@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+ <modelVersion>4.0.0</modelVersion>
+  <groupId>akos-ebelediye-hybrid</groupId>
+  <artifactId>sampas.dai.service</artifactId>
+  <version>${akos-version}</version>
+  <name>${project-name} MOBIL SERVICE</name>
+  <parent>
+    <artifactId>akos.ebelediye.parent</artifactId>
+    <groupId>akos-ebelediye-hybrid</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+   <dependencies>
+    <dependency>
+      <groupId>akos-ebelediye-hybrid</groupId>
+      <artifactId>akos.common.dao</artifactId>
+      <version>${akos-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>akos-ebelediye-hybrid</groupId>
+      <artifactId>sampas.dai.dao</artifactId>
+      <version>${akos-version}</version>
+    </dependency>
+  </dependencies>
+</project>

@@ -1,0 +1,202 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>akos-ebelediye-hybrid</groupId>
+	<artifactId>sampas.dai.esb.servis</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>${project-name} ESB OPENDAI SERVICE</name>
+
+	<parent>
+		<groupId>org.mule.galaxy</groupId>
+		<artifactId>galaxy-parent</artifactId>
+		<version>1.5.3</version>
+	</parent>
+
+	<properties>
+		<muleVersion>2.2.1</muleVersion>
+		<akos-version>0.0.1-SNAPSHOT</akos-version>
+		<ibatis-version>2.3.0</ibatis-version>
+	</properties>
+
+
+
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.mule.transports</groupId>
+			<artifactId>mule-transport-cxf</artifactId>
+			<version>${muleVersion}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>asm</groupId>
+					<artifactId>asm</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>asm</groupId>
+					<artifactId>asm-attrs</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>akos-ebelediye-hybrid</groupId>
+			<artifactId>akos.interceptor.servis</artifactId>
+			<version>${akos-version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>akos-ebelediye-hybrid</groupId>
+					<artifactId>akos.common.dao</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>akos-ebelediye-hybrid</groupId>
+			<artifactId>akos.ortak.errorcode</artifactId>
+			<version>${akos-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>akos-ebelediye-hybrid</groupId>
+			<artifactId>akos.common.dao</artifactId>
+			<version>${akos-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jasypt</groupId>
+			<artifactId>jasypt</artifactId>
+			<version>1.5</version>
+		</dependency>
+		<dependency>
+			<groupId>akos-ebelediye-hybrid</groupId>
+			<artifactId>akos.ESB.ortakmodel</artifactId>
+			<version>${akos-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>akos-ebelediye-hybrid</groupId>
+			<artifactId>akos.common.security.entegrasyon</artifactId>
+			<version>${akos-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>akos-ebelediye-hybrid</groupId>
+			<artifactId>sampas.dai.service</artifactId>
+			<version>${akos-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>akos-ebelediye-hybrid</groupId>
+			<artifactId>akos.messaging.service</artifactId>
+			<version>${akos-version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.12</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.ibatis</groupId>
+			<artifactId>ibatis-sqlmap</artifactId>
+			<version>${ibatis-version}</version>
+		</dependency>
+
+</dependencies>
+
+	<build>
+		<plugins>
+			<!-- Configuration to publish resources to Galaxy -->
+			<plugin>
+				<groupId>org.mule.galaxy</groupId>
+				<artifactId>galaxy-maven-publish-plugin</artifactId>
+				<version>1.5.3</version>
+				<configuration>
+
+					<url>http://192.168.34.228:8090/api/registry/Applications/PRODUCTION/Hybrid/OpenDAI</url>
+					<username>admin</username>
+					<password>admin</password>
+
+					<!--
+						Use this to set up the username/password in your
+						~/.m2/settings.xml
+					-->
+					<!-- <serverId>galaxy</serverId> -->
+
+					<clearWorkspace>true</clearWorkspace>
+
+					<!-- Don't publish Mule & CXF to the repository -->
+					<dependencyExcludes>
+						<dependencyExclude>org.mule:mule-core</dependencyExclude>
+						<dependencyExclude>org.mule.transports:*</dependencyExclude>
+						<dependencyExclude>org.mule.modules:*</dependencyExclude>
+						<dependencyExclude>org.mule.tests:*</dependencyExclude>
+						<dependencyExclude>org.apache.cxf:*</dependencyExclude>
+					</dependencyExcludes>
+
+					<!-- Publish our shared artifacts -->
+					<includes>
+						<include>src/main/resources/*.xsd</include>
+						<include>src/main/resources/*.wsdl</include>
+						<include>src/main/resources/*.xml</include>
+					</includes>
+					<publishProjectMetadata>true</publishProjectMetadata>
+					<!--
+						This is configured here so it can be disabled during the larger
+						Galaxy build when there is no Galaxy instance running.
+					-->
+					<skip>false</skip>
+				</configuration>
+				<executions>
+					<execution>
+						<id>publish-artifacts</id>
+						<phase>deploy</phase>
+						<goals>
+							<goal>execute</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.0.2</version>
+				<configuration>
+					<source>1.5</source>
+					<target>1.5</target>
+				</configuration>
+			</plugin>
+
+		</plugins>
+	</build>
+	<repositories>
+
+		<repository>
+			<id>Akos.Nexus</id>
+			<name>Akos Nexus Public Mirror</name>
+			<url>http://192.168.34.187:8081/nexus/content/groups/public</url>
+		</repository>
+		<repository>
+			<id>snapshots</id>
+			<name>Internal Snapshots</name>
+			<url>http://192.168.34.187:8081/nexus/content/repositories/snapshots</url>
+		</repository>
+
+
+
+
+	</repositories>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Internal Snapshots</name>
+			<url>http://192.168.34.187:8081/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>

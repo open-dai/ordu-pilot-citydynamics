@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+ <modelVersion>4.0.0</modelVersion>
+  <groupId>akos-ebelediye-hybrid</groupId>
+  <artifactId>sampas.dai.dao</artifactId>
+  <version>${akos-version}</version>
+  <name>${project-name} MOBIL DAO</name>
+   <parent>
+    <artifactId>akos.ebelediye.parent</artifactId>
+    <groupId>akos-ebelediye-hybrid</groupId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+   <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <geotools.version>10-SNAPSHOT</geotools.version>
+    </properties>
+  <dependencies>
+    <dependency>
+      <groupId>akos-ebelediye-hybrid</groupId>
+      <artifactId>akos.common.dao</artifactId>
+      <version>${akos-version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>akos-ebelediye-hybrid</groupId>
+      <artifactId>sampas.dai.model</artifactId>
+      <version>${akos-version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-epsg-hsql</artifactId>
+            <version>${geotools.version}</version>
+        </dependency>
+        <!-- Provides support for PostGIS. Note the different groupId -->
+        <dependency>
+            <groupId>org.geotools.jdbc</groupId>
+            <artifactId>gt-jdbc-postgis</artifactId>
+            <version>${geotools.version}</version>
+        </dependency>
+        <!-- Provides support for shapefiles -->
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-shapefile</artifactId>
+            <version>${geotools.version}</version>
+        </dependency>
+        <!-- Provides GUI components -->
+        <dependency>
+            <groupId>org.geotools</groupId>
+            <artifactId>gt-swing</artifactId>
+            <version>${geotools.version}</version>
+        </dependency>
+  </dependencies>
+</project>

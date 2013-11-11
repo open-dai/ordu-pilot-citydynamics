@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layArama"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/txtAddressPOI"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8" />
+
+        <Button
+            android:id="@+id/btnSearchPOI"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2" 
+            android:text="Ara"/>
+    </LinearLayout>
+    
+ <!--     <LinearLayout 
+        android:id="@+id/layAddress"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+        
+        <Spinner 
+            android:id="@+id/spnCity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:spinnerMode="dropdown"
+            />
+        <Spinner 
+            android:id="@+id/spnTown"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:spinnerMode="dropdown"/>
+        <Spinner 
+            android:id="@+id/spnDistrict"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:spinnerMode="dropdown"/>
+        <Spinner 
+            android:id="@+id/spnStreet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:spinnerMode="dropdown"/>
+    </LinearLayout> -->
+
+    <LinearLayout
+        android:id="@+id/layMap"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal" 
+        android:layout_weight="8">
+ 
+        <ListView
+            android:id="@+id/lstGCType"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+        </ListView> 
+
+        <fragment
+            android:id="@+id/mapGC"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            class="com.google.android.gms.maps.MapFragment" />
+    </LinearLayout>
+
+</LinearLayout>

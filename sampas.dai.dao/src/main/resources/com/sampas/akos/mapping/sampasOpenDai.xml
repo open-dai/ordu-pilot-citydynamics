@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd" >
+<sqlMap>
+
+	<select id="readQueryClosestPatoi" resultClass="com.sampas.GeoInfoMngmnt.CityDynamics.V1.PatoiType" >
+		SELECT grf.KURUM_ID as kurumId,grf.ACIKLAMA as aciklama,grf.geometry.sdo_point.x as x,grf.geometry.sdo_point.y as y FROM grf_onemli_yerler grf
+	</select>
+
+	<select id="readQueryClosestPoi" resultClass="com.sampas.GeoInfoMngmnt.CityDynamics.V1.PoiType" >
+		SELECT grf.KURUM_ID as name,grf.ACIKLAMA as description,grf.geometry.sdo_point.x as x,grf.geometry.sdo_point.y as y FROM grf_onemli_yerler grf
+	</select>
+
+	<select id="readQueryClosestGc" resultClass="com.sampas.GeoInfoMngmnt.CityDynamics.V1.CanPoiItem" >
+		SELECT T.KURUM_ID, T.TIPI, T.MAHALLE_ID,   T.CADDE_SOKAK_ID, T.ACIKLAMA,T.geometry.sdo_point.x as x,T.geometry.sdo_point.y as y FROM TIM_COP T
+	</select>
+
+	<select id="readQueryCanTypes" resultClass="com.sampas.GeoInfoMngmnt.CityDynamics.V1.CanType" >
+		SELECT T.KURUM_ID, T.KODU, T.ADI FROM TIM_COP_KONTEYNER_TURLERI T
+	</select>
+
+		<select id="readQueryGcCollectSchedule" resultClass="com.sampas.GeoInfoMngmnt.CityDynamics.V1.GcCollectScheduleItem" >
+			SELECT
+				T.KURUM_ID,  T.YILI,
+				   T.DONEM, T.GUN, T.MAHALLE_ID,
+				   T.CADDE_SOKAK_ID, T.BASLAMA_SAAT, T.BITIS_SAAT,
+				    T.ACIKLAMA
+				FROM TIM_SEMT_COP_TOPLAMA T
+		</select>
+
+
+	<select id="getAddressCity" resultClass="com.sampas.Common.V1.AddressCityItem">
+		select ID,ACIKLAMA from ORT_ILLER
+	</select>
+
+	<select id="getAddressTown" resultClass="com.sampas.Common.V1.AddressTownItem">
+		select ID,ACIKLAMA,IL_ID from ORT_ILCE
+	</select>
+
+	<select id="getAddressDistrict" resultClass="com.sampas.Common.V1.AddressDistrictItem">
+		select ID,MAHALLE_ADI,ILCE_ID from ORT_MAHALLE_KOYLER
+	</select>
+
+	<select id="getAddressStreet" resultClass="com.sampas.Common.V1.AddressStreetItem">
+		select OC.CADDE_SOKAK_ID, OS.CADDE_SOKAK_ADI,OC.MAHALLE_ID from ORT_MAHALLE_CADDE OC left join ORT_CADDE_SOKAK OS on OS.ID = OC.CADDE_SOKAK_ID
+	</select>
+
+</sqlMap>

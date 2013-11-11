@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">CityDynamics</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btnGC">Garbage Collection</string>
+    <string name="btnPOI">POI</string>
+
+    <string-array name="arrCity">
+        <item>Ordu</item>
+    </string-array>
+    <string-array name="arrTown">
+        <item>Bahçelievler</item>
+    </string-array>
+    <string-array name="arrDistrict">
+        <item>Şahincili</item>
+    </string-array>
+    <string-array name="arrStreet">
+        <item>503. Sk</item>
+    </string-array>
+
+</resources>

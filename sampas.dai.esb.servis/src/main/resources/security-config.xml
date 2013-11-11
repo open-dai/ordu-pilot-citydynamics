@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:cxf="http://cxf.apache.org/core"
+	xmlns:jaxws="http://cxf.apache.org/jaxws" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-2.0.4.xsd
+http://cxf.apache.org/core http://cxf.apache.org/schemas/core.xsd
+http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
+
+	<import resource="classpath:com/sampas/akos/commonSecurityContext.xml" />
+	<import resource="classpath:com/sampas/akos/securityContext.xml" />
+	<import resource="classpath:com/sampas/akos/securityServisContext.xml" />
+
+	<bean id="methodSecurityInterceptorIfAnyGranted"
+		class="org.springframework.security.intercept.method.aopalliance.MethodSecurityInterceptor">
+		<property name="authenticationManager">
+			<ref bean="_authenticationManager" />
+		</property>
+		<property name="accessDecisionManager">
+			<ref bean="accessDecisionManagerIfAnyGranted" />
+		</property>
+		<property name="objectDefinitionSource">
+			<value>
+
+			</value>
+		</property>
+	</bean>
+
+	<bean id="methodSecurityInterceptorIfAllGranted"
+		class="org.springframework.security.intercept.method.aopalliance.MethodSecurityInterceptor">
+		<property name="authenticationManager">
+			<ref bean="_authenticationManager" />
+		</property>
+		<property name="accessDecisionManager">
+			<ref bean="accessDecisionManagerIfAllGranted" />
+		</property>
+		<property name="objectDefinitionSource">
+			<value>
+			</value>
+		</property>
+	</bean>
+
+	<jaxws:server name="{http://service.mib.akos.sampas.com/}MibServicePort"
+		createdFromAPI="true">
+		<jaxws:inInterceptors>
+			<ref bean="UsernameToken_Request_Auth" />
+		</jaxws:inInterceptors>
+	</jaxws:server>
+
+	<bean id="UsernameToken_Request_Auth"
+		class="com.sampas.akos.service.interceptor.WSAuthenticationInInterceptor">
+		<constructor-arg>
+			<map>
+				<entry key="action" value="UsernameToken" />
+				<entry key="passwordCallbackRef" value-ref="serverCallback" />
+			</map>
+		</constructor-arg>
+		<property name="authenticationManager" ref="_authenticationManager" />
+	</bean>
+
+	<bean id="TimestampSignEncrypt_Request_Auth"
+		class="com.sampas.akos.service.interceptor.WSAuthenticationInInterceptor">
+		<constructor-arg>
+			<map>
+				<entry key="action" value="Timestamp Signature Encrypt" />
+				<entry key="signaturePropFile" value="serviceKeystore.properties" />
+				<entry key="decryptionPropFile" value="serviceKeystore.properties" />
+				<entry key="passwordCallbackRef" value-ref="serverCallback" />
+			</map>
+		</constructor-arg>
+		<property name="authenticationManager" ref="_authenticationManager" />
+	</bean>
+
+
+	<bean id="TimestampSignEncrypt_Response" class="org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor">
+		<constructor-arg>
+			<map>
+				<entry key="action" value="Timestamp Signature Encrypt" />
+				<entry key="user" value="servicekey" />
+				<entry key="signaturePropFile" value="serviceKeystore.properties" />
+				<entry key="encryptionPropFile" value="serviceKeystore.properties" />
+				<entry key="encryptionUser" value="clientkey" />
+				<entry key="signatureKeyIdentifier" value="DirectReference" />
+				<entry key="passwordCallbackRef" value-ref="serverCallback" />
+				<entry key="signatureParts"
+					value="{Element}{http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd}Timestamp;{Element}{http://schemas.xmlsoap.org/soap/envelope/}Body" />
+				<entry key="encryptionParts"
+					value="{Element}{http://www.w3.org/2000/09/xmldsig#}Signature;{Content}{http://schemas.xmlsoap.org/soap/envelope/}Body" />
+				<entry key="encryptionSymAlgorithm" value="http://www.w3.org/2001/04/xmlenc#tripledes-cbc" />
+			</map>
+		</constructor-arg>
+	</bean>
+
+	<bean id="serverCallback" class="com.sampas.akos.service.util.ServerPasswordCallback" />
+
+
+</beans>
+

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+
+	<!--<import resource="classpath:cityDynamicsDAOContext.xml" />
+	<import resource="classpath:cityDynamicsServiceContext.xml" />
+
+	--><bean id="propertyConfigurer"
+		class="org.jasypt.spring.properties.EncryptablePropertyPlaceholderConfigurer">
+		<constructor-arg ref="configurationEncryptor" />
+		<property name="locations">
+			<list>
+				<value>
+					file:${AKOS_YOL}/servicesForHybrid/webHibernate.properties
+				</value>
+				<value>
+					file:${AKOS_YOL}/servicesForHybrid/akosLdapRoot.properties
+				</value>
+				<value>
+					file:${AKOS_YOL}/servicesForHybrid/akosSecurity.properties
+				</value>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="configurationEncryptor" class="org.jasypt.util.text.BasicTextEncryptor">
+		<property name="password">
+			<value>akos</value>
+		</property>
+	</bean>
+
+	<bean id="beanCityDynamicsService" scope="singleton"
+		class="com.sampas.GeoInfoMngmnt.CityDynamics.V1.impl.SampasDaiServiceImpl">
+		<property name="cityDynamicsService" ref="cityDynamicsService" />
+		<property name="hibernateTemplate" ref="hibernateTemplate" />
+	</bean>
+
+	<bean id="cityDynamicsService" class="com.sampas.GeoInfoMngmnt.CityDynamics.V1.CityDynamicsServiceImpl"
+		autowire="byType">
+		<property name="cityDynamicsDao" ref="cityDynamicsDao" />
+	</bean>
+	<bean id="cityDynamicsDao" class="com.sampas.GeoInfoMngmnt.CityDynamics.V1.CityDynamicsDaoImpl"
+		autowire="byType" />
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName">
+			<value>${hibernate.connection.driver_class}
+			</value>
+		</property>
+		<property name="url">
+			<value>${hibernate.connection.url}</value>
+		</property>
+		<property name="username">
+			<value>${hibernate.connection.username}
+			</value>
+		</property>
+		<property name="password">
+			<value>${hibernate.connection.password}
+			</value>
+		</property>
+	</bean>
+
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+
+		<property name="exposeTransactionAwareSessionFactory" value="false" />
+
+		<property name="dataSource">
+			<ref local="dataSource" />
+		</property>
+
+		<property name="mappingLocations">
+			<!--
+				Spring ve Java Class loader classpath*:**/*.hbm.xml ile hbmleri
+				yükleyemiyor
+			-->
+			<list>
+				<value>classpath*:com/sampas/akos/*/hbm/*.hbm.xml
+				</value>
+				<value>classpath*:com/sampas/akos/**/hbm/*.hbm.xml
+				</value>
+				<value>classpath*:com/sampas/akos/prt/hbm/*.hbm.xml
+				</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<value>
+				hibernate.dialect=${hibernate.dialect}
+				hibernate.show_sql=${hibernate.show_sql}
+				hibernate.format_sql=${hibernate.format_sql}
+				hibernate.hbm2ddl.auto=${hibernate.hbm2ddl.auto}
+				hibernate.default_schema=${hibernate.default_schema}
+				hibernate.cache.use_second_level_cache = false
+				hibernate.cache.use_query_cache = false
+			</value>
+		</property>
+	</bean>
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+	<bean id="txProxyTemplate" abstract="true"
+		class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
+		<property name="transactionManager" ref="transactionManager" />
+		<property name="transactionAttributes">
+			<props>
+				<prop key="*">PROPAGATION_REQUIRED</prop>
+			</props>
+		</property>
+	</bean>
+
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory" />
+
+		<property name="jdbcExceptionTranslator">
+			<bean
+				class="org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator">
+				<property name="dataSource" ref="dataSource" />
+			</bean>
+		</property>
+	</bean>
+</beans>
+
+
+
+
