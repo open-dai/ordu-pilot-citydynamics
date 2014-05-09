@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.akos.ortak.model">
+	<class name="KurumSabit" table="ORT_KURUM">
+		<cache usage="read-write" />
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="kurumAd" type="java.lang.String">
+			<column name="ACIKLAMA" not-null="true" length="75" />
+		</property>
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" length="15" />
+		</property>
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true" />
+		</property>
+		<property name="numaratajKontrolEh" type="java.lang.String">
+			<column name="NUMARATAJ_KONTROL_EH" not-null="true" length="1"
+				check="NUMARATAJ_KONTROL_EH IN('E','H')" />
+		</property>
+		<property name="grafikEh" type="java.lang.String">
+			<column name="GRAFIK_TABANLI_EH" not-null="true" length="1"
+				check="GRAFIK_TABANLI_EH IN('E','H')" />
+		</property>
+
+		<property name="kurumKodu" type="java.lang.String">
+			<column name="KURUM_KODU" length="25" />
+		</property>
+
+		<!--
+			<many-to-one name="ilce" class="com.sampas.akos.idariyapi.model.Ilce"
+		-->
+		<!--			foreign-key="ORT_KURUM_ILCE_FK">-->
+		<!--			<column name="ILCE_ID"></column>-->
+		<!--		</many-to-one>-->
+		<!--
+			<one-to-one name="sistemSabit" foreign-key="SYS_SABITLERI_KURUM_FK"
+		-->
+		<!--			class="com.sampas.akos.ortaksabit.model.SistemSabit">-->
+		<!--		</one-to-one>-->
+
+		<!--		<one-to-one name="emlakSabit" foreign-key="EML_SABIT_KURUM_FK"-->
+		<!--			class="com.sampas.akos.ortakgelir.model.EmlakSabit">-->
+		<!--		</one-to-one>-->
+
+		<!--
+			<one-to-one name="emlakOtomatikNumara"
+			foreign-key="EML_OTOMATIK_NUMARA_KURUM_FK"
+		-->
+		<!--			class="com.sampas.akos.ortakgelir.model.EmlakOtomatikNumara">-->
+		<!--		</one-to-one>-->
+<!---->
+		<!--		<bag name="caddeSokaklar">-->
+		<!--			<key column="KURUM_ID" />-->
+		<!--
+			<one-to-many class="com.sampas.akos.idariyapi.model.CaddeSokak" />
+		-->
+		<!--		</bag>-->
+<!---->
+		<!--		<bag name="mahalleler" cascade="all">-->
+		<!--
+			<key column="KURUM_ID" not-null="true"
+			foreign-key="ORT_MAHALLE_KOYLER_KURUM_FK" />
+		-->
+		<!--
+			<one-to-many class="com.sampas.akos.idariyapi.model.Mahalle" />
+		-->
+		<!--		</bag>-->
+
+	</class>
+</hibernate-mapping>

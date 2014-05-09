@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.socbs.geolsa.model">
+
+	<class name="MdRasterLayer" table="MD_RASTER_LAYERS">
+	
+		<id name="oid" column="OID">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="layerSubType" type="java.lang.Integer">
+			<column name="LAYERSUBTYPE" not-null="false" />
+		</property>
+		
+		<property name="rasterWfsEquvalent" type="java.lang.String">
+			<column name="RASTERWFSEquvalent" not-null="false" length="256" />
+		</property>
+		
+		<many-to-one name="mdDatabaseRasterLayer" foreign-key="MD_DATABASE_RASTER_LAYER_FK" cascade="all" class="MdDatabaseRasterLayer" lazy="false">
+			<column name="DBLAYERID" not-null="false" />
+		</many-to-one>
+				
+		<many-to-one name="mdRemoteRasterLayer" foreign-key="MD_REMOTE_RASTER_LAYER_FK" cascade="all" class="MdRemoteRasterLayer" lazy="false">
+			<column name="REMOTELAYERID" not-null="false" />
+		</many-to-one>
+		 
+		<many-to-one name="mdFileBasedRasterLayer" foreign-key="MD_FILE_BASED_RASTER_LAYER_FK" cascade="all" class="MdFileBasedRasterLayer" lazy="false">
+			<column name="FILELAYERID" not-null="false" />
+		</many-to-one>
+
+ 	</class>
+</hibernate-mapping>

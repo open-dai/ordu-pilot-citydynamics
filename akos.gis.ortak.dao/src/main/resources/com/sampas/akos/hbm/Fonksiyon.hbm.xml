@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.gis.ortak.model">
+	<class name="Fonksiyon" table="PLN_FONKSIYON">
+		
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<many-to-one name="plan" class="Plan" foreign-key="FK_FONKSIYON_PLAN">
+			<column name="PLAN_ID" not-null="true" />
+		</many-to-one>
+		
+		<property name="binaYuksekligi" type="java.lang.Double">
+			<column name="HMAX" not-null="false" />
+		</property>
+		
+		<property name="binaDerinligi" type="java.lang.Double">
+			<column name="DERINLIK" not-null="false" />
+		</property>
+		
+		<property name="binaYuksekligiAciklama" type="java.lang.String">
+			<column name="BINA_YUKSEKLIGI_ACIKLAMA" not-null="false" />
+		</property>
+		
+		<property name="binaDerinligiAciklama" type="java.lang.String">
+			<column name="BINA_DERINLIGI_ACIKLAMA" not-null="false" />
+		</property>
+		
+		<property name="onBahceMesafesi" type="java.lang.Double">
+			<column name="ONBAHCE" not-null="false" />
+		</property>
+		
+		<property name="yanBahceMesafesi" type="java.lang.Double">
+			<column name="YANBAHCE" not-null="false" />
+		</property>
+		
+		<property name="arkaBahceMesafesi" type="java.lang.Double">
+			<column name="ARKABAHCE" not-null="false" />
+		</property>
+		
+		<property name="kotNoktasiNo" type="java.lang.String">
+			<column name="KOTNOKTASINO" not-null="false" length="20" />
+		</property>
+		
+		<property name="insaatNizami" type="java.lang.String">
+			<column name="NIZAM" not-null="false" length="50" />
+		</property>
+		<property name="insaatNizamiAciklama" type="java.lang.String">
+			<column name="INSAAT_NIZAMI_ACIKLAMA" not-null="false" length="50" />
+		</property>
+		<property name="taks" type="java.lang.String">
+			<column name="TAKS" not-null="false" length="100" />
+		</property>
+		
+		<property name="taksAciklama" type="java.lang.String">
+			<column name="TAKS_ACIKLAMA" not-null="false" length="100" />
+		</property>
+		
+		<property name="kaks" type="java.lang.String">
+			<column name="KAKS" not-null="false" length="100" />
+		</property>
+		
+		<property name="kaksAciklama" type="java.lang.String">
+			<column name="KAKS_ACIKLAMA" not-null="false" length="100" />
+		</property>
+		
+		<property name="aciklama" type="java.lang.String">
+			<column name="ACIKLAMA" not-null="false" length="1000" />
+		</property>
+		
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true" />
+		</property>
+		
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" />
+		</property>
+		
+		<property name="onBahceMesafesiAciklama" type="java.lang.String">
+			<column name="ON_BAHCE_MESAFESI_ACIKLAMA" not-null="false" />
+		</property>
+		
+		<property name="yanBahceMesafesiAciklama" type="java.lang.String">
+			<column name="YAN_BAHCE_MESAFESI_ACIKLAMA" not-null="false" />
+		</property>
+		
+		<property name="arkaBahceMesafesiAciklama" type="java.lang.String">
+			<column name="ARKA_BAHCE_MESAFESI_ACIKLAMA" not-null="false" />
+		</property>
+		
+		<property name="katAdedi" type="java.lang.Long">
+			<column name="KATADEDI" not-null="false" />
+		</property>
+		
+		<property name="katAdediAciklama" type="java.lang.String">
+			<column name="KAT_ADEDI_ACIKLAMA" not-null="false" />
+		</property>
+		
+		<property name="fonksiyonAdi" type="java.lang.String">
+			<column name="FONKSIYON_ADI" not-null="false" />
+		</property>
+		
+		<property name="emsal" type="java.lang.Double">
+			<column name="EMSAL" not-null="false" />
+		</property>
+		
+		<many-to-one name="kurumSabit" class="com.sampas.akos.ortak.model.KurumSabit"
+			foreign-key="PLN_FONKSIYON_KURUM_FK">
+			<column name="KURUM_ID" />
+		</many-to-one>
+		
+		<many-to-one name="grafik" class="com.sampas.akos.ortak.model.Grafik"
+			foreign-key="PLN_FONKSIYON_GRAFIK_FK">
+			<column name="FID" />
+		</many-to-one>
+		
+		<property name="tahsisAlani" type="java.lang.Double">
+			<column name="TAHSIS_ALANI" not-null="false" />
+		</property>
+		
+		<property name="yogunluk" type="java.lang.Double">
+			<column name="YOGUNLUK" not-null="false" />
+		</property>
+		
+		<property name="toplamInsaatAlani" type="java.lang.Double">
+			<column name="TOPLAM_INSAAT_ALANI" not-null="false" />
+		</property>
+		
+		<property name="meclisKararOnay" type="java.lang.String">
+			<column name="MECLIS_KARAR_ONAYI" not-null="false" />
+		</property>
+		
+		<property name="ifrazAlan" type="java.lang.Double">
+			<column name="IFRAZALAN" not-null="false" />
+		</property>
+		
+		<property name="ifrazAlanAciklama" type="java.lang.String">
+			<column name="IFRAZ_ALANI_ACIKLAMA" not-null="false" />
+		</property>
+		
+		<property name="ifrazCephe" type="java.lang.Double">
+			<column name="IFRAZCEPHE" not-null="false" />
+		</property>
+		
+		<property name="ifrazCepheAciklama" type="java.lang.String">
+			<column name="IFRAZ_CEPHE_ACIKLAMA" not-null="false" />
+		</property>
+		
+		<property name="ifrazDerinlik" type="java.lang.Double">
+			<column name="IFRAZDERINLIK" not-null="false" />
+		</property>
+		
+		<property name="ifrazDerinlikAciklama" type="java.lang.String">
+			<column name="IFRAZ_DERINLIK_ACIKLAMA" not-null="false" />
+		</property>
+	
+	</class>
+</hibernate-mapping>

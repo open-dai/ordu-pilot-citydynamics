@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.socbs.geolsa.model">
+
+	<class name="MdLayer" table="MD_LAYERS">
+	
+		<id name="oid" column="OID">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="layerName" type="java.lang.String">
+			<column name="LAYERNAME" not-null="false" length="256" />
+		</property>
+	
+		<property name="layerType" type="java.lang.Integer">
+			<column name="LAYERTYPE" not-null="false" />
+		</property>
+	
+		<property name="defaultCrs" type="java.lang.String">
+			<column name="DEFAULTCRS" not-null="false" length="256" />
+		</property>
+	
+		<many-to-one name="mdRasterLayer" foreign-key="MD_RASTER_LAYER_FK" cascade="all" class="MdRasterLayer" lazy="false">
+			<column name="RASTERLAYERID" not-null="false" />
+		</many-to-one>
+		
+		<many-to-one name="mdFeatureLayer" foreign-key="MD_FEATURE_LAYER_FK" cascade="all" class="MdFeatureLayer" lazy="false">
+			<column name="FEATURELAYERID" not-null="false" />
+		</many-to-one>
+ 		
+ 	</class>
+</hibernate-mapping>

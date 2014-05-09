@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.sampas.akos.common.model.AuditLog" table="AUDITLOG" >
+		<cache usage="read-write" />
+		<id name="id" type="java.lang.Long" column="ID">
+			<generator class="native"/>
+		</id>
+		<property name="entityName" 	column="ENTITY_NAME" 	type="java.lang.String" />
+		<property name="entityId" 		column="ENTITY_ID"		type="java.lang.Long" />
+		<property name="newValue" 		column="NEW_VALUE" 		type="java.lang.String" />
+		<property name="oldValue" 		column="OLD_VALUE" 		type="java.lang.String" />
+		<property name="user"			column="USERNAME"		type="java.lang.String" />
+		<property name="operation"		column="OPERATION" 		type="java.lang.String"/>
+		<property name="operationTime"	column="OPERATION_TIME" type="java.util.Date"/>
+		<property name="firmName"		column="FIRM" 			type="java.lang.String"/>
+		<property name="firmId" 		column="FIRM_ID" 		type="java.lang.Long" />
+	 </class>
+</hibernate-mapping>

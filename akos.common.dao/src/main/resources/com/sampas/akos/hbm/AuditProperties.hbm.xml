@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.akos.trace.model">
+	<class name="AuditProperties"
+		table="SYS_AUDIT_PROPERTIES">
+		<cache usage="read-write" />
+		<id name="id" column="ID" length="10">
+			<generator class="native"/>
+		</id>
+			
+		<property name="entityName" type="java.lang.String">
+			<column name="ENTITY_NAME" not-null="false" length="250"/>
+		</property>
+		
+		<property name="historical" type="java.lang.Long">
+			<column name="HISTORICAL" length="2"/>
+		</property>
+		
+		<property name="traceable" type="java.lang.Long">
+			<column name="TRACEABLE" length="2"/>
+		</property>
+		
+		<property name="changeTime" type="java.util.Date">
+			<column name="AKOS_DEGISIM_TARIHI"></column>
+		</property>
+		
+	 </class>
+</hibernate-mapping>

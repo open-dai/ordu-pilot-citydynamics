@@ -1,0 +1,245 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.gis.ortak.metadata.model">
+	<class name="KurumUygMD_DB_Map" table="MD_SMP_COMP_APP">
+
+		<id name="id" column="ID">
+			<generator class="increment"></generator>
+		</id>
+
+		<property name="kurumId" type="java.lang.Long">
+			<column name="KURUM_ID" not-null="true" />
+		</property>
+
+		<property name="applicationName" type="java.lang.String">
+			<column name="APPLICATION_NAME" not-null="true" />
+		</property>
+
+		<property name="coordinateSystem" type="java.lang.Long">
+			<column name="COORDINATE_SYSTEM" />
+		</property>
+
+		<property name="geolsaConnectionName" type="java.lang.String">
+			<column name="GEOLSA_CONNECTION_NAME" />
+		</property>
+
+		<property name="relatedExtent" type="java.lang.String">
+			<column name="RELATED_EXTENT" />
+		</property>
+
+		<property name="numZoomLevels" type="java.lang.Long">
+			<column name="NUM_ZOOM_LEVELS" />
+		</property>
+
+		<property name="minZoomLevel" type="java.lang.Long">
+			<column name="MIN_ZOOM_LEVEL" />
+		</property>
+
+		<property name="isMapExtentFixed" type="java.lang.String">
+			<column name="IS_MAP_EXTENT_FIXED" />
+		</property>
+
+		<property name="tileURLs" type="java.lang.String">
+			<column name="TILE_URLS" />
+		</property>
+
+		<property name="tileLayerNames" type="java.lang.String">
+			<column name="TILE_LAYER_NAMES" />
+		</property>
+
+		<property name="tileLayerNameSpaces" type="java.lang.String">
+			<column name="TILE_LAYER_NAMESPACES" />
+		</property>
+
+		<property name="dmServiceUse" type="java.lang.String">
+			<column name="DM_SERVIS_USE" />
+		</property>
+
+		<property name="useGoogleSatelliteMapAsBaseMap" type="java.lang.String">
+			<column name="GOOGLE_SATELLITEMAP_AS_BASEMAP" />
+		</property>
+
+		<property name="useGoogleHybridMapAsBaseMap" type="java.lang.String">
+			<column name="GOOGLE_HYBRIDMAP_AS_BASEMAP" />
+		</property>
+
+		<property name="useGooglePhysicalMapAsBaseMap" type="java.lang.String">
+			<column name="GOOGLE_PHYSICALMAP_AS_BASEMAP" />
+		</property>
+
+		<property name="useBingSatelliteMapAsBaseMap" type="java.lang.String">
+			<column name="BING_SATELLITEMAP_AS_BASEMAP" />
+		</property>
+
+		<property name="useBingHybridMapAsBaseMap" type="java.lang.String">
+			<column name="BING_HYBRIDMAP_AS_BASEMAP" />
+		</property>
+
+		<property name="useBingAerialMapAsBaseMap" type="java.lang.String">
+			<column name="BING_AERIALMAP_AS_BASEMAP" />
+		</property>
+
+		<property name="useOSMAsBaseMap" type="java.lang.String">
+			<column name="USE_OSMAS_BASEMAP" />
+		</property>
+
+		<property name="useEmptyLayerAsBaseMap" type="java.lang.String">
+			<column name="USE_EMPTYLAYER_AS_BASEMAP" />
+		</property>
+		
+		<property name="isEmptyLayerPriorityFirst" type="java.lang.String">
+			<column name="IS_EMPTYLAYER_PRIORITY_FIRST" />
+		</property>
+
+		<property name="useGoogleSatelliteMapAsOverviewMap" type="java.lang.String">
+			<column name="GOOGLESATELLMAP_AS_OVERVIEWMAP" />
+		</property>
+
+		<property name="useBingSatelliteMapAsOverviewMap" type="java.lang.String">
+			<column name="BINGSATELLITMAP_AS_OVERVIEWMAP" />
+		</property>
+
+		<property name="useOSMAsOverviewMap" type="java.lang.String">
+			<column name="USE_OSMAS_OVERVIEWMAP" />
+		</property>
+
+		<property name="overviewMapFixedLevelNumber" type="java.lang.Long">
+			<column name="OVERVIEWMAP_FIXED_LEVELNUMBER" />
+		</property>
+
+		<property name="overviewMapLayerId" type="java.lang.Long">
+			<column name="OVERVIEWMAP_LAYERID" />
+		</property>
+
+		<property name="tableMaxPages" type="java.lang.Long">
+			<column name="TABLE_MAX_PAGES" />
+		</property>
+
+		<property name="multiZoningStatusSupport" type="java.lang.String">
+			<column name="MULTI_ZONING_STATUS_SUPPORT" />
+		</property>
+
+		<property name="dilDestegiGoruntuleme" type="java.lang.String">
+			<column name="DIL_DESTEGI_GORUNTULEME" />
+		</property>
+
+		<property name="photoFilterTags" type="java.lang.String">
+			<column name="PHOTO_FILTER_TAGS" />
+		</property>
+		
+		<property name="bolgeEh" type="java.lang.String">
+			<column name="BOLGE_EH" check="BOLGE_EH IN('E','H')" />
+		</property>
+		
+		<property name="showStreetView" type="java.lang.String">
+			<column name="SHOWSTREETVIEW" />
+		</property>
+		
+		<property name="streetViewApiKey" type="java.lang.String">
+			<column name="STREETVIEW_APIKEY" />
+		</property>
+		
+		<property name="streetViewSecretKey" type="java.lang.String">
+			<column name="STREETVIEW_SECRETKEY" />
+		</property>
+		
+		<property name="streetViewServiceURL" type="java.lang.String">
+			<column name="STREETVIEW_SERVICE_URL" />
+		</property>
+		
+		<property name="streetViewBaseDataURL" type="java.lang.String">
+			<column name="STREETVIEW_BASEDATA_URL" />
+		</property>
+		
+		<property name="streetViewCoverageURL" type="java.lang.String">
+			<column name="STREETVIEW_COVERAGE_URL" />
+		</property>
+		
+		<property name="binaYuksekligi" type="java.lang.String">
+			<column name="BINA_YUKSEKLIGI" check="BINA_YUKSEKLIGI IN(1 ,2,3)"/>
+		</property>
+		
+		<property name="katAdedi" type="java.lang.String">
+			<column name="KAT_ADEDI" check="KAT_ADEDI IN(1 ,2,3)"/>
+		</property>
+		
+		<property name="binaDerinligi" type="java.lang.String">
+			<column name="BINA_DERINLIGI" check="BINA_DERINLIGI IN(1 ,2,3)"/>
+		</property>
+		
+		<property name="onBahceMesafesi" type="java.lang.String">
+			<column name="ON_BAHCE_MESAFESI" check="ON_BAHCE_MESAFESI IN(1 ,2,3)"/>
+		</property>
+		
+		<property name="yanBahceMesafesi" type="java.lang.String">
+			<column name="YAN_BAHCE_MESAFESI" check="YAN_BAHCE_MESAFESI IN(1 ,2,3)"/>
+		</property>
+		
+		<property name="arkaBahceMesafesi" type="java.lang.String">
+			<column name="ARKA_BAHCE_MESAFESI" check="ARKA_BAHCE_MESAFESI IN(1 ,2,3)"/>
+		</property>
+		
+		<property name="kaks" type="java.lang.String">
+			<column name="KAKS" check="KAKS IN(1 ,2,3)"/>
+		</property>
+		
+		<property name="taks" type="java.lang.String">
+			<column name="TAKS" check="TAKS IN(1 ,2,3)"/>
+		</property>
+		
+		<property name="tileLayerVisibility" type="java.lang.String">
+			<column name="TILE_LAYER_VISIBILITY" />
+		</property>
+		
+		<property name="showPanaroma" type="java.lang.String">
+			<column name="SHOWPANAROMA" />
+		</property>
+		
+		<property name="panaromaLidarLabel" type="java.lang.String">
+			<column name="PANAROMA_LIDAR_LABEL" />
+		</property>
+		
+			<property name="panaromaMaxDestince" type="java.lang.String">
+			<column name="PANAROMA_MAX_DESTINCE" />
+		</property>
+		
+			<property name="panaromaOlcmeToolbar" type="java.lang.String">
+			<column name="PANAROMA_OLCME_TOOLBAR" />
+		</property>
+		
+			<property name="panaromaServiceUrl" type="java.lang.String">
+			<column name="PANAROMA_SERVICE_URL" />
+		</property>
+		
+			<property name="panaromaShowLidar" type="java.lang.String">
+			<column name="PANAROMA_SHOW_LIDAR" />
+		</property>
+		
+			<property name="panaromaShowTimeLabel" type="java.lang.String">
+			<column name="PANAROMA_SHOW_TIME_LABEL" />
+		</property>
+		
+		<property name="panaromaUsername" type="java.lang.String">
+			<column name="PANAROMA_USERNAME" />
+		</property>
+		
+		<property name="panaromaUserpass" type="java.lang.String">
+			<column name="PANAROMA_USERPASS" />
+		</property>
+		
+		<property name="tileLayerOpacity" type="java.lang.String">
+			<column name="TILE_LAYER_OPACITY" />
+		</property>
+		
+		<property name="tileLayerScale" type="java.lang.String">
+			<column name="TILE_LAYER_SCALE" />
+		</property>
+		
+		<property name="tileLayerIsBaselayer" type="java.lang.String">
+			<column name="TILE_LAYER_ISBASELAYER" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

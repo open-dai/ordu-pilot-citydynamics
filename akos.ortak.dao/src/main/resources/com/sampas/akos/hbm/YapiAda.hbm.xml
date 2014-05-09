@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.akos.ortak.model">
+	<class name="YapiAda" table="NUM_YAPI_ADALARI">
+		<cache usage="read-write" />
+		
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="aciklama" type="java.lang.String">
+			<column name="ACIKLAMA" not-null="true" length="50" />
+		</property>
+		
+		<property name="yapiAdasiVasfi" type="java.lang.String">
+			<column name="YAPI_ADASI_VASFI" not-null="true" />
+		</property>
+		
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" length="15" />
+		</property>
+		
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true" />
+		</property>
+		
+		<many-to-one name="kurumSabit" class="KurumSabit"
+			foreign-key="NUM_YAPI_ADA_KURUM_FK" >
+			<column name="KURUM_ID" not-null="true" />
+		</many-to-one>
+		
+		<many-to-one name="grafik" class="Grafik"
+			foreign-key="ORT_MAHALLE_KOYLER_GRAFIK_FK">
+			<column name="FID" />
+		</many-to-one>
+		
+	</class> 
+</hibernate-mapping>

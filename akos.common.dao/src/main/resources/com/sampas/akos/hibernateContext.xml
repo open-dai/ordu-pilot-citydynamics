@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+
+	<!-- ############# TARIHSELLIK ################-->
+	<!--
+		<bean id="auditLogInterceptor"
+		class="com.sampas.akos.common.interceptor.AuditLogInterceptor">
+	-->
+	<!--		<property name="sessionFactory" ref="sessionFactory"/>-->
+	<!--
+		<property name="akosAuditableFactory" ref="akosAuditableFactory"/>
+	-->
+	<!--	</bean>-->
+
+	<!--
+		<bean id="akosAuditableFactory"
+		class="com.sampas.akos.common.dao.AkosAuditableFactoryImpl">
+	-->
+	<!--		<property name="sessionFactory" ref="sessionFactory"/>-->
+	<!--	</bean>-->
+
+	<bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName">
+			<value>${hibernate.connection.driver_class}</value>
+		</property>
+		<property name="url">
+			<value>${hibernate.connection.url}</value>
+		</property>
+		<property name="username">
+			<value>${hibernate.connection.username}</value>
+		</property>
+		<property name="password">
+			<value>${hibernate.connection.password}</value>
+		</property>
+	</bean>
+<!--	<bean id="historicalAuditEventListener" class="com.sampas.akos.common.listener.AkosAuditEventListener" />-->
+<!--	<bean id="akosRevisionListener" class="com.sampas.akos.common.listener.AkosRevisionListener" />-->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref local="dataSource" />
+		</property>
+		<property name="mappingLocations">
+			<list>
+				<value>
+					classpath*:com/sampas/akos/*/audit/*.hbm.xml
+				</value>
+				<value>
+					classpath*:com/sampas/akos/**/audit/*.hbm.xml
+				</value>
+
+				<value>
+					classpath*:com/sampas/akos/*/hbm/*.hbm.xml
+				</value>
+				<value>
+					classpath*:com/sampas/akos/**/hbm/*.hbm.xml
+				</value>
+
+				<value>
+					classpath*:com/sampas/socbs/*/hbm/*.hbm.xml
+				</value>
+				<value>
+					classpath*:com/sampas/socbs/**/hbm/*.hbm.xml
+				</value>
+
+				<value>
+					classpath*:/org/jbpm/**/*.hbm.xml
+				</value>
+				<value>
+					classpath*:/org/jbpm/*/*.hbm.xml
+				</value>
+			</list>
+		</property>
+
+		<property name="hibernateProperties">
+			<value>
+				hibernate.dialect=${hibernate.dialect}
+				hibernate.show_sql=false
+				hibernate.format_sql=${hibernate.format_sql}
+				hibernate.hbm2ddl.auto=${hibernate.hbm2ddl.auto}
+				hibernate.default_schema=${hibernate.default_schema}
+				hibernate.cglib.use_reflection_optimizer=false
+				hibernate.bytecode.use_reflection_optimizer=false
+				hibernate.cache.provider_class=org.hibernate.cache.EhCacheProvider
+				hibernate.generate_statistics=${hibernate.generate_statistics}
+				hibernate.cache.use_structured_entries=${hibernate.cache.use_structured_entries}
+				hibernate.cache.use_query_cache=true
+				org.hibernate.envers.audit_table_suffix=_VER
+				org.hibernate.envers.store_data_at_delete=true
+				
+			</value>
+		</property>
+
+<!--		<property name="eventListeners">-->
+<!--			<map>-->
+<!--				<entry key="post-insert">-->
+<!--					<ref local="historicalAuditEventListener" />-->
+<!--				</entry>-->
+<!--				<entry key="post-update">-->
+<!--					<ref local="historicalAuditEventListener" />-->
+<!--				</entry>-->
+<!--				<entry key="post-delete">-->
+<!--					<ref local="historicalAuditEventListener" />-->
+<!--				</entry>-->
+<!--				<entry key="pre-collection-update">-->
+<!--					<ref local="historicalAuditEventListener" />-->
+<!--				</entry>-->
+<!--				<entry key="pre-collection-remove">-->
+<!--					<ref local="historicalAuditEventListener" />-->
+<!--				</entry>-->
+<!--				<entry key="post-collection-recreate">-->
+<!--					<ref local="historicalAuditEventListener" />-->
+<!--				</entry>-->
+<!--			</map>-->
+<!--		</property>-->
+		<!--		<property name="entityInterceptor">-->
+		<!--			<ref local="auditLogInterceptor"/>-->
+		<!--		</property> -->
+	</bean>
+
+
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory"><ref bean="sessionFactory" /></property>
+		
+		<!--		<property name="entityInterceptor">-->
+		<!--			<ref local="auditLogInterceptor"/>-->
+		<!--		</property> -->
+		
+	</bean>
+
+	<tx:advice id="txAdvice" transaction-manager="transactionManager">
+		<tx:attributes>
+			<tx:method name="read*" read-only="true" propagation="REQUIRED" />
+			<tx:method name="is*" read-only="true" propagation="REQUIRED" />
+			<tx:method name="*"
+				rollback-for="com.sampas.akos.common.exception.AkosException"
+				propagation="REQUIRED" />
+		</tx:attributes>
+	</tx:advice>
+
+	<aop:config>
+		<aop:pointcut id="txPointCut"
+			expression="execution(* com.sampas..servis.*Servis.*(..)) and !execution(* com.sampas..servis.*Servis.nt_*(..))" />
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="txPointCut" />
+	</aop:config>
+
+	<!--
+		<bean id="resourceReader"
+		class="com.sampas.akos.common.util.AkosResourceReader">
+	-->
+	<!--
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	-->
+	<!--		<property name="resourceList">-->
+	<!--			<list>-->
+	<!--				<value>button.kaydet</value>-->
+	<!--				<value>button.ara</value>-->
+	<!--			</list>-->
+	<!--		</property>-->
+	<!--	</bean>	-->
+</beans>

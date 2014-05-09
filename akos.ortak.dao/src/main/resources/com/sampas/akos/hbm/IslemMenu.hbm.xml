@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.akos.ortak.model">
+	<class name="IslemMenu" table="SYS_KULLANICI_ISLEM_MENU">
+		<cache usage="read-write" />
+		<id name="id" column="ID">
+			<generator class="native">
+				<param name="sequence">SEQ_SYS_KULLANICI_ISLEM_MENU</param>
+			</generator>
+		</id>
+		<property name="link" type="java.lang.String">
+			<column name="LINK" not-null="true" length="50"></column>
+		</property>
+		<property name="aciklama" type="java.lang.String">
+			<column name="ACIKLAMA" not-null="true" length="50"></column>
+		</property>
+		<property name="rol" type="java.lang.String">
+			<column name="ROLE" not-null="true" length="100"></column>
+		</property>
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true"></column>
+		</property>
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" length="15"></column>
+		</property>
+
+		<many-to-one name="kurumSabit" class="com.sampas.akos.ortak.model.KurumSabit"
+			foreign-key="SYS_KUL_ISLEM_MENU_KURUM_FK">
+			<column name="KURUM_ID" not-null="true"></column>
+		</many-to-one>
+	</class>
+</hibernate-mapping>

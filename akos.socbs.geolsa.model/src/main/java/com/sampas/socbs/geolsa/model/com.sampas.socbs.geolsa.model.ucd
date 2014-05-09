@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="com.sampas.socbs.geolsa.model" size="2306,2288" metadata="uml2-1.0" initialized="true" scrolledX="-5" scrolledY="-5" tag="1000" key="32303037303533312D3130303020616B6F732E736F6362732E67656F6C73612E6D6F64656C2F63746F73756E6F676C75">
+  <children xsi:type="editmodel:ClassEditModel" name="MdAppLayer" location="359,245" size="367,679" id="com.sampas.socbs.geolsa.model/MdAppLayer" runTimeClassModel="mdLayerAttributeVisibleNames,layerMinScale,layerMaxScale,setLaverVisibility(Z),setOid(J),getMdLayerAttributeVisibleNames(),setSelect(Z),MdAppLayer(),setLayerPriority(I),getLayerMinScale(),setLayerDescForApp(Ljava.lang.String;),getOid(),getMdLayer(),oid,setLayerAppsSystemLayer(Z),setLegendNeeded(Z),getLayerDescForApp(),isLegendNeeded(),legendNeeded,getLayerMaxScale(),layerAppsSystemLayer,layerPriority,mdLayer,setLayerMinScale(I),laverVisibility,isLaverVisibility(),select,setMdLayer(Lcom.sampas.socbs.geolsa.model.MdLayer;),getLayerPriority(),setMdLayerAttributeVisibleNames(Ljava.util.List;),finalize(),setLayerMaxScale(I),isLayerAppsSystemLayer(),layerDescForApp,isSelect()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="344,198">
+      <children xsi:type="editmodel:AttributeEditModel" name="laverVisibility" id="com.sampas.socbs.geolsa.model/MdAppLayer#laverVisibility"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="layerAppsSystemLayer" id="com.sampas.socbs.geolsa.model/MdAppLayer#layerAppsSystemLayer"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="layerDescForApp" id="com.sampas.socbs.geolsa.model/MdAppLayer#layerDescForApp"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="layerMaxScale" id="com.sampas.socbs.geolsa.model/MdAppLayer#layerMaxScale"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="layerMinScale" id="com.sampas.socbs.geolsa.model/MdAppLayer#layerMinScale"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="layerPriority" id="com.sampas.socbs.geolsa.model/MdAppLayer#layerPriority"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="legendNeeded" id="com.sampas.socbs.geolsa.model/MdAppLayer#legendNeeded"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mdLayer" id="com.sampas.socbs.geolsa.model/MdAppLayer#mdLayer"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mdLayerAttributeVisibleNames" id="com.sampas.socbs.geolsa.model/MdAppLayer#mdLayerAttributeVisibleNames"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="oid" id="com.sampas.socbs.geolsa.model/MdAppLayer#oid"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="select" id="com.sampas.socbs.geolsa.model/MdAppLayer#select"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="193,432">
+      <children xsi:type="editmodel:MethodEditModel" name="MdAppLayer" id="com.sampas.socbs.geolsa.model/MdAppLayer#MdAppLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="finalize" id="com.sampas.socbs.geolsa.model/MdAppLayer#finalize()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLayerDescForApp" id="com.sampas.socbs.geolsa.model/MdAppLayer#getLayerDescForApp()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLayerMaxScale" id="com.sampas.socbs.geolsa.model/MdAppLayer#getLayerMaxScale()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLayerMinScale" id="com.sampas.socbs.geolsa.model/MdAppLayer#getLayerMinScale()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLayerPriority" id="com.sampas.socbs.geolsa.model/MdAppLayer#getLayerPriority()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMdLayer" id="com.sampas.socbs.geolsa.model/MdAppLayer#getMdLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMdLayerAttributeVisibleNames" id="com.sampas.socbs.geolsa.model/MdAppLayer#getMdLayerAttributeVisibleNames()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOid" id="com.sampas.socbs.geolsa.model/MdAppLayer#getOid()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isLaverVisibility" id="com.sampas.socbs.geolsa.model/MdAppLayer#isLaverVisibility()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isLayerAppsSystemLayer" id="com.sampas.socbs.geolsa.model/MdAppLayer#isLayerAppsSystemLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isLegendNeeded" id="com.sampas.socbs.geolsa.model/MdAppLayer#isLegendNeeded()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isSelect" id="com.sampas.socbs.geolsa.model/MdAppLayer#isSelect()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLaverVisibility" id="com.sampas.socbs.geolsa.model/MdAppLayer#setLaverVisibility(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLayerAppsSystemLayer" id="com.sampas.socbs.geolsa.model/MdAppLayer#setLayerAppsSystemLayer(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLayerDescForApp" id="com.sampas.socbs.geolsa.model/MdAppLayer#setLayerDescForApp(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLayerMaxScale" id="com.sampas.socbs.geolsa.model/MdAppLayer#setLayerMaxScale(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLayerMinScale" id="com.sampas.socbs.geolsa.model/MdAppLayer#setLayerMinScale(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLayerPriority" id="com.sampas.socbs.geolsa.model/MdAppLayer#setLayerPriority(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLegendNeeded" id="com.sampas.socbs.geolsa.model/MdAppLayer#setLegendNeeded(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMdLayer" id="com.sampas.socbs.geolsa.model/MdAppLayer#setMdLayer(Lcom.sampas.socbs.geolsa.model.MdLayer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMdLayerAttributeVisibleNames" id="com.sampas.socbs.geolsa.model/MdAppLayer#setMdLayerAttributeVisibleNames(Ljava.util.List;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOid" id="com.sampas.socbs.geolsa.model/MdAppLayer#setOid(J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setSelect" id="com.sampas.socbs.geolsa.model/MdAppLayer#setSelect(Z)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MdDatabaseFeatureLayer" location="459,245" size="297,679" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer" runTimeClassModel="setDbURL(Ljava.lang.String;),setOid(J),dbUser,MdDatabaseFeatureLayer(),setLayerGeomClnName(Ljava.lang.String;),getDbType(),setDbName(Ljava.lang.String;),setDbType(Ljava.lang.String;),getDbPort(),getOid(),dbName,setLayerTbName(Ljava.lang.String;),oid,mdFeatureThemeStyles,dbType,dbPort,setDbPass(Ljava.lang.String;),setDbSchema(Ljava.lang.String;),getDbSchema(),setDbPort(I),dbSchema,getDbPass(),dbPass,getLayerTbName(),layerGeomClnName,getDbURL(),dbURL,setDbUser(Ljava.lang.String;),layerTbName,getDbUser(),getLayerGeomClnName(),finalize(),getMdFeatureThemeStyles(),getDbName(),setMdFeatureThemeStyles(Ljava.util.List;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="274,198">
+      <children xsi:type="editmodel:AttributeEditModel" name="dbName" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#dbName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dbPass" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#dbPass"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dbPort" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#dbPort"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dbSchema" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#dbSchema"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dbType" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#dbType"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dbURL" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#dbURL"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dbUser" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#dbUser"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="layerGeomClnName" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#layerGeomClnName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="layerTbName" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#layerTbName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mdFeatureThemeStyles" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#mdFeatureThemeStyles"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="oid" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#oid"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="158,432">
+      <children xsi:type="editmodel:MethodEditModel" name="MdDatabaseFeatureLayer" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#MdDatabaseFeatureLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="finalize" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#finalize()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDbName" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#getDbName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDbPass" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#getDbPass()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDbPort" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#getDbPort()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDbSchema" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#getDbSchema()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDbType" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#getDbType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDbURL" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#getDbURL()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDbUser" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#getDbUser()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLayerGeomClnName" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#getLayerGeomClnName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLayerTbName" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#getLayerTbName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMdFeatureThemeStyles" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#getMdFeatureThemeStyles()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOid" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#getOid()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDbName" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#setDbName(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDbPass" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#setDbPass(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDbPort" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#setDbPort(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDbSchema" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#setDbSchema(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDbType" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#setDbType(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDbURL" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#setDbURL(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDbUser" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#setDbUser(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLayerGeomClnName" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#setLayerGeomClnName(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLayerTbName" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#setLayerTbName(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMdFeatureThemeStyles" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#setMdFeatureThemeStyles(Ljava.util.List;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOid" id="com.sampas.socbs.geolsa.model/MdDatabaseFeatureLayer#setOid(J)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MdDatabaseRasterLayer" location="559,245" size="287,679" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer" runTimeClassModel="setDbURL(Ljava.lang.String;),getRasterType(),setOid(J),dbUser,setRasterType(I),getDbType(),setDbName(Ljava.lang.String;),getRasterName(),setDbType(Ljava.lang.String;),getDbPort(),getMdRasterThemeStyles(),getOid(),dbName,rasterType,oid,MdDatabaseRasterLayer(),rasterName,dbType,setDbPass(Ljava.lang.String;),dbPort,setDbSchema(Ljava.lang.String;),getDbSchema(),setDbPort(I),setMdRasterThemeStyles(Ljava.util.List;),dbSchema,getDbPass(),dbPass,getDbURL(),dbURL,mdRasterThemeStyles,getDbUser(),setDbUser(Ljava.lang.String;),setRasterName(Ljava.lang.String;),finalize(),getDbName()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="264,198">
+      <children xsi:type="editmodel:AttributeEditModel" name="dbName" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#dbName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dbPass" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#dbPass"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dbPort" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#dbPort"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dbSchema" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#dbSchema"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dbType" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#dbType"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dbURL" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#dbURL"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dbUser" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#dbUser"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mdRasterThemeStyles" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#mdRasterThemeStyles"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="oid" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#oid"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rasterName" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#rasterName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rasterType" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#rasterType"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="153,432">
+      <children xsi:type="editmodel:MethodEditModel" name="MdDatabaseRasterLayer" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#MdDatabaseRasterLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="finalize" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#finalize()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDbName" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#getDbName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDbPass" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#getDbPass()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDbPort" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#getDbPort()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDbSchema" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#getDbSchema()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDbType" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#getDbType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDbURL" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#getDbURL()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDbUser" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#getDbUser()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMdRasterThemeStyles" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#getMdRasterThemeStyles()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOid" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#getOid()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRasterName" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#getRasterName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRasterType" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#getRasterType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDbName" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#setDbName(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDbPass" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#setDbPass(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDbPort" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#setDbPort(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDbSchema" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#setDbSchema(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDbType" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#setDbType(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDbURL" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#setDbURL(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDbUser" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#setDbUser(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMdRasterThemeStyles" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#setMdRasterThemeStyles(Ljava.util.List;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOid" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#setOid(J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setRasterName" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#setRasterName(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setRasterType" id="com.sampas.socbs.geolsa.model/MdDatabaseRasterLayer#setRasterType(I)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MdFeatureLayer" location="659,245" size="300,355" id="com.sampas.socbs.geolsa.model/MdFeatureLayer" runTimeClassModel="mdDatabaseFeatureLayer,getMdFileBasedFeatureLayer(),layerSubType,getMdDatabaseFeatureLayer(),setLayerSubType(I),setMdRemoteFeatureLayer(Lcom.sampas.socbs.geolsa.model.MdRemoteFeatureLayer;),setMdDatabaseFeatureLayer(Lcom.sampas.socbs.geolsa.model.MdDatabaseFeatureLayer;),setOid(J),getLayerSubType(),mdFileBasedFeatureLayer,setMdFileBasedFeatureLayer(Lcom.sampas.socbs.geolsa.model.MdFileBasedFeatureLayer;),getOid(),oid,finalize(),getMdRemoteFeatureLayer(),mdRemoteFeatureLayer,MdFeatureLayer()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="277,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="layerSubType" id="com.sampas.socbs.geolsa.model/MdFeatureLayer#layerSubType"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mdDatabaseFeatureLayer" id="com.sampas.socbs.geolsa.model/MdFeatureLayer#mdDatabaseFeatureLayer"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mdFileBasedFeatureLayer" id="com.sampas.socbs.geolsa.model/MdFeatureLayer#mdFileBasedFeatureLayer"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mdRemoteFeatureLayer" id="com.sampas.socbs.geolsa.model/MdFeatureLayer#mdRemoteFeatureLayer"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="oid" id="com.sampas.socbs.geolsa.model/MdFeatureLayer#oid"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="171,216">
+      <children xsi:type="editmodel:MethodEditModel" name="MdFeatureLayer" id="com.sampas.socbs.geolsa.model/MdFeatureLayer#MdFeatureLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="finalize" id="com.sampas.socbs.geolsa.model/MdFeatureLayer#finalize()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLayerSubType" id="com.sampas.socbs.geolsa.model/MdFeatureLayer#getLayerSubType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMdDatabaseFeatureLayer" id="com.sampas.socbs.geolsa.model/MdFeatureLayer#getMdDatabaseFeatureLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMdFileBasedFeatureLayer" id="com.sampas.socbs.geolsa.model/MdFeatureLayer#getMdFileBasedFeatureLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMdRemoteFeatureLayer" id="com.sampas.socbs.geolsa.model/MdFeatureLayer#getMdRemoteFeatureLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOid" id="com.sampas.socbs.geolsa.model/MdFeatureLayer#getOid()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLayerSubType" id="com.sampas.socbs.geolsa.model/MdFeatureLayer#setLayerSubType(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMdDatabaseFeatureLayer" id="com.sampas.socbs.geolsa.model/MdFeatureLayer#setMdDatabaseFeatureLayer(Lcom.sampas.socbs.geolsa.model.MdDatabaseFeatureLayer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMdFileBasedFeatureLayer" id="com.sampas.socbs.geolsa.model/MdFeatureLayer#setMdFileBasedFeatureLayer(Lcom.sampas.socbs.geolsa.model.MdFileBasedFeatureLayer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMdRemoteFeatureLayer" id="com.sampas.socbs.geolsa.model/MdFeatureLayer#setMdRemoteFeatureLayer(Lcom.sampas.socbs.geolsa.model.MdRemoteFeatureLayer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOid" id="com.sampas.socbs.geolsa.model/MdFeatureLayer#setOid(J)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MdFeatureThemeStyle" location="759,245" size="186,409" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle" runTimeClassModel="getLineStyleID(),setPolygonStyleID(J),setPointStyleID(J),select,setOid(J),setSelect(Z),polygonStyleID,setStyleName(Ljava.lang.String;),setLineStyleID(J),pointStyleID,styleName,getOid(),MdFeatureThemeStyle(),lineStyleID,oid,getPointStyleID(),finalize(),getStyleName(),isSelect(),getPolygonStyleID()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="116,108">
+      <children xsi:type="editmodel:AttributeEditModel" name="lineStyleID" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#lineStyleID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="oid" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#oid"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pointStyleID" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#pointStyleID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="polygonStyleID" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#polygonStyleID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="select" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#select"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="styleName" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#styleName"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="137,252">
+      <children xsi:type="editmodel:MethodEditModel" name="MdFeatureThemeStyle" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#MdFeatureThemeStyle()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="finalize" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#finalize()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLineStyleID" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#getLineStyleID()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOid" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#getOid()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPointStyleID" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#getPointStyleID()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPolygonStyleID" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#getPolygonStyleID()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getStyleName" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#getStyleName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isSelect" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#isSelect()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLineStyleID" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#setLineStyleID(J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOid" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#setOid(J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setPointStyleID" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#setPointStyleID(J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setPolygonStyleID" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#setPolygonStyleID(J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setSelect" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#setSelect(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setStyleName" id="com.sampas.socbs.geolsa.model/MdFeatureThemeStyle#setStyleName(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MdFileBasedFeatureLayer" size="297,355" id="com.sampas.socbs.geolsa.model/MdFileBasedFeatureLayer" runTimeClassModel="setFileURL(Ljava.lang.String;),setOid(J),fileURL,getFileFormat(),getOid(),MdFileBasedFeatureLayer(),getFileURL(),oid,finalize(),mdFeatureThemeStyles,setCreateSpatialIndex(Z),setFileFormat(I),getMdFeatureThemeStyles(),isCreateSpatialIndex(),createSpatialIndex,fileFormat,setMdFeatureThemeStyles(Ljava.util.List;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="274,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="createSpatialIndex" id="com.sampas.socbs.geolsa.model/MdFileBasedFeatureLayer#createSpatialIndex"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fileFormat" id="com.sampas.socbs.geolsa.model/MdFileBasedFeatureLayer#fileFormat"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fileURL" id="com.sampas.socbs.geolsa.model/MdFileBasedFeatureLayer#fileURL"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mdFeatureThemeStyles" id="com.sampas.socbs.geolsa.model/MdFileBasedFeatureLayer#mdFeatureThemeStyles"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="oid" id="com.sampas.socbs.geolsa.model/MdFileBasedFeatureLayer#oid"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="158,216">
+      <children xsi:type="editmodel:MethodEditModel" name="MdFileBasedFeatureLayer" id="com.sampas.socbs.geolsa.model/MdFileBasedFeatureLayer#MdFileBasedFeatureLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="finalize" id="com.sampas.socbs.geolsa.model/MdFileBasedFeatureLayer#finalize()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFileFormat" id="com.sampas.socbs.geolsa.model/MdFileBasedFeatureLayer#getFileFormat()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFileURL" id="com.sampas.socbs.geolsa.model/MdFileBasedFeatureLayer#getFileURL()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMdFeatureThemeStyles" id="com.sampas.socbs.geolsa.model/MdFileBasedFeatureLayer#getMdFeatureThemeStyles()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOid" id="com.sampas.socbs.geolsa.model/MdFileBasedFeatureLayer#getOid()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isCreateSpatialIndex" id="com.sampas.socbs.geolsa.model/MdFileBasedFeatureLayer#isCreateSpatialIndex()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setCreateSpatialIndex" id="com.sampas.socbs.geolsa.model/MdFileBasedFeatureLayer#setCreateSpatialIndex(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setFileFormat" id="com.sampas.socbs.geolsa.model/MdFileBasedFeatureLayer#setFileFormat(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setFileURL" id="com.sampas.socbs.geolsa.model/MdFileBasedFeatureLayer#setFileURL(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMdFeatureThemeStyles" id="com.sampas.socbs.geolsa.model/MdFileBasedFeatureLayer#setMdFeatureThemeStyles(Ljava.util.List;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOid" id="com.sampas.socbs.geolsa.model/MdFileBasedFeatureLayer#setOid(J)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MdFileBasedRasterLayer" location="100,0" size="287,409" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer" runTimeClassModel="setMdRasterThemeStyles(Ljava.util.List;),setFileURL(Ljava.lang.String;),getRasterType(),setRasterBandsize(I),MdFileBasedRasterLayer(),setOid(J),fileURL,rasterBandsize,mdRasterThemeStyles,getRasterBandsize(),getFileFormat(),getMdRasterThemeStyles(),getOid(),getFileURL(),rasterType,oid,finalize(),setFileFormat(I),setRasterType(Ljava.lang.String;),fileFormat">
+    <children xsi:type="editmodel:CompartmentEditModel" size="264,108">
+      <children xsi:type="editmodel:AttributeEditModel" name="fileFormat" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#fileFormat"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fileURL" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#fileURL"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mdRasterThemeStyles" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#mdRasterThemeStyles"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="oid" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#oid"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rasterBandsize" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#rasterBandsize"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rasterType" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#rasterType"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="153,252">
+      <children xsi:type="editmodel:MethodEditModel" name="MdFileBasedRasterLayer" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#MdFileBasedRasterLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="finalize" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#finalize()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFileFormat" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#getFileFormat()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFileURL" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#getFileURL()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMdRasterThemeStyles" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#getMdRasterThemeStyles()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOid" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#getOid()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRasterBandsize" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#getRasterBandsize()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRasterType" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#getRasterType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setFileFormat" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#setFileFormat(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setFileURL" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#setFileURL(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMdRasterThemeStyles" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#setMdRasterThemeStyles(Ljava.util.List;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOid" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#setOid(J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setRasterBandsize" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#setRasterBandsize(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setRasterType" id="com.sampas.socbs.geolsa.model/MdFileBasedRasterLayer#setRasterType(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MdLayer" location="200,0" size="206,409" id="com.sampas.socbs.geolsa.model/MdLayer" runTimeClassModel="mdFeatureLayer,mdRasterLayer,layerType,setOid(J),getLayerType(),layerName,getMdRasterLayer(),setLayerName(Ljava.lang.String;),setLayerType(I),getDefaultCrs(),MdLayer(),getOid(),getMdFeatureLayer(),oid,finalize(),setMdRasterLayer(Lcom.sampas.socbs.geolsa.model.MdRasterLayer;),getLayerName(),defaultCrs,setMdFeatureLayer(Lcom.sampas.socbs.geolsa.model.MdFeatureLayer;),setDefaultCrs(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="183,108">
+      <children xsi:type="editmodel:AttributeEditModel" name="defaultCrs" id="com.sampas.socbs.geolsa.model/MdLayer#defaultCrs"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="layerName" id="com.sampas.socbs.geolsa.model/MdLayer#layerName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="layerType" id="com.sampas.socbs.geolsa.model/MdLayer#layerType"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mdFeatureLayer" id="com.sampas.socbs.geolsa.model/MdLayer#mdFeatureLayer"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mdRasterLayer" id="com.sampas.socbs.geolsa.model/MdLayer#mdRasterLayer"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="oid" id="com.sampas.socbs.geolsa.model/MdLayer#oid"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="124,252">
+      <children xsi:type="editmodel:MethodEditModel" name="MdLayer" id="com.sampas.socbs.geolsa.model/MdLayer#MdLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="finalize" id="com.sampas.socbs.geolsa.model/MdLayer#finalize()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDefaultCrs" id="com.sampas.socbs.geolsa.model/MdLayer#getDefaultCrs()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLayerName" id="com.sampas.socbs.geolsa.model/MdLayer#getLayerName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLayerType" id="com.sampas.socbs.geolsa.model/MdLayer#getLayerType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMdFeatureLayer" id="com.sampas.socbs.geolsa.model/MdLayer#getMdFeatureLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMdRasterLayer" id="com.sampas.socbs.geolsa.model/MdLayer#getMdRasterLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOid" id="com.sampas.socbs.geolsa.model/MdLayer#getOid()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDefaultCrs" id="com.sampas.socbs.geolsa.model/MdLayer#setDefaultCrs(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLayerName" id="com.sampas.socbs.geolsa.model/MdLayer#setLayerName(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLayerType" id="com.sampas.socbs.geolsa.model/MdLayer#setLayerType(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMdFeatureLayer" id="com.sampas.socbs.geolsa.model/MdLayer#setMdFeatureLayer(Lcom.sampas.socbs.geolsa.model.MdFeatureLayer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMdRasterLayer" id="com.sampas.socbs.geolsa.model/MdLayer#setMdRasterLayer(Lcom.sampas.socbs.geolsa.model.MdRasterLayer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOid" id="com.sampas.socbs.geolsa.model/MdLayer#setOid(J)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MdLayerAttributeVisibleName" location="300,0" size="231,409" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName" runTimeClassModel="MdLayerAttributeVisibleName(),setSpecificFunction(Ljava.lang.String;),attributeVisibility,select,getSpecificFunction(),setOid(J),setSelect(Z),setAttributeVisibleName(Ljava.lang.String;),attributeName,getAttributeVisibility(),getOid(),getAttributeName(),oid,setAttributeName(Ljava.lang.String;),finalize(),isSelect(),specificFunction,getAttributeVisibleName(),setAttributeVisibility(Z),attributeVisibleName">
+    <children xsi:type="editmodel:CompartmentEditModel" size="151,108">
+      <children xsi:type="editmodel:AttributeEditModel" name="attributeName" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#attributeName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="attributeVisibility" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#attributeVisibility"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="attributeVisibleName" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#attributeVisibleName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="oid" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#oid"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="select" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#select"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="specificFunction" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#specificFunction"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="172,252">
+      <children xsi:type="editmodel:MethodEditModel" name="MdLayerAttributeVisibleName" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#MdLayerAttributeVisibleName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="finalize" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#finalize()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAttributeName" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#getAttributeName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAttributeVisibility" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#getAttributeVisibility()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAttributeVisibleName" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#getAttributeVisibleName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOid" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#getOid()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSpecificFunction" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#getSpecificFunction()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isSelect" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#isSelect()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAttributeName" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#setAttributeName(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAttributeVisibility" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#setAttributeVisibility(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAttributeVisibleName" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#setAttributeVisibleName(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOid" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#setOid(J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setSelect" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#setSelect(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setSpecificFunction" id="com.sampas.socbs.geolsa.model/MdLayerAttributeVisibleName#setSpecificFunction(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MdRasterLayer" location="400,0" size="290,409" id="com.sampas.socbs.geolsa.model/MdRasterLayer" runTimeClassModel="setMdRemoteRasterLayer(Lcom.sampas.socbs.geolsa.model.MdRemoteRasterLayer;),layerSubType,setLayerSubType(I),setRasterWfsEquvalent(Ljava.lang.String;),MdRasterLayer(),mdDatabaseRasterLayer,setOid(J),setMdFileBasedRasterLayer(Lcom.sampas.socbs.geolsa.model.MdFileBasedRasterLayer;),getLayerSubType(),getMdDatabaseRasterLayer(),mdFileBasedRasterLayer,getOid(),oid,finalize(),getRasterWfsEquvalent(),rasterWfsEquvalent,setMdDatabaseRasterLayer(Lcom.sampas.socbs.geolsa.model.MdDatabaseRasterLayer;),getMdRemoteRasterLayer(),mdRemoteRasterLayer,getMdFileBasedRasterLayer()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="267,108">
+      <children xsi:type="editmodel:AttributeEditModel" name="layerSubType" id="com.sampas.socbs.geolsa.model/MdRasterLayer#layerSubType"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mdDatabaseRasterLayer" id="com.sampas.socbs.geolsa.model/MdRasterLayer#mdDatabaseRasterLayer"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mdFileBasedRasterLayer" id="com.sampas.socbs.geolsa.model/MdRasterLayer#mdFileBasedRasterLayer"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mdRemoteRasterLayer" id="com.sampas.socbs.geolsa.model/MdRasterLayer#mdRemoteRasterLayer"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="oid" id="com.sampas.socbs.geolsa.model/MdRasterLayer#oid"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rasterWfsEquvalent" id="com.sampas.socbs.geolsa.model/MdRasterLayer#rasterWfsEquvalent"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="166,252">
+      <children xsi:type="editmodel:MethodEditModel" name="MdRasterLayer" id="com.sampas.socbs.geolsa.model/MdRasterLayer#MdRasterLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="finalize" id="com.sampas.socbs.geolsa.model/MdRasterLayer#finalize()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getLayerSubType" id="com.sampas.socbs.geolsa.model/MdRasterLayer#getLayerSubType()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMdDatabaseRasterLayer" id="com.sampas.socbs.geolsa.model/MdRasterLayer#getMdDatabaseRasterLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMdFileBasedRasterLayer" id="com.sampas.socbs.geolsa.model/MdRasterLayer#getMdFileBasedRasterLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMdRemoteRasterLayer" id="com.sampas.socbs.geolsa.model/MdRasterLayer#getMdRemoteRasterLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOid" id="com.sampas.socbs.geolsa.model/MdRasterLayer#getOid()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRasterWfsEquvalent" id="com.sampas.socbs.geolsa.model/MdRasterLayer#getRasterWfsEquvalent()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setLayerSubType" id="com.sampas.socbs.geolsa.model/MdRasterLayer#setLayerSubType(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMdDatabaseRasterLayer" id="com.sampas.socbs.geolsa.model/MdRasterLayer#setMdDatabaseRasterLayer(Lcom.sampas.socbs.geolsa.model.MdDatabaseRasterLayer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMdFileBasedRasterLayer" id="com.sampas.socbs.geolsa.model/MdRasterLayer#setMdFileBasedRasterLayer(Lcom.sampas.socbs.geolsa.model.MdFileBasedRasterLayer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMdRemoteRasterLayer" id="com.sampas.socbs.geolsa.model/MdRasterLayer#setMdRemoteRasterLayer(Lcom.sampas.socbs.geolsa.model.MdRemoteRasterLayer;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOid" id="com.sampas.socbs.geolsa.model/MdRasterLayer#setOid(J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setRasterWfsEquvalent" id="com.sampas.socbs.geolsa.model/MdRasterLayer#setRasterWfsEquvalent(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MdRasterThemeStyle" location="500,0" size="177,301" id="com.sampas.socbs.geolsa.model/MdRasterThemeStyle" runTimeClassModel="styleID,select,setSelect(Z),setOid(J),setStyleName(Ljava.lang.String;),styleName,getOid(),setStyleID(J),getStyleID(),oid,finalize(),getStyleName(),isSelect(),MdRasterThemeStyle()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="103,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="oid" id="com.sampas.socbs.geolsa.model/MdRasterThemeStyle#oid"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="select" id="com.sampas.socbs.geolsa.model/MdRasterThemeStyle#select"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="styleID" id="com.sampas.socbs.geolsa.model/MdRasterThemeStyle#styleID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="styleName" id="com.sampas.socbs.geolsa.model/MdRasterThemeStyle#styleName"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="132,180">
+      <children xsi:type="editmodel:MethodEditModel" name="MdRasterThemeStyle" id="com.sampas.socbs.geolsa.model/MdRasterThemeStyle#MdRasterThemeStyle()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="finalize" id="com.sampas.socbs.geolsa.model/MdRasterThemeStyle#finalize()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOid" id="com.sampas.socbs.geolsa.model/MdRasterThemeStyle#getOid()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getStyleID" id="com.sampas.socbs.geolsa.model/MdRasterThemeStyle#getStyleID()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getStyleName" id="com.sampas.socbs.geolsa.model/MdRasterThemeStyle#getStyleName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="isSelect" id="com.sampas.socbs.geolsa.model/MdRasterThemeStyle#isSelect()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOid" id="com.sampas.socbs.geolsa.model/MdRasterThemeStyle#setOid(J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setSelect" id="com.sampas.socbs.geolsa.model/MdRasterThemeStyle#setSelect(Z)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setStyleID" id="com.sampas.socbs.geolsa.model/MdRasterThemeStyle#setStyleID(J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setStyleName" id="com.sampas.socbs.geolsa.model/MdRasterThemeStyle#setStyleName(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MdRemoteFeatureLayer" location="600,0" size="297,463" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer" runTimeClassModel="queryPage,setDirectory(Ljava.lang.String;),setQueryPage(Ljava.lang.String;),remoteDSVersion,setOid(J),setRemoteDSVersion(Ljava.lang.String;),getRemoteDSUrl(),setRemoteDSUrl(Ljava.lang.String;),remoteDSUrl,portNo,getOid(),getRemoteDSVersion(),getQueryPage(),setPortNo(I),getDirectory(),directory,oid,mdFeatureThemeStyles,finalize(),getMdFeatureThemeStyles(),getPortNo(),MdRemoteFeatureLayer(),setMdFeatureThemeStyles(Ljava.util.List;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="274,126">
+      <children xsi:type="editmodel:AttributeEditModel" name="directory" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#directory"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mdFeatureThemeStyles" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#mdFeatureThemeStyles"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="oid" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#oid"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="portNo" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#portNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="queryPage" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#queryPage"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="remoteDSUrl" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#remoteDSUrl"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="remoteDSVersion" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#remoteDSVersion"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="158,288">
+      <children xsi:type="editmodel:MethodEditModel" name="MdRemoteFeatureLayer" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#MdRemoteFeatureLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="finalize" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#finalize()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDirectory" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#getDirectory()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMdFeatureThemeStyles" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#getMdFeatureThemeStyles()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOid" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#getOid()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPortNo" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#getPortNo()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getQueryPage" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#getQueryPage()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRemoteDSUrl" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#getRemoteDSUrl()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRemoteDSVersion" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#getRemoteDSVersion()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDirectory" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#setDirectory(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMdFeatureThemeStyles" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#setMdFeatureThemeStyles(Ljava.util.List;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOid" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#setOid(J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setPortNo" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#setPortNo(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setQueryPage" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#setQueryPage(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setRemoteDSUrl" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#setRemoteDSUrl(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setRemoteDSVersion" id="com.sampas.socbs.geolsa.model/MdRemoteFeatureLayer#setRemoteDSVersion(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MdRemoteRasterLayer" location="700,0" size="287,679" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer" runTimeClassModel="setQueryPage(Ljava.lang.String;),remoteDSVersion,setOid(J),defaultSRS,MdRemoteRasterLayer(),getRemoteDSUrl(),setDefaultSRS(Ljava.lang.String;),portNo,getMdRasterThemeStyles(),getOid(),setPortNo(I),getQueryPage(),getDirectory(),oid,setMaxWidth(I),maxWidth,getMaxWidth(),setMaxHeight(I),setRemoteDSGmlVersion(Ljava.lang.String;),queryPage,setMdRasterThemeStyles(Ljava.util.List;),setDirectory(Ljava.lang.String;),setRemoteDSVersion(Ljava.lang.String;),setRemoteDSUrl(Ljava.lang.String;),mdRasterThemeStyles,getMaxHeight(),remoteDSUrl,getDefaultSRS(),getRemoteDSVersion(),getRemoteDSGmlVersion(),directory,finalize(),maxHeight,getPortNo(),remoteDSGmlVersion">
+    <children xsi:type="editmodel:CompartmentEditModel" size="264,198">
+      <children xsi:type="editmodel:AttributeEditModel" name="defaultSRS" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#defaultSRS"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="directory" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#directory"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="maxHeight" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#maxHeight"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="maxWidth" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#maxWidth"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mdRasterThemeStyles" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#mdRasterThemeStyles"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="oid" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#oid"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="portNo" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#portNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="queryPage" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#queryPage"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="remoteDSGmlVersion" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#remoteDSGmlVersion"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="remoteDSUrl" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#remoteDSUrl"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="remoteDSVersion" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#remoteDSVersion"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="153,432">
+      <children xsi:type="editmodel:MethodEditModel" name="MdRemoteRasterLayer" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#MdRemoteRasterLayer()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="finalize" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#finalize()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDefaultSRS" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#getDefaultSRS()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDirectory" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#getDirectory()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMaxHeight" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#getMaxHeight()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMaxWidth" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#getMaxWidth()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMdRasterThemeStyles" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#getMdRasterThemeStyles()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOid" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#getOid()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPortNo" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#getPortNo()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getQueryPage" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#getQueryPage()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRemoteDSGmlVersion" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#getRemoteDSGmlVersion()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRemoteDSUrl" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#getRemoteDSUrl()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getRemoteDSVersion" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#getRemoteDSVersion()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDefaultSRS" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#setDefaultSRS(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDirectory" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#setDirectory(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMaxHeight" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#setMaxHeight(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMaxWidth" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#setMaxWidth(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMdRasterThemeStyles" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#setMdRasterThemeStyles(Ljava.util.List;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOid" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#setOid(J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setPortNo" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#setPortNo(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setQueryPage" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#setQueryPage(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setRemoteDSGmlVersion" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#setRemoteDSGmlVersion(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setRemoteDSUrl" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#setRemoteDSUrl(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setRemoteDSVersion" id="com.sampas.socbs.geolsa.model/MdRemoteRasterLayer#setRemoteDSVersion(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MdSmpGISApp" location="800,0" size="286,319" id="com.sampas.socbs.geolsa.model/MdSmpGISApp" runTimeClassModel="setMdAppLayers(Ljava.util.List;),mdAppLayers,getMdAppLayers(),setOid(J),getFeatureLayerFromGivenMdApplicationLayers(Ljava.util.List;J),MdSmpGISApp(),getAppDescriptor(),appName,getOid(),appDescriptor,oid,getAppName(),finalize(),setAppDescriptor(Ljava.lang.String;),setAppName(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="184,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="appDescriptor" id="com.sampas.socbs.geolsa.model/MdSmpGISApp#appDescriptor"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="appName" id="com.sampas.socbs.geolsa.model/MdSmpGISApp#appName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mdAppLayers" id="com.sampas.socbs.geolsa.model/MdSmpGISApp#mdAppLayers"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="oid" id="com.sampas.socbs.geolsa.model/MdSmpGISApp#oid"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="263,198">
+      <children xsi:type="editmodel:MethodEditModel" name="MdSmpGISApp" id="com.sampas.socbs.geolsa.model/MdSmpGISApp#MdSmpGISApp()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="finalize" id="com.sampas.socbs.geolsa.model/MdSmpGISApp#finalize()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAppDescriptor" id="com.sampas.socbs.geolsa.model/MdSmpGISApp#getAppDescriptor()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAppName" id="com.sampas.socbs.geolsa.model/MdSmpGISApp#getAppName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFeatureLayerFromGivenMdApplicationLayers" id="com.sampas.socbs.geolsa.model/MdSmpGISApp#getFeatureLayerFromGivenMdApplicationLayers(Ljava.util.List;J)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getMdAppLayers" id="com.sampas.socbs.geolsa.model/MdSmpGISApp#getMdAppLayers()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOid" id="com.sampas.socbs.geolsa.model/MdSmpGISApp#getOid()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAppDescriptor" id="com.sampas.socbs.geolsa.model/MdSmpGISApp#setAppDescriptor(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAppName" id="com.sampas.socbs.geolsa.model/MdSmpGISApp#setAppName(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setMdAppLayers" id="com.sampas.socbs.geolsa.model/MdSmpGISApp#setMdAppLayers(Ljava.util.List;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOid" id="com.sampas.socbs.geolsa.model/MdSmpGISApp#setOid(J)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler>
+      <guides position="144"/>
+    </topRuler>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.socbs.geolsa.model">
+
+	<class name="MdRasterThemeStyle" table="MD_RASTER_THEME_STYLES">
+	
+		<id name="oid" column="OID">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="styleName" type="java.lang.String">
+			<column name="StyleName" not-null="false" />
+		</property>
+		
+		<property name="styleID" type="java.lang.Long">
+			<column name="StyleID" not-null="false" />
+		</property>
+		
+ 	</class>
+</hibernate-mapping>

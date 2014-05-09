@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.socbs.geolsa.model">
+	
+	<class name="MdLayerAttributeVisibleName" table="MD_LAYER_ATT_VISIBLE_NAMES">
+		<id name="oid" column="OID">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="attributeName" type="java.lang.String">
+			<column name="ATTRIBUTENAME" not-null="false" length="256" />
+		</property>
+		
+		<property name="attributeVisibility" type="java.lang.Boolean">
+			<column name="ATTRIBUTEVISIBILITY" not-null="false" length="256" />
+		</property>
+		
+		<property name="attributeVisibleName" type="java.lang.String">
+			<column name="ATTVISIBLENAME" not-null="false" />
+		</property>
+		
+		<property name="specificFunction" type="java.lang.String">
+			<column name="SPECIFICFUNCTION" not-null="false" length="256" />
+		</property>
+	
+ 	</class>
+</hibernate-mapping>

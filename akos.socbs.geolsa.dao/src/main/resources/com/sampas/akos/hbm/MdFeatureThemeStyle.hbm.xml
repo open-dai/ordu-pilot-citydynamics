@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.socbs.geolsa.model">
+
+	<class name="MdFeatureThemeStyle" table="MD_FEATURE_THEME_STYLES">
+	
+		<id name="oid" column="OID">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="styleName" type="java.lang.String">
+			<column name="StyleName" not-null="false" />
+		</property>
+		
+		<property name="lineStyleID" type="java.lang.Long">
+			<column name="LineStyleID" not-null="false" />
+		</property>
+		
+		<property name="pointStyleID" type="java.lang.Long">
+			<column name="PointStyleID" not-null="false" />
+		</property>
+		
+		<property name="polygonStyleID" type="java.lang.Long">
+			<column name="PolygonStyleID" not-null="false" />
+		</property>
+		
+ 	</class>
+</hibernate-mapping>

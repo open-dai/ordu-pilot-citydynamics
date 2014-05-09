@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="com.sampas.gis.ortak.model" size="815,393" metadata="uml2-1.0" initialized="true" scrolledX="-5" scrolledY="-5" tag="1000" key="32303037303533312D3130303020616B6F732E6769732E6F7274616B2E6D6F64656C2F63746F73756E6F676C75">
+  <children xsi:type="editmodel:ClassEditModel" name="Fonksiyon" location="256,119" size="215,661" id="com.sampas.gis.ortak.model/Fonksiyon" runTimeClassModel="onBahceMesafesiAciklama,kaks,emsal,setArkaBahceMesafesiAciklama(Ljava.lang.String;),grafik,aciklama,insaatNizami,getOnBahceMesafesiAciklama(),getYanBahceMesafesiAciklama(),getKatAdediAciklama(),id,getArkaBahceMesafesiAciklama(),katAdediAciklama,setFonksiyonAdi(Ljava.lang.String;),setKatAdediAciklama(Ljava.lang.String;),setKatAdedi(Ljava.lang.Long;),onBahceMesafesi,arkaBahceMesafesi,binaYuksekligi,getFonksiyonAdi(),binaDerinligi,setEmsal(Ljava.lang.Double;),taks,yanBahceMesafesiAciklama,getKatAdedi(),setOnBahceMesafesiAciklama(Ljava.lang.String;),getEmsal(),katAdedi,kotNoktasiNo,yanBahceMesafesi,plan,setYanBahceMesafesiAciklama(Ljava.lang.String;),fonksiyonAdi,arkaBahceMesafesiAciklama">
+    <children xsi:type="editmodel:CompartmentEditModel" size="192,360">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.gis.ortak.model/Fonksiyon#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="arkaBahceMesafesi" id="com.sampas.gis.ortak.model/Fonksiyon#arkaBahceMesafesi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="arkaBahceMesafesiAciklama" id="com.sampas.gis.ortak.model/Fonksiyon#arkaBahceMesafesiAciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="binaDerinligi" id="com.sampas.gis.ortak.model/Fonksiyon#binaDerinligi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="binaYuksekligi" id="com.sampas.gis.ortak.model/Fonksiyon#binaYuksekligi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="emsal" id="com.sampas.gis.ortak.model/Fonksiyon#emsal"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="fonksiyonAdi" id="com.sampas.gis.ortak.model/Fonksiyon#fonksiyonAdi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="grafik" id="com.sampas.gis.ortak.model/Fonksiyon#grafik"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.gis.ortak.model/Fonksiyon#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="insaatNizami" id="com.sampas.gis.ortak.model/Fonksiyon#insaatNizami"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kaks" id="com.sampas.gis.ortak.model/Fonksiyon#kaks"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="katAdedi" id="com.sampas.gis.ortak.model/Fonksiyon#katAdedi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="katAdediAciklama" id="com.sampas.gis.ortak.model/Fonksiyon#katAdediAciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kotNoktasiNo" id="com.sampas.gis.ortak.model/Fonksiyon#kotNoktasiNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="onBahceMesafesi" id="com.sampas.gis.ortak.model/Fonksiyon#onBahceMesafesi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="onBahceMesafesiAciklama" id="com.sampas.gis.ortak.model/Fonksiyon#onBahceMesafesiAciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="plan" id="com.sampas.gis.ortak.model/Fonksiyon#plan"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="taks" id="com.sampas.gis.ortak.model/Fonksiyon#taks"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="yanBahceMesafesi" id="com.sampas.gis.ortak.model/Fonksiyon#yanBahceMesafesi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="yanBahceMesafesiAciklama" id="com.sampas.gis.ortak.model/Fonksiyon#yanBahceMesafesiAciklama"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="186,252">
+      <children xsi:type="editmodel:MethodEditModel" name="getArkaBahceMesafesiAciklama" id="com.sampas.gis.ortak.model/Fonksiyon#getArkaBahceMesafesiAciklama()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getEmsal" id="com.sampas.gis.ortak.model/Fonksiyon#getEmsal()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getFonksiyonAdi" id="com.sampas.gis.ortak.model/Fonksiyon#getFonksiyonAdi()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getKatAdedi" id="com.sampas.gis.ortak.model/Fonksiyon#getKatAdedi()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getKatAdediAciklama" id="com.sampas.gis.ortak.model/Fonksiyon#getKatAdediAciklama()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getOnBahceMesafesiAciklama" id="com.sampas.gis.ortak.model/Fonksiyon#getOnBahceMesafesiAciklama()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getYanBahceMesafesiAciklama" id="com.sampas.gis.ortak.model/Fonksiyon#getYanBahceMesafesiAciklama()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setArkaBahceMesafesiAciklama" id="com.sampas.gis.ortak.model/Fonksiyon#setArkaBahceMesafesiAciklama(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setEmsal" id="com.sampas.gis.ortak.model/Fonksiyon#setEmsal(Ljava.lang.Double;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setFonksiyonAdi" id="com.sampas.gis.ortak.model/Fonksiyon#setFonksiyonAdi(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setKatAdedi" id="com.sampas.gis.ortak.model/Fonksiyon#setKatAdedi(Ljava.lang.Long;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setKatAdediAciklama" id="com.sampas.gis.ortak.model/Fonksiyon#setKatAdediAciklama(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setOnBahceMesafesiAciklama" id="com.sampas.gis.ortak.model/Fonksiyon#setOnBahceMesafesiAciklama(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setYanBahceMesafesiAciklama" id="com.sampas.gis.ortak.model/Fonksiyon#setYanBahceMesafesiAciklama(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="KadastroParselGecerliFonksiyon" location="356,119" size="248,165" id="com.sampas.gis.ortak.model/KadastroParselGecerliFonksiyon" runTimeClassModel="id,kurumSabit,kesisimOrani,kesisimAlani,kadastroParsel,planTuru,fonksiyon">
+    <children xsi:type="editmodel:CompartmentEditModel" size="171,126">
+      <children xsi:type="editmodel:AttributeEditModel" name="fonksiyon" id="com.sampas.gis.ortak.model/KadastroParselGecerliFonksiyon#fonksiyon"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.gis.ortak.model/KadastroParselGecerliFonksiyon#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kadastroParsel" id="com.sampas.gis.ortak.model/KadastroParselGecerliFonksiyon#kadastroParsel"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kesisimAlani" id="com.sampas.gis.ortak.model/KadastroParselGecerliFonksiyon#kesisimAlani"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kesisimOrani" id="com.sampas.gis.ortak.model/KadastroParselGecerliFonksiyon#kesisimOrani"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kurumSabit" id="com.sampas.gis.ortak.model/KadastroParselGecerliFonksiyon#kurumSabit"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="planTuru" id="com.sampas.gis.ortak.model/KadastroParselGecerliFonksiyon#planTuru"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="OcxFormTable" location="456,119" size="135,111" id="com.sampas.gis.ortak.model/OcxFormTable" runTimeClassModel="id,onayTarihi,planNo,adi">
+    <children xsi:type="editmodel:CompartmentEditModel" size="96,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="adi" id="com.sampas.gis.ortak.model/OcxFormTable#adi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.gis.ortak.model/OcxFormTable#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="onayTarihi" id="com.sampas.gis.ortak.model/OcxFormTable#onayTarihi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="planNo" id="com.sampas.gis.ortak.model/OcxFormTable#planNo"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="OnemliYer" location="556,119" size="225,183" id="com.sampas.gis.ortak.model/OnemliYer" runTimeClassModel="id,kurumSabit,bagimsiz,grafik,kullanimGrubu,kullanimSinifi,aciklama,kullanimDetayi">
+    <children xsi:type="editmodel:CompartmentEditModel" size="202,144">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.gis.ortak.model/OnemliYer#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bagimsiz" id="com.sampas.gis.ortak.model/OnemliYer#bagimsiz"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="grafik" id="com.sampas.gis.ortak.model/OnemliYer#grafik"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.gis.ortak.model/OnemliYer#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kullanimDetayi" id="com.sampas.gis.ortak.model/OnemliYer#kullanimDetayi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kullanimGrubu" id="com.sampas.gis.ortak.model/OnemliYer#kullanimGrubu"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kullanimSinifi" id="com.sampas.gis.ortak.model/OnemliYer#kullanimSinifi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kurumSabit" id="com.sampas.gis.ortak.model/OnemliYer#kurumSabit"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="OnemliYerKriterleri" location="656,119" size="225,129" id="com.sampas.gis.ortak.model/OnemliYerKriterleri" runTimeClassModel="id,kurumSabit,kullanimGrubu,kullanimSinifi,kullanimDetayi">
+    <children xsi:type="editmodel:CompartmentEditModel" size="202,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.gis.ortak.model/OnemliYerKriterleri#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kullanimDetayi" id="com.sampas.gis.ortak.model/OnemliYerKriterleri#kullanimDetayi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kullanimGrubu" id="com.sampas.gis.ortak.model/OnemliYerKriterleri#kullanimGrubu"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kullanimSinifi" id="com.sampas.gis.ortak.model/OnemliYerKriterleri#kullanimSinifi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kurumSabit" id="com.sampas.gis.ortak.model/OnemliYerKriterleri#kurumSabit"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Plan" location="756,119" size="156,183" id="com.sampas.gis.ortak.model/Plan" runTimeClassModel="id,onayTarihi,kurumSabit,olcek,grafik,planNo,adi,planTuru">
+    <children xsi:type="editmodel:CompartmentEditModel" size="133,144">
+      <children xsi:type="editmodel:AttributeEditModel" name="adi" id="com.sampas.gis.ortak.model/Plan#adi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="grafik" id="com.sampas.gis.ortak.model/Plan#grafik"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.gis.ortak.model/Plan#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kurumSabit" id="com.sampas.gis.ortak.model/Plan#kurumSabit"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="olcek" id="com.sampas.gis.ortak.model/Plan#olcek"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="onayTarihi" id="com.sampas.gis.ortak.model/Plan#onayTarihi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="planNo" id="com.sampas.gis.ortak.model/Plan#planNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="planTuru" id="com.sampas.gis.ortak.model/Plan#planTuru"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PlanNot" size="121,481" id="com.sampas.gis.ortak.model/PlanNot" runTimeClassModel="getSira(),sira,setNotTipi(Ljava.lang.String;),getBaslik(),aciklama,setPlan(Lcom.sampas.gis.ortak.model.Plan;),altBaslik,baslik,setDefaultEh(Ljava.lang.String;),id,getNotTipi(),getAltBaslik(),getAciklama(),plan,defaultEh,setAciklama(Ljava.lang.String;),notTipi,getId(),setId(Ljava.lang.Long;),setBaslik(Ljava.lang.String;),getPlan(),getDefaultEh(),setSira(Ljava.lang.Long;),setAltBaslik(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="98,144">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.gis.ortak.model/PlanNot#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="altBaslik" id="com.sampas.gis.ortak.model/PlanNot#altBaslik"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="baslik" id="com.sampas.gis.ortak.model/PlanNot#baslik"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="defaultEh" id="com.sampas.gis.ortak.model/PlanNot#defaultEh"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.gis.ortak.model/PlanNot#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="notTipi" id="com.sampas.gis.ortak.model/PlanNot#notTipi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="plan" id="com.sampas.gis.ortak.model/PlanNot#plan"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="sira" id="com.sampas.gis.ortak.model/PlanNot#sira"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="91,288">
+      <children xsi:type="editmodel:MethodEditModel" name="getAciklama" id="com.sampas.gis.ortak.model/PlanNot#getAciklama()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getAltBaslik" id="com.sampas.gis.ortak.model/PlanNot#getAltBaslik()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBaslik" id="com.sampas.gis.ortak.model/PlanNot#getBaslik()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDefaultEh" id="com.sampas.gis.ortak.model/PlanNot#getDefaultEh()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getId" id="com.sampas.gis.ortak.model/PlanNot#getId()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNotTipi" id="com.sampas.gis.ortak.model/PlanNot#getNotTipi()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPlan" id="com.sampas.gis.ortak.model/PlanNot#getPlan()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getSira" id="com.sampas.gis.ortak.model/PlanNot#getSira()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAciklama" id="com.sampas.gis.ortak.model/PlanNot#setAciklama(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAltBaslik" id="com.sampas.gis.ortak.model/PlanNot#setAltBaslik(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setBaslik" id="com.sampas.gis.ortak.model/PlanNot#setBaslik(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setDefaultEh" id="com.sampas.gis.ortak.model/PlanNot#setDefaultEh(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setId" id="com.sampas.gis.ortak.model/PlanNot#setId(Ljava.lang.Long;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setNotTipi" id="com.sampas.gis.ortak.model/PlanNot#setNotTipi(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setPlan" id="com.sampas.gis.ortak.model/PlanNot#setPlan(Lcom.sampas.gis.ortak.model.Plan;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setSira" id="com.sampas.gis.ortak.model/PlanNot#setSira(Ljava.lang.Long;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PlanTurleri" location="100,0" size="161,147" id="com.sampas.gis.ortak.model/PlanTurleri" runTimeClassModel="id,kurumSabit,kullaniliyorEh,maxOlcek,minOlcek,planTuruAciklama">
+    <children xsi:type="editmodel:CompartmentEditModel" size="138,108">
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.gis.ortak.model/PlanTurleri#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kullaniliyorEh" id="com.sampas.gis.ortak.model/PlanTurleri#kullaniliyorEh"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kurumSabit" id="com.sampas.gis.ortak.model/PlanTurleri#kurumSabit"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="maxOlcek" id="com.sampas.gis.ortak.model/PlanTurleri#maxOlcek"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="minOlcek" id="com.sampas.gis.ortak.model/PlanTurleri#minOlcek"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="planTuruAciklama" id="com.sampas.gis.ortak.model/PlanTurleri#planTuruAciklama"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="Poi" location="200,0" size="162,265" id="com.sampas.gis.ortak.model/Poi" runTimeClassModel="setAddress(Ljava.lang.String;),address,coordinate,getPoiName(),getAddress(),getCoordinate(),poiID,setPoiName(Ljava.lang.String;),getPoiID(),poiName,setCoordinate([D),setPoiID(I)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="139,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="address" id="com.sampas.gis.ortak.model/Poi#address"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="coordinate" id="com.sampas.gis.ortak.model/Poi#coordinate"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="poiID" id="com.sampas.gis.ortak.model/Poi#poiID"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="poiName" id="com.sampas.gis.ortak.model/Poi#poiName"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="97,144">
+      <children xsi:type="editmodel:MethodEditModel" name="getAddress" id="com.sampas.gis.ortak.model/Poi#getAddress()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getCoordinate" id="com.sampas.gis.ortak.model/Poi#getCoordinate()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPoiID" id="com.sampas.gis.ortak.model/Poi#getPoiID()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPoiName" id="com.sampas.gis.ortak.model/Poi#getPoiName()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setAddress" id="com.sampas.gis.ortak.model/Poi#setAddress(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setCoordinate" id="com.sampas.gis.ortak.model/Poi#setCoordinate([D)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setPoiID" id="com.sampas.gis.ortak.model/Poi#setPoiID(I)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setPoiName" id="com.sampas.gis.ortak.model/Poi#setPoiName(Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="PoiTypes" location="300,0" size="148,121" id="com.sampas.gis.ortak.model/PoiTypes" runTimeClassModel="poiTypes,addPoiTypes(Ljava.lang.String;),setPoiTypes(Ljava.util.List;),getPoiTypes()">
+    <children xsi:type="editmodel:CompartmentEditModel" size="125,18">
+      <children xsi:type="editmodel:AttributeEditModel" name="poiTypes" id="com.sampas.gis.ortak.model/PoiTypes#poiTypes"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="91,54">
+      <children xsi:type="editmodel:MethodEditModel" name="addPoiTypes" id="com.sampas.gis.ortak.model/PoiTypes#addPoiTypes(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPoiTypes" id="com.sampas.gis.ortak.model/PoiTypes#getPoiTypes()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setPoiTypes" id="com.sampas.gis.ortak.model/PoiTypes#setPoiTypes(Ljava.util.List;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=1;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

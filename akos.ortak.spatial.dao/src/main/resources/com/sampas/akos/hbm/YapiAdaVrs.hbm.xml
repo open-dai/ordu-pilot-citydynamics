@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.ortak.spatial.versiyon.model">
+	<class name="YapiAdaVrs" table="NUM_YAPI_ADALARI_VRS">
+		
+		<!-- Common Variables For All Version Objects Region Begin -->
+		
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="nesneId" type="java.lang.Long">
+			<column name="NESNE_ID" not-null="false" />
+		</property>
+		
+		<property name="surecId" type="java.lang.Long">
+			<column name="SUREC_ID" not-null="false" />
+		</property>
+		
+		<property name="taskId" type="java.lang.Long">
+			<column name="TASK_ID" not-null="false" />
+		</property>
+		
+		<property name="userSpecVariable" type="java.lang.String">
+			<column name="USER_SPEC_VARIABLE" />
+		</property>
+		
+		<property name="islemiYapan" type="java.lang.String">
+			<column name="ISLEMI_YAPAN" not-null="true" length="15" />
+		</property>
+		
+		<property name="versiyonNo" type="java.lang.Double">
+			<column name="VERSIYON_NO" />
+		</property>
+		
+		<property name="versiyonTarihi" type="java.util.Date">
+			<column name="VERSIYON_TARIHI" />
+		</property>
+		
+		<!-- Common Variables For All Version Objects Region End -->
+		
+		<!-- Common Variables For All Base Objects Region Begin -->
+		
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true" />
+		</property>
+		
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" length="15" />
+		</property>
+		
+		<!-- Common Variables For All Base Objects Region End -->
+		
+		<!-- Build Area Version Specific Variables Region Begin -->
+		
+		<property name="aciklama" type="java.lang.String">
+			<column name="ACIKLAMA" not-null="true" length="50" />
+		</property>
+		
+		<property name="yapiAdasiVasfi" type="java.lang.String">
+			<column name="YAPI_ADASI_VASFI" not-null="true" />
+		</property>
+		
+		<property name="kurumSabitId" type="java.lang.Long">
+			<column name="KURUM_ID" not-null="true" />
+		</property>
+		
+		<property name="grafik" type="java.lang.Long">
+			<column name="FID" />
+		</property>
+		
+		<!-- Build Area Version Specific Variables Region End -->
+		
+	</class>
+</hibernate-mapping>

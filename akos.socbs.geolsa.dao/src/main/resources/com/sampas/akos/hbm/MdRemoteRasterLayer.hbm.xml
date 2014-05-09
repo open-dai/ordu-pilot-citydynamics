@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.socbs.geolsa.model">
+
+	<class name="MdRemoteRasterLayer" table="MD_REMOTE_RASTER_LAYERS">
+	
+		<id name="oid" column="OID">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="defaultSRS" type="java.lang.String">
+			<column name="DEFAULTSRS" not-null="false" length="256" />
+		</property>
+		
+		<property name="directory" type="java.lang.String">
+			<column name="DIRECTORY" not-null="false" length="256" />
+		</property>
+		
+		<property name="queryPage" type="java.lang.String">
+			<column name="QUERYPAGE" not-null="false" length="256" />
+		</property>
+		
+		<property name="remoteDSGmlVersion" type="java.lang.String">
+			<column name="REMOTEDSGMLVERSION" not-null="false" length="256" />
+		</property>
+		
+		<property name="remoteDSUrl" type="java.lang.String">
+			<column name="REMOTEDSLURL" not-null="false" length="256" />
+		</property>
+		
+		<property name="remoteDSVersion" type="java.lang.String">
+			<column name="REMOTEDSVERSION" not-null="false" length="256" />
+		</property>
+		
+		<property name="maxHeight" type="java.lang.Integer">
+			<column name="MAXHEIGHT" not-null="false" />
+		</property>
+		
+		<property name="maxWidth" type="java.lang.Integer">
+			<column name="MAXWIDTH" not-null="false" />
+		</property>
+		
+		<property name="portNo" type="java.lang.Integer">
+			<column name="PORTNO" not-null="false" />
+		</property>
+
+		<bag name="mdRasterThemeStyles" cascade="all" lazy="false">
+			<key column="LAYERRMSTYLEID" />
+			<one-to-many class="MdRasterThemeStyle" />
+		</bag>
+ 		
+ 	</class>
+</hibernate-mapping>

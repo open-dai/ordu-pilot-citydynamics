@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.akos.ortak.model">
+	<class name="BagimsizKullanimGrup" table="ORT_BINA_KULLANIM_GRUP">
+		<cache usage="read-write" />
+
+		<id name="id" column="ID">
+			<generator class="native">
+				<param name="sequence">SEQ_ORT_BINA_KULLANIM_GRUP</param>
+			</generator>
+		</id>
+
+		<property name="aciklama" type="java.lang.String">
+			<column name="ACIKLAMA" not-null="true" length="50"></column>
+		</property>
+
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true"></column>
+		</property>
+
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" length="15"></column>
+		</property>
+
+		<many-to-one name="bagimsizKullanimSinif" class="BagimsizKullanimSinif"
+			foreign-key="ORT_BINA_KUL_GRUP_SINIF_FK" not-null="true">
+			<column name="KULLANIM_SINIF_ID"></column>
+		</many-to-one>
+
+	</class>
+</hibernate-mapping>

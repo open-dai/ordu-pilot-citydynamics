@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.socbs.geolsa.model">
+
+	<class name="MdDatabaseFeatureLayer" table="MD_DATABASE_FEATURE_LAYERS">
+	
+		<id name="oid" column="OID">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="dbName" type="java.lang.String">
+			<column name="DBNAME" not-null="false" length="256" />
+		</property>
+		
+		<property name="dbPass" type="java.lang.String">
+			<column name="DBPASS" not-null="false" length="256" />
+		</property>
+		
+		<property name="dbURL" type="java.lang.String">
+			<column name="DBURL" not-null="false" length="256" />
+		</property>
+		
+		<property name="dbUser" type="java.lang.String">
+			<column name="DBUSER" not-null="false" length="256" />
+		</property>
+		
+		<property name="layerGeomClnName" type="java.lang.String">
+			<column name="LAYERGEOMCLNNAME" not-null="false" length="256" />
+		</property>
+		
+		<property name="layerTbName" type="java.lang.String">
+			<column name="LAYERTBNAME" not-null="false" length="256" />
+		</property>
+		
+		<property name="dbPort" type="java.lang.Integer">
+			<column name="DBPORT" not-null="false" />
+		</property>
+		
+		<property name="dbSchema" type="java.lang.String">
+			<column name="DBSCHEMA" not-null="false" length="256" />
+		</property>
+		
+		<property name="dbType" type="java.lang.String">
+			<column name="DBTYPE" not-null="false" length="256" />
+		</property>
+
+		<bag name="mdFeatureThemeStyles" cascade="all" lazy="false">
+			<key column="LAYERDBSTYLEID" />
+			<one-to-many class="MdFeatureThemeStyle" />
+		</bag>
+		
+ 	</class>
+</hibernate-mapping>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.socbs.geolsa.model">
+
+	<class name="MdRemoteFeatureLayer" table="MD_REMOTE_FEATURE_LAYERS">
+	
+		<id name="oid" column="OID">
+			<generator class="increment"></generator>
+		</id>
+
+		<property name="directory" type="java.lang.String">
+			<column name="DIRECTORY" not-null="false" length="256" />
+		</property>
+		
+		<property name="queryPage" type="java.lang.String">
+			<column name="QUERYPAGE" not-null="false" length="256" />
+		</property>
+		
+		<property name="remoteDSUrl" type="java.lang.String">
+			<column name="REMOTEDSURL" not-null="false" length="256" />
+		</property>
+		
+		<property name="remoteDSVersion" type="java.lang.String">
+			<column name="REMOTEDSVERSION" not-null="false" length="256" />
+		</property>
+		
+		<property name="portNo" type="java.lang.Integer">
+			<column name="PORTNO" not-null="false" />
+		</property>
+
+		<bag name="mdFeatureThemeStyles" cascade="all" lazy="false">
+			<key column="LAYERRMSTYLEID" />
+			<one-to-many class="MdFeatureThemeStyle" />
+		</bag>
+ 		
+ 	</class>
+</hibernate-mapping>

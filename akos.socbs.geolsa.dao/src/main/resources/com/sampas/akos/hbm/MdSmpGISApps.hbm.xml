@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.socbs.geolsa.model">
+
+	<class name="MdSmpGISApp" table="MD_SMP_GIS_APPS">
+	
+		<id name="oid" column="OID">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="appDescriptor" type="java.lang.String">
+			<column name="APPDESCRIPTOR" not-null="false" length="256" />
+		</property>
+		
+		<property name="appName" type="java.lang.String">
+			<column name="APPNAME" not-null="false" length="256" />
+		</property>
+		
+		<bag name="mdAppLayers" cascade="all" lazy="false">
+			<key column="APPID" />
+			<one-to-many class="MdAppLayer" />
+		</bag>
+ 		
+ 	</class>
+ 	
+</hibernate-mapping>

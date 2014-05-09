@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans 
+	xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+		<bean id="ortakSpatialDAO"
+		class="com.sampas.ortak.spatial.dao.OrtakSpatialDAO"
+		autowire="byType" />
+		
+		<bean id="historyDAO"
+		class="com.sampas.ortak.spatial.history.dao.HistoryDAO"
+		autowire="byType" />
+		
+		<bean id="transactionDAO"
+		class="com.sampas.ortak.spatial.transaction.dao.TransactionDAO"
+		autowire="byType" />
+		
+		<bean id="versioningDAO"
+		class="com.sampas.ortak.spatial.versioning.dao.VersioningDAO"
+		autowire="byType" />
+		
+		<bean id="generatorDAO"
+		class="com.sampas.ortak.spatial.generator.dao.GeneratorDAO"
+		autowire="byType" />
+		
+		<bean id="dbConnectionDAO"
+		class="com.sampas.ortak.spatial.generator.dao.DBConnectionDAO"
+		autowire="byType" />
+			
+</beans>

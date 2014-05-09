@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.ortak.spatial.transaction.model">
+	<class name="PlanNotTrs" table="PLN_NOT_TRS">
+	
+		<!-- Common Variables For All Transaction Objects Region Begin -->
+		
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="nesneId" type="java.lang.Long">
+			<column name="NESNE_ID" not-null="false" />
+		</property>
+		
+		<property name="surecId" type="java.lang.Long">
+			<column name="SUREC_ID" not-null="false" />
+		</property>
+		
+		<property name="taskId" type="java.lang.Long">
+			<column name="TASK_ID" not-null="false" />
+		</property>
+		
+		<property name="islemiYapan" type="java.lang.String">
+			<column name="ISLEMI_YAPAN" not-null="true" length="15" />
+		</property>
+		
+		<property name="islemTarihi" type="java.util.Date">
+			<column name="ISLEM_TARIHI" not-null="true" />
+		</property>
+		
+		<property name="onayDurumu" type="java.lang.String">
+			<column name="ONAY_DURUMU" length="10" not-null="true" />
+		</property>
+		
+		<!-- Common Variables For All Transaction Objects Region End -->
+		
+		<!-- Common Variables For All Base Objects Region Begin -->
+		
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true" />
+		</property>
+		
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" length="15" />
+		</property>
+		
+		<!-- Common Variables For All Base Objects Region End -->
+		
+		<!-- Plan Note Transaction Specific Variables Region Begin -->
+		
+		<property name="aciklama" type="java.lang.String">
+			<column name="ACIKLAMA" />
+		</property>
+		
+		<property name="sira" type="java.lang.Long">
+			<column name="SIRA" default="0" />
+		</property>
+		
+		<property name="notTipi" type="java.lang.String">
+			<column name="NOT_TIPI" default="'T'" />
+		</property>
+
+		<property name="baslik" type="java.lang.String">
+			<column name="BASLIK" length="250"/>
+		</property>
+
+		<property name="altBaslik" type="java.lang.String">
+			<column name="ALT_BASLIK" length="250" />
+		</property>
+
+		<property name="defaultEh" type="java.lang.String">
+			<column name="DEFAULT_EH" length="1" default="'E'"/>
+		</property>
+		
+		<property name="planId" type="java.lang.Long">
+			<column name="PLAN_ID"/>
+		</property>
+		
+		<!-- Plan Note Transaction Specific Variables Region End -->
+		
+	</class>
+</hibernate-mapping>

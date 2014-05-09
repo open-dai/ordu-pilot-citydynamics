@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.gis.ortak.model">
+	<class name="OnemliYer" table="GRF_ONEMLI_YERLER">
+
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+
+		<many-to-one name="bagimsiz" class="com.sampas.akos.ortak.model.Bagimsiz"
+			foreign-key="GRF_ONM_YER_BAGIMSIZ_FK">
+			<column name="BAGIMSIZ_ID" />
+		</many-to-one>
+
+		<many-to-one name="kullanimDetayi"
+			class="com.sampas.akos.ortak.model.BagimsizKullanimDetay"
+			foreign-key="GRF_ONM_YER_KULLDTL_FK">
+			<column name="KULLANIM_DETAY_ID" />
+		</many-to-one>
+
+		<many-to-one name="kullanimGrubu"
+			class="com.sampas.akos.ortak.model.BagimsizKullanimGrup" foreign-key="GRF_ONM_YER_KULLGRP_FK">
+			<column name="KULLANIM_GRUP_ID" />
+		</many-to-one>
+
+		<many-to-one name="kullanimSinifi"
+			class="com.sampas.akos.ortak.model.BagimsizKullanimSinif"
+			foreign-key="GRF_ONM_YER_KULLSNF_FK">
+			<column name="KULLANIM_SINIF_ID" />
+		</many-to-one>
+
+		<property name="aciklama" type="java.lang.String">
+			<column name="ACIKLAMA" />
+		</property>
+
+		<property name="telefon" type="java.lang.String">
+			<column name="TELEFONU" />
+		</property>
+
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true" />
+		</property>
+
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" />
+		</property>
+
+		<many-to-one name="kurumSabit" class="com.sampas.akos.ortak.model.KurumSabit"
+			foreign-key="GRF_ONEMLI_YER_KURUM_FK">
+			<column name="KURUM_ID" />
+		</many-to-one>
+
+		<many-to-one name="grafik" class="com.sampas.akos.ortak.model.Grafik"
+			foreign-key="ORT_MAHALLE_KOYLER_GRAFIK_FK">
+			<column name="FID" />
+		</many-to-one>
+
+	</class>
+</hibernate-mapping>

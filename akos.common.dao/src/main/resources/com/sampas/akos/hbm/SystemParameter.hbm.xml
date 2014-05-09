@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.akos.common.model">
+	<class name="SystemParameter"
+		table="SYS_PARAMETERS">
+		<cache usage="read-write" />
+		<id name="id" column="ID" length="10">
+			<generator class="native">
+				<param name="sequence">SEQ_SYS_PARAMETERS</param>
+			</generator>
+		</id>
+			
+		<property name="parameterKey" type="java.lang.String">
+			<column name="PARAMETER_KEY" length="250"/>
+		</property>
+		
+		<property name="parameterValue" type="java.lang.String">
+			<column name="PARAMETER_VALUE" length="250"/>
+		</property>
+		
+		<property name="source" type="java.lang.Long">
+			<column name="SOURCE" not-null="false" />
+		</property>
+				
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="false" length="15"></column>
+		</property>
+		
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="false"></column>
+		</property>
+		
+		<property name="akosDegistiren" type="java.lang.String">
+			<column name="AKOS_DEGISTIREN" length="15"></column>
+		</property>
+		
+		<property name="akosDegisimTarihi" type="java.util.Date">
+			<column name="AKOS_DEGISIM_TARIHI"></column>
+		</property>
+		
+		<property name="akosDegisti" type="java.lang.Long">
+			<column name="AKOS_DEGISTI" length="2"></column>
+		</property>
+				
+	 </class>
+</hibernate-mapping>

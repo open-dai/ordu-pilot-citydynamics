@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.socbs.geolsa.model">
+
+	<class name="MdAppLayer" table="MD_APP_LAYERS">
+	
+		<id name="oid" column="OID">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="layerDescForApp" type="java.lang.String">
+			<column name="LAYERDESCFORAPP" not-null="false" length="256" />
+		</property>
+		
+		<property name="legendNeeded" type="java.lang.Boolean">
+			<column name="LEGENDNEEDED" not-null="false" />
+		</property>
+		
+		<property name="layerAppsSystemLayer" type="java.lang.Boolean">
+			<column name="LAYERAPPSSYSTEMLAYER" not-null="false" />
+		</property>
+		
+		<property name="laverVisibility" type="java.lang.Boolean">
+			<column name="LAYERVISIBILITY" not-null="false" />
+		</property>
+		
+		<property name="layerMaxScale" type="java.lang.Integer">
+			<column name="LAYERMAXSCALE" not-null="false" />
+		</property>
+		
+		<property name="layerMinScale" type="java.lang.Integer">
+			<column name="LAYERMINSCALE" not-null="false" />
+		</property>
+		
+		<property name="layerPriority" type="java.lang.Integer">
+			<column name="LAYERPRIORITY" not-null="false" />
+		</property>
+		
+		<many-to-one name="mdLayer" foreign-key="MD_LAYER_FK" cascade="all" lazy="false" class="MdLayer">
+			<column name="LAYERID" not-null="false" />
+		</many-to-one>
+	
+		<bag name="mdLayerAttributeVisibleNames" cascade="all" lazy="false" >
+			<key column="LAYERATTID" />
+			<one-to-many class="MdLayerAttributeVisibleName" />
+		</bag>
+ 		
+ 	</class>
+</hibernate-mapping>

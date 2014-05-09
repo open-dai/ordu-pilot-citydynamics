@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.akos.ortak.model">
+	<class name="BagimsizKullanimDetay" table="ORT_BINA_KULLANIM_DETAY">
+		<cache usage="read-write" />
+
+		<id name="id" column="ID">
+			<generator class="native">
+				<param name="sequence">SEQ_ORT_BINA_KULLANIM_DETAY</param>
+			</generator>
+		</id>
+
+		<property name="aciklama" type="java.lang.String">
+			<column name="ACIKLAMA" not-null="true" length="100"></column>
+		</property>
+
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true"></column>
+		</property>
+
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" length="15"></column>
+		</property>
+
+		<property name="isyeriEh" type="java.lang.String">
+			<column name="ISYERI_RUHSATI_EH" not-null="true" length="1"
+				check="ISYERI_RUHSATI_EH IN('E','H')">
+			</column>
+		</property>
+
+		<property name="kullanimTip" type="java.lang.String">
+			<column name="KULLANIM_TIPI" length="1"></column>
+		</property>
+
+		<many-to-one name="kullanimSekli" class="KullanimSekli" 
+			foreign-key="ORT_BINA_KUL_DETAY_K_SEKLI_FK" not-null="true">
+			<column name="KULLANIM_SEKLI_ID"></column>
+		</many-to-one>
+
+		<many-to-one name="bagimsizKullanimGrup" class="BagimsizKullanimGrup" 
+			foreign-key="ORT_BINA_KUL_DETAY_GRUP_FK" not-null="true">
+			<column name="KULLANIM_GRUP_ID"></column>
+		</many-to-one>
+
+	</class>
+</hibernate-mapping>

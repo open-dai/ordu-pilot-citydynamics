@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+       
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>
+				file:${AKOS_YOL}/mapesbservis/webHibernate.properties
+			</value>
+		</property>
+	</bean>
+	
+	<import resource="classpath:com/sampas/akos/hibernateContext.xml" />
+
+	<import resource="classpath:com/sampas/akos/ortakSpatialContext.xml"/>
+	<import resource="classpath:com/sampas/akos/ortakSpatialServisContext.xml"/>
+	<import resource="classpath:com/sampas/akos/geolsaContext.xml" />
+	<import resource="classpath:com/sampas/akos/geolsaServisContext.xml" />
+	<import resource="classpath:com/sampas/akos/gisOrtakContext.xml"/>
+	<import resource="classpath:com/sampas/akos/gisOrtakServisContext.xml"/>
+	<import	resource="classpath:com/sampas/akos/ortakContext.xml" />
+	<import	resource="classpath:com/sampas/akos/ortakServisContext.xml" />	
+	<import resource="classpath:com/sampas/akos/ortakSabitContext.xml" />
+	<import resource="classpath:com/sampas/akos/poiServisContext.xml" />
+			
+	<bean id="soCBSMapESBServis" scope="singleton" class="com.sampas.socbs.opendai.esb.servis.impl.SoCBSMapESBServisImpl">
+		<property name="poiServis" ref="poiServis" />
+		<property name="ortakSpatialServis" ref="ortakSpatialServis" />
+		<property name="ortakServis" ref="ortakServis" />	
+	</bean>
+</beans>

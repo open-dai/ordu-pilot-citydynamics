@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>
+					file:${AKOS_YOL}/mapservis/testHibernate.properties
+				</value>
+			</list>
+		</property>
+	</bean>
+
+	<import resource="classpath:com/sampas/akos/hibernateTestContext.xml" />
+	<import resource="classpath:com/sampas/akos/geolsaContext.xml"/>
+	<import resource="classpath:com/sampas/akos/geolsaServisContext.xml"/>
+	<import resource="classpath:com/sampas/akos/mapServisContext.xml"/>
+
+</beans>
+

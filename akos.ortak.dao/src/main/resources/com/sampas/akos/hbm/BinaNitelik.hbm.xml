@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.akos.ortak.model">
+	<class name="BinaNitelik" table="NUM_BINA_NITELIK">
+		<cache usage="read-write" />
+		
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<many-to-one name="bina" class="Bina"
+			foreign-key="NUM_BINA_NITELIK_BINA_FK" >
+			<column name="BINA_ID" />
+		</many-to-one>
+		
+		<property name="benzerYapiSayisi" type="java.lang.Integer">
+			<column name="BENZER_YAPI_SAYISI" />
+		</property>
+		
+		<property name="bagimsizBolumSayisi" type="java.lang.Integer">
+			<column name="BAGIMSIZ_BOLUM_SAYISI" />
+		</property>
+		
+		<property name="konutDaireSayisi" type="java.lang.Integer">
+			<column name="KONUT_DAIRE_SAYISI" />
+		</property>
+		
+		<property name="yolKotuAltiKatSayisi" type="java.lang.Integer">
+			<column name="YOL_KOTU_ALTI_KAT_SAYISI" />
+		</property>
+		
+		<property name="yolKotuUstuKatSayisi" type="java.lang.Integer">
+			<column name="YOL_KOTU_USTU_KAT_SAYISI" />
+		</property>
+		
+		<property name="ilaveYukseklik" type="java.lang.Double">
+			<column name="ILAVE_YUKSEKLIK" />
+		</property>
+		
+		<property name="toplamYukseklik" type="java.lang.Double">
+			<column name="TOPLAM_YUKSEKLIK" />
+		</property>
+		
+		<property name="insaatAlani" type="java.lang.Double">
+			<column name="INSAAT_ALANI" />
+		</property>
+		
+		<property name="toplamMaliyeti" type="java.lang.Double">
+			<column name="TOPLAM_MALIYETI" />
+		</property>
+		
+		<property name="icmeSuTuru" type="java.lang.Integer">
+			<column name="ICMESU_TURU" />
+		</property>
+		
+		<property name="atikSuTuru" type="java.lang.Integer">
+			<column name="ATIKSU_TURU" />
+		</property>
+		
+		<property name="bosEh" type="java.lang.String">
+			<column name="BOS_EH" length="1"
+				check="BOS_EH IN('E','H')" />
+		</property>
+		
+		<property name="ulusalBinaNo" type="java.lang.String">
+			<column name="ULUSAL_BINA_NO" />
+		</property>
+		
+		<property name="tabanAlani" type="java.lang.Double">
+			<column name="TABAN_ALANI" />
+		</property>
+		
+		<property name="aciklama" type="java.lang.String">
+			<column name="ACIKLAMA" />
+		</property>
+		
+		<property name="ilaveKatSayisi" type="java.lang.Integer">
+			<column name="ILAVE_KAT_SAYISI" />
+		</property>
+		
+		<property name="toplamKatSayisi" type="java.lang.Integer">
+			<column name="TOPLAM_KAT_SAYISI" />
+		</property>
+		
+		<property name="yolKotuAltiYukseklik" type="java.lang.Double">
+			<column name="YOL_KOTU_ALTI_YUKSEKLIK" />
+		</property>
+		
+		<property name="yolKotuUstuYukseklik" type="java.lang.Double">
+			<column name="YOL_KOTU_USTU_YUKSEKLIK" />
+		</property>
+		
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" length="15" />
+		</property>
+		
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true" />
+		</property>
+		
+		<property name="tarihiEserEh" type="java.lang.String">
+			<column name="TARIHI_ESER_EH" not-null="true" length="1"
+				check="TARIHI_ESER_EH IN('E','H')" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

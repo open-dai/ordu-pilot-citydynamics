@@ -1,0 +1,108 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.ortak.spatial.versiyon.model">
+	<class name="MahalleVrs" table="ORT_MAHALLE_KOYLER_VRS">
+		
+		<!-- Common Variables For All Version Objects Region Begin -->
+		
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="nesneId" type="java.lang.Long">
+			<column name="NESNE_ID" not-null="false" />
+		</property>
+		
+		<property name="surecId" type="java.lang.Long">
+			<column name="SUREC_ID" not-null="false" />
+		</property>
+		
+		<property name="taskId" type="java.lang.Long">
+			<column name="TASK_ID" not-null="false" />
+		</property>
+		
+		<property name="userSpecVariable" type="java.lang.String">
+			<column name="USER_SPEC_VARIABLE" />
+		</property>
+		
+		<property name="islemiYapan" type="java.lang.String">
+			<column name="ISLEMI_YAPAN" not-null="true" length="15" />
+		</property>
+		
+		<property name="versiyonNo" type="java.lang.Double">
+			<column name="VERSIYON_NO" />
+		</property>
+		
+		<property name="versiyonTarihi" type="java.util.Date">
+			<column name="VERSIYON_TARIHI" />
+		</property>
+		
+		<!-- Common Variables For All Version Objects Region End -->
+		
+		<!-- Common Variables For All Base Objects Region Begin -->
+		
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true" />
+		</property>
+		
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" length="15" />
+		</property>
+		
+		<!-- Common Variables For All Base Objects Region End -->
+		
+		<!-- DistrictStreet Version Specific Variables Region Begin -->
+		
+		<property name="aciklama" type="java.lang.String">
+			<column name="MAHALLE_ADI" length="50" />
+		</property>
+		
+		<property name="koy" type="java.lang.String">
+			<column name="KOY_EH" not-null="true" length="1"
+				check="KOY_EH IN('E','H')" />
+		</property>
+		
+		<property name="tuikMahalleKod">
+			<column name="TUIK_MAHALLE_KODU" />
+		</property>
+		
+		<property name="tuikMahalleTanitimNo" >
+			<column name="TUIK_MAHALLE_TANITIM_NO" 
+				precision="10" scale="2" />
+		</property>
+		
+		<property name="aktifEh" type="java.lang.String">
+			<column name="AKTIF_EH" length="1" 
+				check="AKTIF_EH IN('E','H')" />
+		</property>
+		
+		<property name="acilisTarih" type="java.util.Date">
+			<column name="ACILIS_TARIHI" />
+		</property>
+		
+		<property name="kapanisTarih" type="java.util.Date">
+			<column name="KAPANIS_TARIHI" />
+		</property>
+		
+		<property name="kurumSabitId" type="java.util.Date">
+			<column name="KURUM_ID" not-null="true"/>
+		</property>
+		
+		<property name="acilisHareketKodId" type="java.lang.Long">
+			<column name="ACILIS_HAREKET_ID" />
+		</property>
+		
+		<property name="kapanisHareketKodId" type="java.lang.Long">
+			<column name="KAPANIS_HAREKET_ID" />
+		</property>
+		
+		<property name="grafik" type="java.lang.Long">
+			<column name="FID" />
+		</property>
+		
+		<!-- DistrictStreet Version Specific Variables Region End -->
+		
+	</class>
+</hibernate-mapping>

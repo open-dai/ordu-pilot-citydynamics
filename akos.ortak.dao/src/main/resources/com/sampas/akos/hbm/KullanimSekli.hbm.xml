@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.akos.ortak.model">
+	<class name="KullanimSekli" table="ORT_KULLANIM_SEKLI">
+		<cache usage="read-write" />
+		
+		<id name="id" column="ID">
+			<generator class="native">
+				<param name="sequence">SEQ_ORT_KULLANIM_SEKLI</param>
+			</generator>
+		</id>
+		
+		<property name="aciklama" type="java.lang.String">
+			<column name="ACIKLAMA" not-null="true" length="50" />
+		</property>
+		
+		<property name="isyeriEh" type="java.lang.String">
+			<column name="ISYERI_EH" not-null="true" length="1"
+				check="ISYERI_EH IN('E','H')" />
+		</property>
+		
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true"></column>
+		</property>
+		
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" length="15"></column>
+		</property>
+
+	</class>
+</hibernate-mapping>

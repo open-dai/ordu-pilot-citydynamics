@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.ortak.spatial.versiyon.model">
+	<class name="CaddeSokakVrs" table="ORT_CADDE_SOKAK_VRS">
+		
+		<!-- Common Variables For All Version Objects Region Begin -->
+		
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="nesneId" type="java.lang.Long">
+			<column name="NESNE_ID" not-null="false" />
+		</property>
+		
+		<property name="surecId" type="java.lang.Long">
+			<column name="SUREC_ID" not-null="false" />
+		</property>
+		
+		<property name="taskId" type="java.lang.Long">
+			<column name="TASK_ID" not-null="false" />
+		</property>
+		
+		<property name="userSpecVariable" type="java.lang.String">
+			<column name="USER_SPEC_VARIABLE" />
+		</property>
+		
+		<property name="islemiYapan" type="java.lang.String">
+			<column name="ISLEMI_YAPAN" not-null="true" length="15" />
+		</property>
+		
+		<property name="versiyonNo" type="java.lang.Double">
+			<column name="VERSIYON_NO" />
+		</property>
+		
+		<property name="versiyonTarihi" type="java.util.Date">
+			<column name="VERSIYON_TARIHI" />
+		</property>
+		
+		<!-- Common Variables For All Version Objects Region End -->
+		
+		<!-- Common Variables For All Base Objects Region Begin -->
+		
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true" />
+		</property>
+		
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" length="15" />
+		</property>
+		
+		<!-- Common Variables For All Base Objects Region End -->
+		
+		<!-- Street Version Specific Variables Region Begin -->
+		
+		<property name="aciklama" type="java.lang.String">
+			<column name="CADDE_SOKAK_ADI" not-null="true" length="50" />
+		</property>
+		
+		<property name="meclisKararNo" type="java.lang.String">
+			<column name="MECLIS_KARAR_NO" length="15" />
+		</property>
+		
+		<property name="meclisKararTarih" type="java.util.Date">
+			<column name="MECLIS_KARAR_TARIHI" />
+		</property>
+		
+		<property name="tekKapiBaslangicNo" type="java.lang.Long">
+			<column name="TEK_KAPI_BASLANGIC_NO" precision="4" />
+		</property>
+		
+		<property name="tekKapiBitisNo" type="java.lang.Long">
+			<column name="TEK_KAPI_BITIS_NO" precision="4" />
+		</property>
+		
+		<property name="ciftKapiBaslangicNo" type="java.lang.Long">
+			<column name="CIFT_KAPI_BASLANGIC_NO" precision="4" />
+		</property>
+		
+		<property name="ciftKapiBitisNo" type="java.lang.Long">
+			<column name="CIFT_KAPI_BITIS_NO" precision="4" />
+		</property>
+		
+		<property name="aktifEh" type="java.lang.String">
+			<column name="AKTIF_EH" length="1"  
+				check="AKTIF_EH IN('E','H')" />
+		</property>
+		
+		<property name="acilisTarih" type="java.util.Date">
+			<column name="ACILIS_TARIHI" />
+		</property>
+		
+		<property name="kapanisTarih" type="java.util.Date">
+			<column name="KAPANIS_TARIHI" />
+		</property>
+		
+		<property name="kurumSabitId" type="java.lang.Long">
+			<column name="KURUM_ID" not-null="true" />
+		</property>
+		
+		<property name="caddeSokakTurId" type="java.lang.Long">
+			<column name="CADDE_SOKAK_TUR_ID"/>
+		</property>
+		
+		<property name="acilisHareketKodId" type="java.lang.Long">
+			<column name="ACILIS_HAREKET_ID" />
+		</property>
+		
+		<property name="kapanisHareketKodId" type="java.lang.Long">
+			<column name="KAPANIS_HAREKET_ID" />
+		</property>
+
+		<property name="grafik" type="java.lang.Long">
+			<column name="FID" />
+		</property>
+		
+		<!-- Street Version Specific Variables Region End -->
+		
+	</class>
+</hibernate-mapping>

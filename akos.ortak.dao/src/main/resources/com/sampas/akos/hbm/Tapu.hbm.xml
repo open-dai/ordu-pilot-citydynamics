@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.akos.ortak.model">
+	<class name="Tapu" table="NUM_TAPU">
+		<cache usage="read-write" />
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="aciklama" type="java.lang.String">
+			<column name="ACIKLAMA" length="200" />
+		</property>
+		<property name="ada" type="java.lang.String">
+			<column name="ADA" length="10" />
+		</property>
+		<property name="ad" type="java.lang.String">
+			<column name="ADI" length="100" />
+		</property>
+		<property name="adres" type="java.lang.String">
+			<column name="ADRESI" length="500" />
+		</property>
+		<property name="anaKutukCiltNo" type="java.lang.Long">
+			<column name="ANA_KUTUK_CILT_NO" />
+		</property>
+		<property name="anaKutukSayfaNo" type="java.lang.Long">
+			<column name="ANA_KUTUK_SAYFA_NO" />
+		</property>
+		<property name="anaKutukZeminId" type="java.lang.Long">
+			<column name="ANAKUTUKZEMIN_ID" />
+		</property>
+		<property name="arsaPay" type="java.lang.Double">
+			<column name="ARSAPAY" />
+		</property>
+		<property name="arsaPayda" type="java.lang.Double">
+			<column name="ARSAPAYDA" />
+		</property>
+		<property name="babaAd" type="java.lang.String">
+			<column name="BABA_ADI" length="100" />
+		</property>
+		<property name="blokNo" type="java.lang.String">
+			<column name="BLOK_NO" length="100" />
+		</property>
+		<property name="bolumCins" type="java.lang.String">
+			<column name="BOLUM_CINSI" length="100" />
+		</property>
+		<property name="bolumNo" type="java.lang.String">
+			<column name="BOLUM_NO" length="50" />
+		</property>
+		<property name="cinsiyet" type="java.lang.String">
+			<column name="CINSIYET" length="1"
+				check="CINSIYET IN('E','K')" />
+		</property>
+		<property name="dogumTarih" type="java.util.Date">
+			<column name="DOGUM_TARIHI" />
+		</property>
+		<property name="dogumYer" type="java.lang.String">
+			<column name="DOGUM_YERI" length="100" />
+		</property>
+		<property name="edinSebep" type="java.lang.String">
+			<column name="EDINSEBEBI" length="200" />
+		</property>
+		<property name="hissePay" type="java.lang.Double">
+			<column name="HISSEPAY"></column>
+		</property>
+		<property name="hissePayda" type="java.lang.Double">
+			<column name="HISSEPAYDA"></column>
+		</property>
+		<property name="iktisapTarih" type="java.util.Date">
+			<column name="IKTISAP_TARIHI" />
+		</property>
+		<property name="kapanma" type="java.lang.String">
+			<column name="KAPANMA" length="1"
+				check="KAPANMA IN('E','H')" />
+		</property>
+		<property name="kapiNo" type="java.lang.String">
+			<column name="KAPI_NO" length="50" />
+		</property>
+		<property name="katKutukCiltNo" type="java.lang.Long">
+			<column name="KAT_KUTUK_CILT_NO" />
+		</property>
+		<property name="katKutukSayfaNo" type="java.lang.Long">
+			<column name="KAT_KUTUK_SAYFA_NO" />
+		</property>
+		<property name="katKutukZeminId" type="java.lang.Long">
+			<column name="KATKUTUKZEMIN_ID" />
+		</property>
+		<property name="katNo" type="java.lang.String">
+			<column name="KAT_NO" length="50" />
+		</property>
+		<property name="kayittar" type="java.lang.String">
+			<column name="KAYITTAR" length="20" />
+		</property>
+		<property name="mevki" type="java.lang.String">
+			<column name="MEVKI" length="200" />
+		</property>
+		<property name="pafta" type="java.lang.String">
+			<column name="PAFTA" length="15" />
+		</property>
+		<property name="parsel" type="java.lang.String">
+			<column name="PARSEL" length="10" />
+		</property>
+		<property name="soyad" type="java.lang.String">
+			<column name="SOYADI" length="100" />
+		</property>
+		<property name="tapuKat" type="java.lang.String">
+			<column name="TAPUKAT" length="1" />
+		</property>
+		<property name="tasinmazCins" type="java.lang.String">
+			<column name="TASINMAZ_CINSI" length="100" />
+		</property>
+		<property name="tcKimlikNo" type="java.lang.Long">
+			<column name="TC_KIMLIK_NO" length="11" />
+		</property>
+		<property name="yuzolcum" type="java.lang.Double">
+			<column name="YUZOLCUMU" />
+		</property>
+		
+		<many-to-one name="kadastroParsel"
+			class="KadastroParsel">
+			<column name="PARSEL_ID" not-null="true" />
+		</many-to-one>
+		<many-to-one name="kurumSabit"
+			class="com.sampas.akos.ortak.model.KurumSabit"
+			foreign-key="NUM_TAPU_KURUM_FK">
+			<column name="KURUM_ID" not-null="true" />
+		</many-to-one>
+		<many-to-one name="tapuMahalle"
+			class="TapuMahalle"
+			foreign-key="NUM_TAPU_TAPU_MAH_FK">
+			<column name="TAPU_MAHALLE_ID" not-null="true" />
+		</many-to-one>
+		<many-to-one name="tapuMulkiyetTip"
+			class="TapuMulkiyetTip"
+			foreign-key="NUM_TAPU_MULKIYET_FK">
+			<column name="MULKIYET_ID" not-null="true" />
+		</many-to-one>
+	</class>
+</hibernate-mapping>

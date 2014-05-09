@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.gis.ortak.model">
+	<class name="PlanNot" table="PLN_NOT">
+		
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="aciklama" type="java.lang.String">
+			<column name="ACIKLAMA" />
+		</property>
+		
+		<property name="sira" type="java.lang.Long">
+			<column name="SIRA" default="0" />
+		</property>
+		
+		<property name="notTipi" type="java.lang.String">
+			<column name="NOT_TIPI" default="'T'" />
+		</property>
+
+		<property name="baslik" type="java.lang.String">
+			<column name="BASLIK" length="250"/>
+		</property>
+
+		<property name="altBaslik" type="java.lang.String">
+			<column name="ALT_BASLIK" length="250" />
+		</property>
+
+		<property name="defaultEh" type="java.lang.String">
+			<column name="DEFAULT_EH" length="1" default="'E'"/>
+		</property>
+
+		<many-to-one name="plan" class="Plan"
+			foreign-key="PLN_NOT_PLAN_FK">
+			<column name="PLAN_ID" />
+		</many-to-one>
+
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.akos.ortak.model">
+	<class name="Adres" table="NUM_ADRES">
+		<cache usage="read-write" />
+
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+
+		<property name="adresNo" type="java.lang.Long">
+			<column name="ADRES_NO" />
+		</property>
+
+		<property name="kapiNo" type="java.lang.Long">
+			<column name="KAPI_NO" />
+		</property>
+
+		<property name="altKapiNo" type="java.lang.String">
+			<column name="ALT_KAPI_NO" />
+		</property>
+
+		<property name="adresTur" type="java.lang.String">
+			<column name="ADRES_TURU" length="1" check="ADRES_TURU IN('A','T')" />
+		</property>
+
+		<property name="aciklama" type="java.lang.String">
+			<column name="ACIKLAMA" />
+		</property>
+
+		<property name="aktifEh" type="java.lang.String">
+			<column name="AKTIF_EH" not-null="true" length="1"
+				check="AKTIF_EH IN('E','H')" />
+		</property>
+
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true" />
+		</property>
+
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" length="15" />
+		</property>
+
+		<many-to-one name="kurumSabit" class="KurumSabit"
+			foreign-key="NUM_ADRES_KURUM_FK" not-null="true">
+			<column name="KURUM_ID" />
+		</many-to-one>
+
+		<property name="pdaEh" type="java.lang.String">
+			<column name="PDA_EH" length="1" check="PDA_EH IN('E','H')" />
+		</property>
+
+		<property name="pdaUserName" type="java.lang.String">
+			<column name="PDA_USERNAME" />
+		</property>
+
+		<property name="pdaIslemTarihi" type="java.util.Date">
+			<column name="PDA_ISLEM_TARIHI" />
+		</property>
+
+		<property name="acilisTarihi" type="java.util.Date">
+			<column name="ACILIS_TARIHI" />
+		</property>
+
+		<property name="kapanisTarihi" type="java.util.Date">
+			<column name="KAPANIS_TARIHI" />
+		</property>
+
+		<property name="uavtBinaKodu" type="java.lang.Long">
+			<column name="UAVT_BINA_KODU" />
+		</property>
+
+		<many-to-one name="mahalleCaddeSokak" class="MahalleCaddeSokak"
+			foreign-key="NUM_ADRES_MAH_CAD_FK" not-null="true">
+			<column name="MAHALLE_CADDE_ID" />
+		</many-to-one>
+
+		<many-to-one name="bina" class="Bina" foreign-key="NUM_ADRES_BINA_FK">
+			<column name="BINA_ID" />
+		</many-to-one>
+
+		<many-to-one name="kadastroParsel" class="KadastroParsel"
+			foreign-key="NUM_ADRES_PARSEL_FK">
+			<column name="PARSEL_ID" />
+		</many-to-one>
+
+		<many-to-one name="acilisHareketKod" class="HareketKod"
+			foreign-key="NUM_ADRES_AC_HAREKET_FK">
+			<column name="ACILIS_HAREKET_ID" />
+		</many-to-one>
+
+		<many-to-one name="kapanisHareketKod" class="HareketKod"
+			foreign-key="NUM_ADRES_KAPA_HAREKET_FK">
+			<column name="KAPANIS_HAREKET_ID" />
+		</many-to-one>
+
+		<many-to-one name="grafik" class="Grafik"
+			foreign-key="ORT_MAHALLE_KOYLER_GRAFIK_FK">
+			<column name="FID" />
+		</many-to-one>
+
+	</class>
+</hibernate-mapping>

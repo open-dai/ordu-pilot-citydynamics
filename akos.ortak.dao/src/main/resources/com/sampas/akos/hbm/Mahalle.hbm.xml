@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.akos.ortak.model">
+	<class name="Mahalle" table="ORT_MAHALLE_KOYLER">
+		<cache usage="read-write" />
+		
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="aciklama" type="java.lang.String">
+			<column name="MAHALLE_ADI" length="50" />
+		</property>
+		
+		<property name="koy" type="java.lang.String">
+			<column name="KOY_EH" not-null="true" length="1"
+				check="KOY_EH IN('E','H')" />
+		</property>
+		
+		<property name="tuikMahalleKod">
+			<column name="TUIK_MAHALLE_KODU" />
+		</property>
+		
+		<property name="tuikMahalleTanitimNo" generated="never">
+			<column name="TUIK_MAHALLE_TANITIM_NO" />
+		</property>
+		
+		<many-to-one name="kurumSabit" class="KurumSabit"  
+			foreign-key="ORT_MAHALLE_KOYLER_KURUM_FK">
+			<column name="KURUM_ID" not-null="true"></column>
+		</many-to-one>
+
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" length="15" />
+		</property>
+		
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true" />
+		</property>
+		
+		<property name="aktifEh" type="java.lang.String">
+			<column name="AKTIF_EH" length="1" not-null="true"
+				check="AKTIF_EH IN('E','H')" />
+		</property>
+		
+		<property name="acilisTarih" type="java.util.Date">
+			<column name="ACILIS_TARIHI" />
+		</property>
+		
+		<property name="kapanisTarih" type="java.util.Date">
+			<column name="KAPANIS_TARIHI" />
+		</property>
+		
+		<many-to-one name="acilisHareketKod" class="HareketKod" 
+			foreign-key="ORT_MAHALLE_KOYLER_AC_HAR_FK">
+			<column name="ACILIS_HAREKET_ID" />
+		</many-to-one>
+		
+		<many-to-one name="kapanisHareketKod" class="HareketKod" 
+			foreign-key="ORT_MAHALLE_KOYLER_KAPA_HAR_FK">
+			<column name="KAPANIS_HAREKET_ID" />
+		</many-to-one>
+		
+		<many-to-one name="grafik" class="Grafik" 
+			foreign-key="ORT_MAHALLE_KOYLER_GRAFIK_FK">
+			<column name="FID" />
+		</many-to-one>
+		
+	</class>
+</hibernate-mapping>

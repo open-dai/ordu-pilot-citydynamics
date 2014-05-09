@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.socbs.geolsa.model">
+
+	<class name="MdFileBasedFeatureLayer" table="MD_FILE_BASED_FEATURE_LAYERS">
+	
+		<id name="oid" column="OID">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="fileURL" type="java.lang.String">
+			<column name="FILEURL" not-null="false" length="256" />
+		</property>
+		
+		<property name="fileFormat" type="java.lang.Integer">
+			<column name="FILEFORMAT" not-null="false" />
+		</property>
+		
+		<property name="createSpatialIndex" type="java.lang.Boolean">
+			<column name="CREATESPATIALINDEX" not-null="false" length="256" />
+		</property>
+		
+		<bag name="mdFeatureThemeStyles" cascade="all" lazy="false">
+			<key column="LAYERFILESTYLEID" />
+			<one-to-many class="MdFeatureThemeStyle" />
+		</bag>
+ 		
+ 	</class>
+</hibernate-mapping>

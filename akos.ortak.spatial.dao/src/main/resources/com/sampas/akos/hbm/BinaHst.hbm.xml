@@ -1,0 +1,197 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.ortak.spatial.history.model">
+	<class name="BinaHst" table="NUM_BINA_HST">
+		
+		<!-- Common Variables For All History Objects Region Begin -->
+		
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="nesneId" type="java.lang.Long">
+			<column name="NESNE_ID" not-null="false" />
+		</property>
+		
+		<property name="surecId" type="java.lang.Long">
+			<column name="SUREC_ID" not-null="false" />
+		</property>
+		
+		<property name="taskId" type="java.lang.Long">
+			<column name="TASK_ID" not-null="false" />
+		</property>
+		
+		<property name="degisiklikYapan" type="java.lang.String">
+			<column name="DEGISIKLIK_YAPAN" not-null="true" length="15" />
+		</property>
+		
+		<property name="degisiklikTarihi" type="java.util.Date">
+			<column name="DEGISIKLIK_TARIHI" not-null="true" />
+		</property>
+		
+		<property name="degisiklikTipi" type="java.lang.String">
+			<column name="DEGISIKLIK_TIPI" length="1" not-null="true"
+				check="DEGISIKLIK_TIPI IN('I','U','D')" />
+		</property>
+		
+		<!-- Common Variables For All History Objects Region End -->
+		
+		<!-- Common Variables For All Base Objects Region Begin -->
+		
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true" />
+		</property>
+		
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" length="15" />
+		</property>
+		
+		<!-- Common Variables For All Base Objects Region End -->
+		
+		<!-- Building History Specific Variables Region Begin -->
+		
+		<property name="binaNo" type="java.lang.Long">
+			<column name="BINA_NO" not-null="true" />
+		</property>
+		
+		<property name="apartmanBlokAd" type="java.lang.String">
+			<column name="APARTMAN_BLOK_ADI" />
+		</property>
+		
+		<property name="asansorEh" type="java.lang.String">
+			<column name="ASANSOR_EH" length="1"
+				check="ASANSOR_EH IN('E','H')" />
+		</property>
+		
+		<property name="arsaAlan" type="java.lang.Double">
+			<column name="ARSA_ALANI" />
+		</property>
+		
+		<property name="pdaEh" type="java.lang.String">
+			<column name="PDA_EH" length="1" check="PDA_EH IN('E','H')" />
+		</property>
+		
+		<property name="aktifEh" type="java.lang.String">
+			<column name="AKTIF_EH" length="1" not-null="true"
+				check="AKTIF_EH IN('E','H')" />
+		</property>
+		
+		<property name="acilisTarih" type="java.util.Date">
+			<column name="ACILIS_TARIHI" />
+		</property>
+		
+		<property name="kapanisTarih" type="java.util.Date">
+			<column name="KAPANIS_TARIHI" />
+		</property>
+		
+		<property name="kaloriferEh" type="java.lang.String">
+			<column name="KALORIFER_EH" length="1"
+				check="KALORIFER_EH IN('E','H')" />
+		</property>
+		
+		<property name="pdaUserName" type="java.lang.String">
+			<column name="PDA_USERNAME" />
+		</property>
+		
+		<property name="pdaIslemTarihi" type="java.util.Date">
+			<column name="PDA_ISLEM_TARIHI" />
+		</property>
+		
+		<property name="postaKodu" type="java.lang.String">
+			<column name="POSTA_KODU" />
+		</property>
+		
+		<property name="zoneNo" type="java.lang.Long">
+			<column name="ZONE_NO" />
+		</property>
+		
+		<property name="kurumSabitId" type="java.lang.Long">
+			<column name="KURUM_ID" not-null="true" />
+		</property>
+		
+		<property name="yapiAdaId" type="java.lang.Long">
+			<column name="YAPI_ADA_ID" />
+		</property>
+		
+		<property name="siteId" type="java.lang.Long">
+			<column name="SITE_ID" />
+		</property>
+		
+		<property name="kadastroParselId" type="java.lang.Long">
+			<column name="PARSEL_ID" />
+		</property>
+		
+		<property name="acilisHareketKodId" type="java.lang.Long">
+			<column name="ACILIS_HAREKET_ID" />
+		</property>
+		
+		<property name="kapanisHareketKodId" type="java.lang.Long">
+			<column name="KAPANIS_HAREKET_ID" />
+		</property>
+		
+		<property name="uretimKaynakId" type="java.lang.Long">
+			<column name="URETIM_ID" />
+		</property>
+		
+		<property name="bilgiTipiId" type="java.lang.Long">
+			<column name="BILGI_TIP_ID" />
+		</property>
+
+		<property name="binaCatiTurId" type="java.lang.Long">
+			<column name="CATI_TUR_ID" />
+		</property>
+		
+		<property name="yapiCepheTurId" type="java.lang.Long">
+			<column name="CEPHE_TUR_ID" />
+		</property>
+		
+		<property name="dosemeTurId" type="java.lang.Long">
+			<column name="DOSEME_ID" />
+		</property>
+
+		<property name="isitmaTurId" type="java.lang.Long">
+			<column name="ISITMA_TUR_ID" />
+		</property>
+		
+		<property name="isitmaYakitTurId" type="java.lang.Long">
+			<column name="ISITMA_YAKIT_TUR_ID" />
+		</property>
+
+		<property name="sicakSuTeminTurId" type="java.lang.Long">
+			<column name="SICAKSU_TUR_ID" />
+		</property>
+
+		<property name="sicakSuYakitId" type="java.lang.Long">
+			<column name="SICAKSU_YAKIT_TUR_ID" />
+		</property>
+		
+		<property name="tasiyiciSistemId" type="java.lang.Long">
+			<column name="TASIYICI_SISTEM_ID" />
+		</property>
+		
+		<property name="bagimsizKullanimSinifId" type="java.lang.Long">
+			<column name="KULLANIM_SINIF_ID" />
+		</property>
+		
+		<property name="insaatTurId" type="java.lang.Long">
+			<column name="INSAAT_TURU_ID" />
+		</property>
+		
+		<property name="insaatSinifId" type="java.lang.Long">
+			<column name="INSAAT_SINIFI_ID" />
+		</property>
+		
+		<property name="duvarDolguId" type="java.lang.Long">
+			<column name="DUVAR_DOLGU_ID" />
+		</property>
+		
+		<property name="grafik" type="java.lang.Long">
+			<column name="FID" />
+		</property>
+		
+		<!-- Building History Specific Variables Region End -->
+		
+	</class>
+</hibernate-mapping>

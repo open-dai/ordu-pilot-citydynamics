@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.socbs.geolsa.model">
+
+	<class name="MdFeatureLayer" table="MD_FEATURE_LAYERS">
+	
+		<id name="oid" column="OID">
+			<generator class="increment"></generator>
+		</id>
+		
+		<property name="layerSubType" type="java.lang.Integer">
+			<column name="LAYERSUBTYPE" not-null="false" />
+		</property>
+	 
+	 	<many-to-one name="mdDatabaseFeatureLayer" foreign-key="MD_DATABASE_FEATURE_LAYER_FK" cascade="all" class="MdDatabaseFeatureLayer" lazy="false">
+			<column name="DBLAYERID" not-null="false" />
+		</many-to-one>
+		
+		<many-to-one name="mdRemoteFeatureLayer" foreign-key="MD_REMOTE_FEATURE_LAYER_FK" cascade="all" class="MdRemoteFeatureLayer" lazy="false">
+			<column name="REMOTELAYERID" not-null="false" />
+		</many-to-one>
+
+		<many-to-one name="mdFileBasedFeatureLayer" foreign-key="MD_FILE_BASED_FEATURE_LAYER_FK" cascade="all" class="MdFileBasedFeatureLayer" lazy="false">
+			<column name="FILELAYERID" not-null="false" />
+		</many-to-one>
+		
+ 	</class>
+</hibernate-mapping>

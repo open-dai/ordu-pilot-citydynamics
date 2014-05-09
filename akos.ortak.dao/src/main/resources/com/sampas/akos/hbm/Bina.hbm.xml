@@ -1,0 +1,182 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.akos.ortak.model">
+	<class name="Bina" table="NUM_BINA">
+		<cache usage="read-write" />
+
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="binaNo" type="java.lang.Long" unique-key="NUM_BINA_BINA_NO_UQ">
+			<column name="BINA_NO" not-null="true" />
+		</property>
+
+		<property name="apartmanBlokAd" type="java.lang.String">
+			<column name="APARTMAN_BLOK_ADI" />
+		</property>
+
+		<property name="asansorEh" type="java.lang.String">
+			<column name="ASANSOR_EH" length="1" check="ASANSOR_EH IN('E','H')" />
+		</property>
+
+		<property name="arsaAlan" type="java.lang.Double">
+			<column name="ARSA_ALANI" />
+		</property>
+
+		<property name="pdaEh" type="java.lang.String">
+			<column name="PDA_EH" length="1" check="PDA_EH IN('E','H')" />
+		</property>
+
+		<property name="aktifEh" type="java.lang.String">
+			<column name="AKTIF_EH" length="1" not-null="true"
+				check="AKTIF_EH IN('E','H')" />
+		</property>
+
+		<property name="acilisTarih" type="java.util.Date">
+			<column name="ACILIS_TARIHI" />
+		</property>
+
+		<property name="kapanisTarih" type="java.util.Date">
+			<column name="KAPANIS_TARIHI" />
+		</property>
+
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true" />
+		</property>
+
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" />
+		</property>
+
+		<many-to-one name="kurumSabit" class="KurumSabit"
+			foreign-key="NUM_BINA_KURUM_FK" unique-key="NUM_BINA_BINA_NO_UQ">
+			<column name="KURUM_ID" not-null="true" />
+		</many-to-one>
+
+		<many-to-one name="yapiAda" class="YapiAda" foreign-key="NUM_BINA_YAPI_ADA_FK">
+			<column name="YAPI_ADA_ID" />
+		</many-to-one>
+
+		<many-to-one name="site" class="Site" foreign-key="NUM_BINA_SITE_FK">
+			<column name="SITE_ID" />
+		</many-to-one>
+
+		<property name="kaloriferEh" type="java.lang.String">
+			<column name="KALORIFER_EH" length="1" check="KALORIFER_EH IN('E','H')" />
+		</property>
+
+		<property name="pdaUserName" type="java.lang.String">
+			<column name="PDA_USERNAME" />
+		</property>
+
+		<property name="pdaIslemTarihi" type="java.util.Date">
+			<column name="PDA_ISLEM_TARIHI" />
+		</property>
+
+		<property name="postaKodu" type="java.lang.String">
+			<column name="POSTA_KODU" />
+		</property>
+
+		<property name="zoneNo" type="java.lang.Long">
+			<column name="ZONE_NO" />
+		</property>
+
+		<property name="zoneBinaNo" type="java.lang.Long">
+			<column name="ZONE_BINA_NO" />
+		</property>
+
+		<many-to-one name="kadastroParsel" class="KadastroParsel"
+			foreign-key="NUM_BINA_KADASTRO_FK">
+			<column name="PARSEL_ID" not-null="true" />
+		</many-to-one>
+
+		<many-to-one name="acilisHareketKod" class="HareketKod"
+			foreign-key="NUM_BINA_AC_HAREKET_FK">
+			<column name="ACILIS_HAREKET_ID" />
+		</many-to-one>
+
+		<many-to-one name="kapanisHareketKod" class="HareketKod"
+			foreign-key="NUM_BINA_KAPA_HAREKET_FK">
+			<column name="KAPANIS_HAREKET_ID" />
+		</many-to-one>
+
+		<many-to-one name="uretimKaynak" class="UretimKaynak"
+			foreign-key="NUM_BINA_URETIM_KAYNAK_FK">
+			<column name="URETIM_ID" />
+		</many-to-one>
+
+		<many-to-one name="bilgiTipi" class="BilgiTipi"
+			foreign-key="NUM_BINA_BILGI_TIP_FK">
+			<column name="BILGI_TIP_ID" />
+		</many-to-one>
+
+		<many-to-one name="binaCatiTur" class="BinaCatiTur"
+			foreign-key="NUM_BINA_CATI_TUR_FK">
+			<column name="CATI_TUR_ID" />
+		</many-to-one>
+
+		<many-to-one name="yapiCepheTur" class="YapiCepheTur"
+			foreign-key="NUM_BINA_YAPI_CEPHE_TURU_FK">
+			<column name="CEPHE_TUR_ID" />
+		</many-to-one>
+
+		<many-to-one name="dosemeTur" class="DosemeTur"
+			foreign-key="NUM_BINA_DOSEME_TUR_FK">
+			<column name="DOSEME_ID" />
+		</many-to-one>
+
+		<many-to-one name="isitmaTur" class="IsitmaTur"
+			foreign-key="NUM_BINA_ISITMA_TURU_FK">
+			<column name="ISITMA_TUR_ID" />
+		</many-to-one>
+
+		<many-to-one name="isitmaYakitTur" class="YakitTur"
+			foreign-key="NUM_BINA_ISITMA_YAKIT_TUR_FK">
+			<column name="ISITMA_YAKIT_TUR_ID" />
+		</many-to-one>
+
+		<many-to-one name="sicakSuTeminTur" class="SicakSuTeminTur"
+			foreign-key="NUM_BINA_SICAKSU_TURU_FK">
+			<column name="SICAKSU_TUR_ID" />
+		</many-to-one>
+
+		<many-to-one name="sicakSuYakit" class="YakitTur"
+			foreign-key="NUM_BINA_SICAKSU_YAKIT_TUR_FK">
+			<column name="SICAKSU_YAKIT_TUR_ID" />
+		</many-to-one>
+
+		<!-- 
+		<many-to-one name="tasiyiciSistem" class="TasiyiciSistem"
+			foreign-key="NUM_BINA_TASIYICI_SISTEM_FK">
+			<column name="TASIYICI_SISTEM_ID" />
+		</many-to-one>
+ -->
+		<many-to-one name="bagimsizKullanimSinif" class="BagimsizKullanimSinif"
+			foreign-key="NUM_BINA_KULLANIM_SINIF_FK" not-null="true">
+			<column name="KULLANIM_SINIF_ID"></column>
+		</many-to-one>
+
+		<many-to-one name="insaatTur" class="InsaatTur"
+			foreign-key="NUM_BINA_INSAAT_TURU_FK">
+			<column name="INSAAT_TURU_ID"></column>
+		</many-to-one>
+
+		<many-to-one name="insaatSinif" class="InsaatSinif"
+			foreign-key="NUM_BINA_INSAAT_SINIF_FK">
+			<column name="INSAAT_SINIFI_ID"></column>
+		</many-to-one>
+
+		<many-to-one name="grafik" class="Grafik"
+			foreign-key="ORT_MAHALLE_KOYLER_GRAFIK_FK">
+			<column name="FID" />
+		</many-to-one>
+
+		<many-to-one name="duvarDolguMadde" class="DuvarDolguMadde"
+			foreign-key="NUM_BINA_DUVAR_DOLGU_TUR_FK">
+			<column name="DUVAR_DOLGU_ID"></column>
+		</many-to-one>
+
+	</class>
+</hibernate-mapping>

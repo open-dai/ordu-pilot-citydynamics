@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.akos.ortak.model">
+	<class name="CaddeSokak" table="ORT_CADDE_SOKAK">
+		<cache usage="read-write" />
+		
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+
+		<property name="aciklama" type="java.lang.String">
+			<column name="CADDE_SOKAK_ADI" not-null="true" length="50" />
+		</property>
+		
+		<many-to-one name="caddeSokakTur" class="CaddeSokakTur"
+			foreign-key="ORT_CADDE_SOKAK_TUR_FK">
+			<column name="CADDE_SOKAK_TUR_ID" not-null="true" />
+		</many-to-one>
+
+		<property name="meclisKararNo" type="java.lang.String">
+			<column name="MECLIS_KARAR_NO" length="15" />
+		</property>
+		
+		<property name="meclisKararTarih" type="java.util.Date">
+			<column name="MECLIS_KARAR_TARIHI" />
+		</property>
+		
+		<property name="tekKapiBaslangicNo" type="java.lang.Long">
+			<column name="TEK_KAPI_BASLANGIC_NO" precision="4" />
+		</property>
+		
+		<property name="tekKapiBitisNo" type="java.lang.Long">
+			<column name="TEK_KAPI_BITIS_NO" precision="4" />
+		</property>
+		
+		<property name="ciftKapiBaslangicNo" type="java.lang.Long">
+			<column name="CIFT_KAPI_BASLANGIC_NO" precision="4" />
+		</property>
+		
+		<property name="ciftKapiBitisNo" type="java.lang.Long">
+			<column name="CIFT_KAPI_BITIS_NO" precision="4" />
+		</property>
+		
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true" />
+		</property>
+		
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" length="15" />
+		</property>
+		
+		<property name="aktifEh" type="java.lang.String">
+			<column name="AKTIF_EH" length="1" not-null="true" check="AKTIF_EH IN('E','H')" />
+		</property>
+		
+		<many-to-one name="kurumSabit" class="KurumSabit"
+			foreign-key="ORT_CADDE_SOKAK_KURUM_FK">
+			<column name="KURUM_ID" not-null="true"></column>
+		</many-to-one>
+		
+		<property name="acilisTarih" type="java.util.Date">
+			<column name="ACILIS_TARIHI" />
+		</property>
+		
+		<property name="kapanisTarih" type="java.util.Date">
+			<column name="KAPANIS_TARIHI" />
+		</property>
+		
+		<many-to-one name="acilisHareketKod" class="HareketKod"
+			foreign-key="ORT_CADDE_SOKAK_AC_HAR_FK">
+			<column name="ACILIS_HAREKET_ID" />
+		</many-to-one>
+		
+		<many-to-one name="kapanisHareketKod" class="HareketKod"
+			foreign-key="ORT_CADDE_SOKAK_KAPA_HAR_FK">
+			<column name="KAPANIS_HAREKET_ID" />
+		</many-to-one>
+		
+		<many-to-one name="grafik" class="Grafik"
+			foreign-key="ORT_CADDE_SOKAK_GRAFIK_FK">
+			<column name="FID" />
+		</many-to-one>
+
+	</class>
+</hibernate-mapping>

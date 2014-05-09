@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.akos.ortak.model">
+	<class name="Bolge" table="NUM_BOLGE">
+		<cache usage="read-write" />
+
+		<id name="bolgeKodu" column="BOLGE_KODU">
+			<generator class="increment"></generator>
+		</id>
+
+		<property name="aciklama" type="java.lang.String">
+			<column name="ACIKLAMA" length="20" />
+		</property>
+
+		<many-to-one name="kurumSabit" class="KurumSabit"
+			foreign-key="NUM_BOLGE_KURUM_FK">
+			<column name="KURUM_ID" not-null="true"></column>
+		</many-to-one>
+
+	</class>
+</hibernate-mapping>

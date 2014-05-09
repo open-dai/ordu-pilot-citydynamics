@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.gis.ortak.model">
+	<class name="OcxFormTable" table="OCX_FORM_TABLE">
+		<id name="formAdi" column="FORM_ADI">
+			<generator class="assigned"></generator>
+		</id>
+		<property name="formAciklamasi" type="java.lang.String">
+			<column name="FORM_ACIKLAMASI"/>
+		</property>
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI"/>
+		</property>
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" />
+		</property>
+		<property name="katmanAdi" type="java.lang.String">
+			<column name="KATMAN_ADI"/>
+		</property>
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+    
+	<bean id="mapServis" class="com.sampas.socbs.opendai.servis.impl.MapServisImpl"
+		autowire="byType">
+	</bean>
+
+<!-- 	<bean id="gisOrtakServis" -->
+<!-- 		class="com.sampas.gis.ortak.servis.impl.GisOrtakServis" -->
+<!-- 		autowire="byType"> -->
+<!-- 	</bean> -->
+	
+	<bean id="ortakSabitServis"
+		class="com.sampas.akos.ortaksabit.servis.OrtakSabitServisImpl"
+		autowire="byType">
+	</bean>
+	
+	<bean id="ortakServis"
+		class="com.sampas.akos.ortak.servis.OrtakServisImpl"
+		autowire="byType">
+	</bean>
+
+	<bean id="featureFinderServis"
+		class="com.sampas.socbs.base.feature.services.impl.SmpFeatureFinderServices"
+		autowire="byType">
+	</bean>
+	
+	<bean id="ortakSpatialServis" class="com.sampas.ortak.spatial.servis.impl.OrtakSpatialServis" autowire="byType">
+		<!-- <constructor-arg type="java.lang.String" value="AKOS-GIS-MIS-APPS" />  -->
+		<constructor-arg type="java.lang.String" value="kentrehberiv3.0" />
+		<!-- constructor-arg type="java.lang.String" value="esulama" /-->
+		<property name="geolsaServis" ref="geolsaServis"></property>
+	</bean>
+	
+	<bean id="poiServis" class="com.sampas.socbs.poi.servis.impl.POIServisImpl" autowire="byType">
+		<property name="mapServis" ref="mapServis" />
+<!-- 		<property name="gisOrtakServis" ref="gisOrtakServis" /> -->
+		<property name="featureFinderServices" ref="featureFinderServis" />
+		<property name="ortakSabitServis" ref="ortakSabitServis" />
+		<property name="ortakServis" ref="ortakServis" />
+		<property name="ortakSpatialServis" ref="ortakSpatialServis" />  
+	</bean>
+	
+</beans>

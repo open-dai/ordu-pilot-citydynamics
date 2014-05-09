@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.akos.ortak.model">
+	<class name="MahalleCaddeSokak" table="ORT_MAHALLE_CADDE">		
+		<cache usage="read-write" />
+		
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<many-to-one name="mahalle" class="Mahalle"
+			cascade="none" unique-key="ORT_MAHALLE_CADDE_ANA_UQ"
+			foreign-key="ORT_MAHALLE_CADDE_MAH_FK">
+			<column name="MAHALLE_ID" not-null="true"></column>
+		</many-to-one>
+		
+		<many-to-one name="caddeSokak" class="CaddeSokak"
+			cascade="none" unique-key="ORT_MAHALLE_CADDE_ANA_UQ"
+			foreign-key="ORT_MAHALLE_CADDE_CAD_FK">
+			<column name="CADDE_SOKAK_ID" not-null="true"></column>
+		</many-to-one>
+		
+		<property name="tuikCaddeSokakKod" type="java.lang.Long">
+			<column name="TUIK_CADSOK_KODU"></column>
+		</property>
+		
+		<property name="tuikCaddeSokakTanitimNo" type="java.lang.Double">
+			<column name="TUIK_CADSOK_TANITIM_NO" 
+				precision="10" scale="2"></column>
+		</property>
+		
+		<property name="ctvDerece" type="java.lang.Long">
+			<column name="CTV_DERECESI" length="4"></column>
+		</property>
+		
+		<property name="ctvGrup" type="java.lang.Long">
+			<column name="CTV_GRUP" length="1"></column>
+		</property>
+		
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true"></column>
+		</property>
+		
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true"></column>
+		</property>
+		
+		<property name="aktifEh" type="java.lang.String">
+			<column name="AKTIF_EH" length="1" not-null="true"
+				check="AKTIF_EH IN('E','H')" />
+		</property>
+
+		<many-to-one name="gelismislikDurum" class="GelismislikDurum"
+			foreign-key="ORT_MAHALLE_CADDE_GEL_DURUM_FK"> 
+			<column	name="GELISMISLIK_KOD_ID"></column> 
+		</many-to-one>
+
+	</class>
+</hibernate-mapping>

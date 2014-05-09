@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" size="1533,1300" id="com.sampas.akos.ortak.model" metadata="uml2-1.0" initialized="true" scrolledX="-175" scrolledY="181" tag="1000" key="32303037303533312D3130303020616B6F732E6F7274616B2E6D6F64656C2F746F6B7574">
+  <children xsi:type="editmodel:ClassEditModel" name="Grafik" location="0,1065" size="117,75" id="com.sampas.akos.ortak.model/Grafik" runTimeClassModel="id,aciklama">
+    <children xsi:type="editmodel:CompartmentEditModel" size="94,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.akos.ortak.model/Grafik#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/Grafik#id"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="MahalleCaddeSokak" location="837,531" size="206,183" id="com.sampas.akos.ortak.model/MahalleCaddeSokak" runTimeClassModel="id,tuikCaddeSokakKod,tuikCaddeSokakTanitimNo,ctvGrup,grafik,aktifEh,ctvDerece,gelismislikDurum">
+    <children xsi:type="editmodel:CompartmentEditModel" size="183,144">
+      <children xsi:type="editmodel:AttributeEditModel" name="ctvDerece" id="com.sampas.akos.ortak.model/MahalleCaddeSokak#ctvDerece"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ctvGrup" id="com.sampas.akos.ortak.model/MahalleCaddeSokak#ctvGrup"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="grafik" id="com.sampas.akos.ortak.model/MahalleCaddeSokak#grafik"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/MahalleCaddeSokak#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tuikCaddeSokakKod" id="com.sampas.akos.ortak.model/MahalleCaddeSokak#tuikCaddeSokakKod"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tuikCaddeSokakTanitimNo" id="com.sampas.akos.ortak.model/MahalleCaddeSokak#tuikCaddeSokakTanitimNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="gelismislikDurum" id="com.sampas.akos.ortak.model/MahalleCaddeSokak#gelismislikDurum"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="aktifEh" id="com.sampas.akos.ortak.model/MahalleCaddeSokak#aktifEh"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.sampas.akos.ortak.model/Mahalle@mahalle+com.sampas.akos.ortak.model/MahalleCaddeSokak@mahalleCaddeSokak" source="//@children.1" target="//@children.9" targetEnd="//@children.1/@sourceConnections.0/@children.1" label="//@children.1/@sourceConnections.0/@children.2" sourceEnd="//@children.1/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="mahalleCaddeSokak" location="10,183" id="com.sampas.akos.ortak.model/Mahalle@mahalle+com.sampas.akos.ortak.model/MahalleCaddeSokak@mahalleCaddeSokak|com.sampas.akos.ortak.model/MahalleCaddeSokak#mahalleCaddeSokak" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="mahalle" location="197,10" id="com.sampas.akos.ortak.model/Mahalle@mahalle+com.sampas.akos.ortak.model/MahalleCaddeSokak@mahalleCaddeSokak|com.sampas.akos.ortak.model/Mahalle#mahalle" multiplicityLabel="//@children.1/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - mahalle" location="849,743" size="46,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="849,771" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.sampas.akos.ortak.model/CaddeSokak@caddeSokak+com.sampas.akos.ortak.model/MahalleCaddeSokak@mahalleCaddeSokak" source="//@children.1" target="//@children.10" targetEnd="//@children.1/@sourceConnections.1/@children.1" label="//@children.1/@sourceConnections.1/@children.2" sourceEnd="//@children.1/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="mahalleCaddeSokak" location="201,183" id="com.sampas.akos.ortak.model/CaddeSokak@caddeSokak+com.sampas.akos.ortak.model/MahalleCaddeSokak@mahalleCaddeSokak|com.sampas.akos.ortak.model/MahalleCaddeSokak#mahalleCaddeSokak" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="caddeSokak" location="3,0" id="com.sampas.akos.ortak.model/CaddeSokak@caddeSokak+com.sampas.akos.ortak.model/MahalleCaddeSokak@mahalleCaddeSokak|com.sampas.akos.ortak.model/CaddeSokak#caddeSokak" multiplicityLabel="//@children.1/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - caddeSokak" location="1090,759" size="69,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1058,759" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" source="//@children.1" target="//@children.3" targetEnd="//@children.1/@sourceConnections.2/@children.1" label="//@children.1/@sourceConnections.2/@children.2" sourceEnd="//@children.1/@sourceConnections.2/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="mahalleCaddeSokak" location="0,74" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="adresler" location="240,343" multiplicityLabel="//@children.1/@sourceConnections.2/@children.1/@children.1" roleLabel="//@children.1/@sourceConnections.2/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - adresler" location="742,584" size="50,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="742,612" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.16/@sourceConnections.1" name="KadastroParsel" location="375,600" size="241,345" id="com.sampas.akos.ortak.model/KadastroParsel" runTimeClassModel="alan,mahalle,tapuMahalle,aktifEh,pafta,grafik,acilisHareketKod,geciciAda,geciciParsel,acilisTarih,id,ada,uretimKaynak,kapanisHareketKod,kapanisTarih,parsel,kadastroParselTipi">
+    <children xsi:type="editmodel:CompartmentEditModel" size="218,306">
+      <children xsi:type="editmodel:AttributeEditModel" name="acilisTarih" id="com.sampas.akos.ortak.model/KadastroParsel#acilisTarih"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ada" id="com.sampas.akos.ortak.model/KadastroParsel#ada"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="aktifEh" id="com.sampas.akos.ortak.model/KadastroParsel#aktifEh"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="alan" id="com.sampas.akos.ortak.model/KadastroParsel#alan"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="geciciAda" id="com.sampas.akos.ortak.model/KadastroParsel#geciciAda"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="geciciParsel" id="com.sampas.akos.ortak.model/KadastroParsel#geciciParsel"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="grafik" id="com.sampas.akos.ortak.model/KadastroParsel#grafik"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/KadastroParsel#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kapanisTarih" id="com.sampas.akos.ortak.model/KadastroParsel#kapanisTarih"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pafta" id="com.sampas.akos.ortak.model/KadastroParsel#pafta"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="parsel" id="com.sampas.akos.ortak.model/KadastroParsel#parsel"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kapanisHareketKod" id="com.sampas.akos.ortak.model/KadastroParsel#kapanisHareketKod"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="uretimKaynak" id="com.sampas.akos.ortak.model/KadastroParsel#uretimKaynak"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mahalle" id="com.sampas.akos.ortak.model/KadastroParsel#mahalle"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kadastroParselTipi" id="com.sampas.akos.ortak.model/KadastroParsel#kadastroParselTipi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="acilisHareketKod" id="com.sampas.akos.ortak.model/KadastroParsel#acilisHareketKod"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tapuMahalle" id="com.sampas.akos.ortak.model/KadastroParsel#tapuMahalle"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" source="//@children.2" target="//@children.3" targetEnd="//@children.2/@sourceConnections.0/@children.1" label="//@children.2/@sourceConnections.0/@children.2" sourceEnd="//@children.2/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="kadastroParsel" location="223,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="adresler" location="13,412" multiplicityLabel="//@children.2/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - adresler" location="451,686" size="50,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="515,686" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/KadastroParsel@kadastroParsel" source="//@children.2" target="//@children.4" targetEnd="//@children.2/@sourceConnections.1/@children.1" label="//@children.2/@sourceConnections.1/@children.2" sourceEnd="//@children.2/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="kadastroParsel" location="0,13" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/KadastroParsel@kadastroParsel|com.sampas.akos.ortak.model/KadastroParsel#kadastroParsel" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="kurumSabit" location="169,60" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/KadastroParsel@kadastroParsel|com.sampas.akos.ortak.model/KurumSabit#kurumSabit" multiplicityLabel="//@children.2/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.2/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - kurumSabit" location="71,712" size="63,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="71,684" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0 //@children.6/@sourceConnections.1 //@children.1/@sourceConnections.2" name="Adres" location="495,262" size="240,417" id="com.sampas.akos.ortak.model/Adres" runTimeClassModel="esbinakodu,uavtBinaKodu,kapiNo,adresNo,mahalleCaddeSokak,aktifEh,grafik,acilisTarihi,adresTur,pdaIslemTarihi,aciklama,acilisHareketKod,uavtGuncellemeTarih,id,pdaEh,kapanisTarihi,kadastroParsel,kapanisHareketKod,bina,altKapiNo,pdaUserName">
+    <children xsi:type="editmodel:CompartmentEditModel" size="217,378">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.akos.ortak.model/Adres#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="adresNo" id="com.sampas.akos.ortak.model/Adres#adresNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="adresTur" id="com.sampas.akos.ortak.model/Adres#adresTur"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="aktifEh" id="com.sampas.akos.ortak.model/Adres#aktifEh"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="altKapiNo" id="com.sampas.akos.ortak.model/Adres#altKapiNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="grafik" id="com.sampas.akos.ortak.model/Adres#grafik"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/Adres#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kapiNo" id="com.sampas.akos.ortak.model/Adres#kapiNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pdaUserName" id="com.sampas.akos.ortak.model/Adres#pdaUserName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kadastroParsel" id="com.sampas.akos.ortak.model/Adres#kadastroParsel"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bina" id="com.sampas.akos.ortak.model/Adres#bina"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kapanisTarihi" id="com.sampas.akos.ortak.model/Adres#kapanisTarihi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="mahalleCaddeSokak" id="com.sampas.akos.ortak.model/Adres#mahalleCaddeSokak"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pdaIslemTarihi" id="com.sampas.akos.ortak.model/Adres#pdaIslemTarihi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="acilisTarihi" id="com.sampas.akos.ortak.model/Adres#acilisTarihi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pdaEh" id="com.sampas.akos.ortak.model/Adres#pdaEh"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kapanisHareketKod" id="com.sampas.akos.ortak.model/Adres#kapanisHareketKod"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="acilisHareketKod" id="com.sampas.akos.ortak.model/Adres#acilisHareketKod"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="uavtBinaKodu" id="com.sampas.akos.ortak.model/Adres#uavtBinaKodu"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="esbinakodu" id="com.sampas.akos.ortak.model/Adres#esbinakodu"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="uavtGuncellemeTarih" id="com.sampas.akos.ortak.model/Adres#uavtGuncellemeTarih"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/Adres@adres" source="//@children.3" target="//@children.7" targetEnd="//@children.3/@sourceConnections.0/@children.1" label="//@children.3/@sourceConnections.0/@children.2" sourceEnd="//@children.3/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="adres" location="240,191" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/Adres@adres|com.sampas.akos.ortak.model/Adres#adres" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="kurumSabit" location="0,423" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/Adres@adres|com.sampas.akos.ortak.model/KurumSabit#kurumSabit" multiplicityLabel="//@children.3/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.3/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - kurumSabit" location="860,432" size="63,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="905,460" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/Adres@adres" source="//@children.3" target="//@children.4" targetEnd="//@children.3/@sourceConnections.1/@children.1" label="//@children.3/@sourceConnections.1/@children.2" sourceEnd="//@children.3/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="adres" location="0,10" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/Adres@adres|com.sampas.akos.ortak.model/Adres#adres" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="kurumSabit" location="169,123" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/Adres@adres|com.sampas.akos.ortak.model/KurumSabit#kurumSabit" multiplicityLabel="//@children.3/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.3/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - kurumSabit" location="71,775" size="63,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="71,747" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.1 //@children.3/@sourceConnections.1 //@children.8/@sourceConnections.0 //@children.9/@sourceConnections.0 //@children.6/@sourceConnections.2 //@children.5/@sourceConnections.0 //@children.10/@sourceConnections.0 //@children.22/@sourceConnections.0 //@children.17/@sourceConnections.0" name="KurumSabit" location="-105,645" size="169,147" id="com.sampas.akos.ortak.model/KurumSabit" runTimeClassModel="id,grafik,grafikEh,numaratajKontrolEh,kurumKodu,kurumAd">
+    <children xsi:type="editmodel:CompartmentEditModel" size="146,108">
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/KurumSabit#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kurumAd" id="com.sampas.akos.ortak.model/KurumSabit#kurumAd"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="numaratajKontrolEh" id="com.sampas.akos.ortak.model/KurumSabit#numaratajKontrolEh"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="grafikEh" id="com.sampas.akos.ortak.model/KurumSabit#grafikEh"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="grafik" id="com.sampas.akos.ortak.model/KurumSabit#grafik"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kurumKodu" id="com.sampas.akos.ortak.model/KurumSabit#kurumKodu"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.6/@sourceConnections.0" name="YapiAda" location="435,15" size="150,111" id="com.sampas.akos.ortak.model/YapiAda" runTimeClassModel="id,yapiAdasiVasfi,grafik,aciklama">
+    <children xsi:type="editmodel:CompartmentEditModel" size="127,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="grafik" id="com.sampas.akos.ortak.model/YapiAda#grafik"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/YapiAda#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.akos.ortak.model/YapiAda#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="yapiAdasiVasfi" id="com.sampas.akos.ortak.model/YapiAda#yapiAdasiVasfi"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/YapiAda@yapiAda" source="//@children.5" target="//@children.4" targetEnd="//@children.5/@sourceConnections.0/@children.1" label="//@children.5/@sourceConnections.0/@children.2" sourceEnd="//@children.5/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="yapiAda" location="0,26" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/YapiAda@yapiAda|com.sampas.akos.ortak.model/YapiAda#yapiAda" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="kurumSabit" location="169,9" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/YapiAda@yapiAda|com.sampas.akos.ortak.model/KurumSabit#kurumSabit" multiplicityLabel="//@children.5/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.5/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - kurumSabit" location="71,661" size="63,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="71,633" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.11/@sourceConnections.1 //@children.16/@sourceConnections.0" name="Bina" location="124,275" size="253,597" id="com.sampas.akos.ortak.model/Bina" runTimeClassModel="apartmanBlokAd,dosemeTur,aktifEh,grafik,pdaIslemTarihi,isitmaYakitTur,acilisHareketKod,acilisTarih,asansorEh,bagimsizKullanimSinif,id,pdaEh,kaloriferEh,bilgiTipi,sicakSuYakit,sicakSuTeminTur,kapanisTarih,pdaUserName,binaCatiTur,zoneBinaNo,postaKodu,uavtGuncellemeTarih,arsaAlan,yapiCepheTur,tasiyiciSistem,zoneNo,isitmaTur,binaNo,uretimKaynak,kadastroParsel,kapanisHareketKod">
+    <children xsi:type="editmodel:CompartmentEditModel" size="230,558">
+      <children xsi:type="editmodel:AttributeEditModel" name="acilisTarih" id="com.sampas.akos.ortak.model/Bina#acilisTarih"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="aktifEh" id="com.sampas.akos.ortak.model/Bina#aktifEh"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="apartmanBlokAd" id="com.sampas.akos.ortak.model/Bina#apartmanBlokAd"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="arsaAlan" id="com.sampas.akos.ortak.model/Bina#arsaAlan"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="asansorEh" id="com.sampas.akos.ortak.model/Bina#asansorEh"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="binaNo" id="com.sampas.akos.ortak.model/Bina#binaNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="grafik" id="com.sampas.akos.ortak.model/Bina#grafik"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/Bina#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kapanisTarih" id="com.sampas.akos.ortak.model/Bina#kapanisTarih"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pdaEh" id="com.sampas.akos.ortak.model/Bina#pdaEh"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kapanisHareketKod" id="com.sampas.akos.ortak.model/Bina#kapanisHareketKod"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="binaCatiTur" id="com.sampas.akos.ortak.model/Bina#binaCatiTur"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bagimsizKullanimSinif" id="com.sampas.akos.ortak.model/Bina#bagimsizKullanimSinif"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kadastroParsel" id="com.sampas.akos.ortak.model/Bina#kadastroParsel"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="dosemeTur" id="com.sampas.akos.ortak.model/Bina#dosemeTur"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="acilisHareketKod" id="com.sampas.akos.ortak.model/Bina#acilisHareketKod"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bilgiTipi" id="com.sampas.akos.ortak.model/Bina#bilgiTipi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tasiyiciSistem" id="com.sampas.akos.ortak.model/Bina#tasiyiciSistem"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="yapiCepheTur" id="com.sampas.akos.ortak.model/Bina#yapiCepheTur"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="isitmaTur" id="com.sampas.akos.ortak.model/Bina#isitmaTur"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="postaKodu" id="com.sampas.akos.ortak.model/Bina#postaKodu"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="sicakSuYakit" id="com.sampas.akos.ortak.model/Bina#sicakSuYakit"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pdaUserName" id="com.sampas.akos.ortak.model/Bina#pdaUserName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="uretimKaynak" id="com.sampas.akos.ortak.model/Bina#uretimKaynak"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="sicakSuTeminTur" id="com.sampas.akos.ortak.model/Bina#sicakSuTeminTur"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kaloriferEh" id="com.sampas.akos.ortak.model/Bina#kaloriferEh"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="isitmaYakitTur" id="com.sampas.akos.ortak.model/Bina#isitmaYakitTur"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pdaIslemTarihi" id="com.sampas.akos.ortak.model/Bina#pdaIslemTarihi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="zoneNo" id="com.sampas.akos.ortak.model/Bina#zoneNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="uavtGuncellemeTarih" id="com.sampas.akos.ortak.model/Bina#uavtGuncellemeTarih"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="zoneBinaNo" id="com.sampas.akos.ortak.model/Bina#zoneBinaNo"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.sampas.akos.ortak.model/YapiAda@yapiAda+com.sampas.akos.ortak.model/Bina@bina" source="//@children.6" target="//@children.5" targetEnd="//@children.6/@sourceConnections.0/@children.1" label="//@children.6/@sourceConnections.0/@children.2" sourceEnd="//@children.6/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="bina" location="253,10" id="com.sampas.akos.ortak.model/YapiAda@yapiAda+com.sampas.akos.ortak.model/Bina@bina|com.sampas.akos.ortak.model/Bina#bina" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="yapiAda" location="10,111" id="com.sampas.akos.ortak.model/YapiAda@yapiAda+com.sampas.akos.ortak.model/Bina@bina|com.sampas.akos.ortak.model/YapiAda#yapiAda" multiplicityLabel="//@children.6/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.6/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - yapiAda" location="452,239" size="50,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="420,239" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" source="//@children.6" target="//@children.3" targetEnd="//@children.6/@sourceConnections.1/@children.1" label="//@children.6/@sourceConnections.1/@children.2" sourceEnd="//@children.6/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="bina" location="253,202" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="adresler" location="0,215" multiplicityLabel="//@children.6/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.6/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - adresler" location="438,456" size="50,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="484,484" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/Bina@bina" source="//@children.6" target="//@children.4" targetEnd="//@children.6/@sourceConnections.2/@children.1" label="//@children.6/@sourceConnections.2/@children.2" sourceEnd="//@children.6/@sourceConnections.2/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="bina" location="24,0" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/Bina@bina|com.sampas.akos.ortak.model/Bina#bina" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="kurumSabit" location="23,146" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/Bina@bina|com.sampas.akos.ortak.model/KurumSabit#kurumSabit" multiplicityLabel="//@children.6/@sourceConnections.2/@children.1/@children.1" roleLabel="//@children.6/@sourceConnections.2/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - kurumSabit" location="-152,799" size="63,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="-75,799" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="com.sampas.akos.ortak.model/Site@site+com.sampas.akos.ortak.model/Bina@bina" source="//@children.6" target="//@children.8" targetEnd="//@children.6/@sourceConnections.3/@children.1" label="//@children.6/@sourceConnections.3/@children.2" sourceEnd="//@children.6/@sourceConnections.3/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="bina" location="251,421" id="com.sampas.akos.ortak.model/Site@site+com.sampas.akos.ortak.model/Bina@bina|com.sampas.akos.ortak.model/Bina#bina" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="site" location="115,13" id="com.sampas.akos.ortak.model/Site@site+com.sampas.akos.ortak.model/Bina@bina|com.sampas.akos.ortak.model/Site#site" multiplicityLabel="//@children.6/@sourceConnections.3/@children.1/@children.1" roleLabel="//@children.6/@sourceConnections.3/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - site" location="174,938" size="27,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="174,910" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.sampas.akos.ortak.model/InsaatSinif@insaatSinif+com.sampas.akos.ortak.model/Bina@bina" source="//@children.6" target="//@children.20" targetEnd="//@children.6/@sourceConnections.4/@children.1" label="//@children.6/@sourceConnections.4/@children.2" sourceEnd="//@children.6/@sourceConnections.4/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="bina" location="0,62" id="com.sampas.akos.ortak.model/InsaatSinif@insaatSinif+com.sampas.akos.ortak.model/Bina@bina|com.sampas.akos.ortak.model/Bina#bina" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="insaatSinif" location="96,37" id="com.sampas.akos.ortak.model/InsaatSinif@insaatSinif+com.sampas.akos.ortak.model/Bina@bina|com.sampas.akos.ortak.model/InsaatSinif#insaatSinif" multiplicityLabel="//@children.6/@sourceConnections.4/@children.1/@children.1" roleLabel="//@children.6/@sourceConnections.4/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - insaatSinif" location="79,316" size="60,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="79,344" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.sampas.akos.ortak.model/InsaatTur@insaatTur+com.sampas.akos.ortak.model/Bina@bina" source="//@children.6" target="//@children.21" targetEnd="//@children.6/@sourceConnections.5/@children.1" label="//@children.6/@sourceConnections.5/@children.2" sourceEnd="//@children.6/@sourceConnections.5/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="bina" location="0,168" id="com.sampas.akos.ortak.model/InsaatTur@insaatTur+com.sampas.akos.ortak.model/Bina@bina|com.sampas.akos.ortak.model/Bina#bina" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="insaatTur" location="117,37" id="com.sampas.akos.ortak.model/InsaatTur@insaatTur+com.sampas.akos.ortak.model/Bina@bina|com.sampas.akos.ortak.model/InsaatTur#insaatTur" multiplicityLabel="//@children.6/@sourceConnections.5/@children.1/@children.1" roleLabel="//@children.6/@sourceConnections.5/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - insaatTur" location="58,422" size="55,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="58,450" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.3/@sourceConnections.0 //@children.13/@sourceConnections.0" name="Bagimsiz" location="930,30" size="267,615" id="com.sampas.akos.ortak.model/Bagimsiz" runTimeClassModel="katNo,aktifEh,pdaIslemTarihi,yakitTur,yuzolcum,aciklama,acilisHareketKod,acilisTarih,id,pdaEh,kaloriferEh,bilgiTipi,kapanisTarih,konutTip,tuikSiraNo,pdaUserName,gazNo,bagimsizAd,bagimsizNo,suNo,altDaireNo,adres,pdaBagimsizNo,uavtGuncellemeTarih,daireNo,uavtAdresNo,konutDurum,isitmaTur,bagimsizKullanimDetay,kapanisHareketKod,bina,elektrikNo">
+    <children xsi:type="editmodel:CompartmentEditModel" size="244,576">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.akos.ortak.model/Bagimsiz#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="acilisTarih" id="com.sampas.akos.ortak.model/Bagimsiz#acilisTarih"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="aktifEh" id="com.sampas.akos.ortak.model/Bagimsiz#aktifEh"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="altDaireNo" id="com.sampas.akos.ortak.model/Bagimsiz#altDaireNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bagimsizAd" id="com.sampas.akos.ortak.model/Bagimsiz#bagimsizAd"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bagimsizNo" id="com.sampas.akos.ortak.model/Bagimsiz#bagimsizNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="daireNo" id="com.sampas.akos.ortak.model/Bagimsiz#daireNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="elektrikNo" id="com.sampas.akos.ortak.model/Bagimsiz#elektrikNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="gazNo" id="com.sampas.akos.ortak.model/Bagimsiz#gazNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/Bagimsiz#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kaloriferEh" id="com.sampas.akos.ortak.model/Bagimsiz#kaloriferEh"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kapanisTarih" id="com.sampas.akos.ortak.model/Bagimsiz#kapanisTarih"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="katNo" id="com.sampas.akos.ortak.model/Bagimsiz#katNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pdaEh" id="com.sampas.akos.ortak.model/Bagimsiz#pdaEh"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="suNo" id="com.sampas.akos.ortak.model/Bagimsiz#suNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tuikSiraNo" id="com.sampas.akos.ortak.model/Bagimsiz#tuikSiraNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="yuzolcum" id="com.sampas.akos.ortak.model/Bagimsiz#yuzolcum"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bagimsizKullanimDetay" id="com.sampas.akos.ortak.model/Bagimsiz#bagimsizKullanimDetay"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="konutDurum" id="com.sampas.akos.ortak.model/Bagimsiz#konutDurum"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="adres" id="com.sampas.akos.ortak.model/Bagimsiz#adres"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bilgiTipi" id="com.sampas.akos.ortak.model/Bagimsiz#bilgiTipi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="isitmaTur" id="com.sampas.akos.ortak.model/Bagimsiz#isitmaTur"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pdaUserName" id="com.sampas.akos.ortak.model/Bagimsiz#pdaUserName"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="konutTip" id="com.sampas.akos.ortak.model/Bagimsiz#konutTip"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="yakitTur" id="com.sampas.akos.ortak.model/Bagimsiz#yakitTur"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bina" id="com.sampas.akos.ortak.model/Bagimsiz#bina"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pdaBagimsizNo" id="com.sampas.akos.ortak.model/Bagimsiz#pdaBagimsizNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pdaIslemTarihi" id="com.sampas.akos.ortak.model/Bagimsiz#pdaIslemTarihi"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kapanisHareketKod" id="com.sampas.akos.ortak.model/Bagimsiz#kapanisHareketKod"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="acilisHareketKod" id="com.sampas.akos.ortak.model/Bagimsiz#acilisHareketKod"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="uavtAdresNo" id="com.sampas.akos.ortak.model/Bagimsiz#uavtAdresNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="uavtGuncellemeTarih" id="com.sampas.akos.ortak.model/Bagimsiz#uavtGuncellemeTarih"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.6/@sourceConnections.3" name="Site" location="50,585" size="117,93" id="com.sampas.akos.ortak.model/Site" runTimeClassModel="id,grafik,aciklama">
+    <children xsi:type="editmodel:CompartmentEditModel" size="94,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.akos.ortak.model/Site#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="grafik" id="com.sampas.akos.ortak.model/Site#grafik"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/Site#id"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/Site@site" source="//@children.8" target="//@children.4" targetEnd="//@children.8/@sourceConnections.0/@children.1" label="//@children.8/@sourceConnections.0/@children.2" sourceEnd="//@children.8/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="site" location="0,23" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/Site@site|com.sampas.akos.ortak.model/Site#site" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="kurumSabit" location="0,45" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/Site@site|com.sampas.akos.ortak.model/KurumSabit#kurumSabit" multiplicityLabel="//@children.8/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.8/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - kurumSabit" location="-175,669" size="63,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="-130,697" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="Mahalle" location="645,754" size="197,237" id="com.sampas.akos.ortak.model/Mahalle" runTimeClassModel="id,tuikMahalleKod,aktifEh,grafik,kapanisHareketKod,aciklama,tuikMahalleTanitimNo,kapanisTarih,koy,acilisHareketKod,acilisTarih">
+    <children xsi:type="editmodel:CompartmentEditModel" size="174,198">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.akos.ortak.model/Mahalle#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/Mahalle#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="koy" id="com.sampas.akos.ortak.model/Mahalle#koy"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tuikMahalleKod" id="com.sampas.akos.ortak.model/Mahalle#tuikMahalleKod"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tuikMahalleTanitimNo" id="com.sampas.akos.ortak.model/Mahalle#tuikMahalleTanitimNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="aktifEh" id="com.sampas.akos.ortak.model/Mahalle#aktifEh"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kapanisTarih" id="com.sampas.akos.ortak.model/Mahalle#kapanisTarih"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="acilisTarih" id="com.sampas.akos.ortak.model/Mahalle#acilisTarih"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="acilisHareketKod" id="com.sampas.akos.ortak.model/Mahalle#acilisHareketKod"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kapanisHareketKod" id="com.sampas.akos.ortak.model/Mahalle#kapanisHareketKod"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="grafik" id="com.sampas.akos.ortak.model/Mahalle#grafik"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/Mahalle@mahalle" source="//@children.9" target="//@children.4" targetEnd="//@children.9/@sourceConnections.0/@children.1" label="//@children.9/@sourceConnections.0/@children.2" sourceEnd="//@children.9/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="mahalle" location="0,212" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/Mahalle@mahalle|com.sampas.akos.ortak.model/Mahalle#mahalle" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="kurumSabit" location="151,146" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/Mahalle@mahalle|com.sampas.akos.ortak.model/KurumSabit#kurumSabit" multiplicityLabel="//@children.9/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.9/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - kurumSabit" location="-24,799" size="63,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="53,799" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.1" name="CaddeSokak" location="1035,780" size="197,309" id="com.sampas.akos.ortak.model/CaddeSokak" runTimeClassModel="meclisKararNo,ciftKapiBaslangicNo,grafik,aktifEh,aciklama,acilisHareketKod,acilisTarih,id,kapanisHareketKod,tekKapiBaslangicNo,meclisKararTarih,kapanisTarih,tekKapiBitisNo,ciftKapiBitisNo">
+    <children xsi:type="editmodel:CompartmentEditModel" size="174,270">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.akos.ortak.model/CaddeSokak#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ciftKapiBaslangicNo" id="com.sampas.akos.ortak.model/CaddeSokak#ciftKapiBaslangicNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="ciftKapiBitisNo" id="com.sampas.akos.ortak.model/CaddeSokak#ciftKapiBitisNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="eskiCaddeSokakAd"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/CaddeSokak#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="meclisKararNo" id="com.sampas.akos.ortak.model/CaddeSokak#meclisKararNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="meclisKararTarih" id="com.sampas.akos.ortak.model/CaddeSokak#meclisKararTarih"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tekKapiBaslangicNo" id="com.sampas.akos.ortak.model/CaddeSokak#tekKapiBaslangicNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tekKapiBitisNo" id="com.sampas.akos.ortak.model/CaddeSokak#tekKapiBitisNo"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="aktifEh" id="com.sampas.akos.ortak.model/CaddeSokak#aktifEh"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="acilisTarih" id="com.sampas.akos.ortak.model/CaddeSokak#acilisTarih"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kapanisTarih" id="com.sampas.akos.ortak.model/CaddeSokak#kapanisTarih"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kapanisHareketKod" id="com.sampas.akos.ortak.model/CaddeSokak#kapanisHareketKod"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="acilisHareketKod" id="com.sampas.akos.ortak.model/CaddeSokak#acilisHareketKod"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="grafik" id="com.sampas.akos.ortak.model/CaddeSokak#grafik"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/CaddeSokak@caddeSokak" source="//@children.10" target="//@children.4" targetEnd="//@children.10/@sourceConnections.0/@children.1" label="//@children.10/@sourceConnections.0/@children.2" sourceEnd="//@children.10/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="caddeSokak" location="154,0" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/CaddeSokak@caddeSokak|com.sampas.akos.ortak.model/CaddeSokak#caddeSokak" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="kurumSabit" location="108,0" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/CaddeSokak@caddeSokak|com.sampas.akos.ortak.model/KurumSabit#kurumSabit" multiplicityLabel="//@children.10/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.10/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - kurumSabit" location="-67,624" size="63,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="10,624" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.sampas.akos.ortak.model/CaddeSokakTur@caddeSokakTur+com.sampas.akos.ortak.model/CaddeSokak@caddeSokak" source="//@children.10" target="//@children.15" targetEnd="//@children.10/@sourceConnections.1/@children.1" label="//@children.10/@sourceConnections.1/@children.2" sourceEnd="//@children.10/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="caddeSokak" location="182,0" id="com.sampas.akos.ortak.model/CaddeSokakTur@caddeSokakTur+com.sampas.akos.ortak.model/CaddeSokak@caddeSokak|com.sampas.akos.ortak.model/CaddeSokak#caddeSokak" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="caddeSokakTur" location="14,75" id="com.sampas.akos.ortak.model/CaddeSokakTur@caddeSokakTur+com.sampas.akos.ortak.model/CaddeSokak@caddeSokak|com.sampas.akos.ortak.model/CaddeSokakTur#caddeSokakTur" multiplicityLabel="//@children.10/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.10/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - caddeSokakTur" location="1125,637" size="85,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1224,637" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="BagimsizKullanimSinif" location="326,900" size="186,75" id="com.sampas.akos.ortak.model/BagimsizKullanimSinif" runTimeClassModel="id,aciklama">
+    <children xsi:type="editmodel:CompartmentEditModel" size="94,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.akos.ortak.model/BagimsizKullanimSinif#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/BagimsizKullanimSinif#id"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" source="//@children.11" target="//@children.12" targetEnd="//@children.11/@sourceConnections.0/@children.1" label="//@children.11/@sourceConnections.0/@children.2" sourceEnd="//@children.11/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="bagimsizKullanimSinif" location="68,75" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="bagimsizKullanimGruplar" location="184,0" multiplicityLabel="//@children.11/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.11/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - bagimsizKullanimGruplar" location="401,1099" size="127,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="383,1099" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" source="//@children.11" target="//@children.6" targetEnd="//@children.11/@sourceConnections.1/@children.1" label="//@children.11/@sourceConnections.1/@children.2" sourceEnd="//@children.11/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="bagimsizKullanimSinif" location="25,0" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="binalar" location="227,572" multiplicityLabel="//@children.11/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.11/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - binalar" location="358,879" size="42,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="340,879" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.11/@sourceConnections.0" name="BagimsizKullanimGrup" location="210,1080" size="253,93" id="com.sampas.akos.ortak.model/BagimsizKullanimGrup" runTimeClassModel="id,aciklama,bagimsizKullanimSinif">
+    <children xsi:type="editmodel:CompartmentEditModel" size="230,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.akos.ortak.model/BagimsizKullanimGrup#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/BagimsizKullanimGrup#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bagimsizKullanimSinif" id="com.sampas.akos.ortak.model/BagimsizKullanimGrup#bagimsizKullanimSinif"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" source="//@children.12" target="//@children.13" targetEnd="//@children.12/@sourceConnections.0/@children.1" label="//@children.12/@sourceConnections.0/@children.2" sourceEnd="//@children.12/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="bagimsizKullanimGrup" location="253,41" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="bagimsizKullanimDetaylar" location="0,86" multiplicityLabel="//@children.12/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.12/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - bagimsizKullanimDetaylar" location="676,1100" size="131,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="*" location="803,1128" size="4,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.12/@sourceConnections.0" name="BagimsizKullanimDetay" location="814,1035" size="259,129" id="com.sampas.akos.ortak.model/BagimsizKullanimDetay" runTimeClassModel="id,kullanimTip,bagimsizKullanimGrup,aciklama,isyeriEh">
+    <children xsi:type="editmodel:CompartmentEditModel" size="236,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.akos.ortak.model/BagimsizKullanimDetay#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/BagimsizKullanimDetay#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="isyeriEh" id="com.sampas.akos.ortak.model/BagimsizKullanimDetay#isyeriEh"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kullanimTip" id="com.sampas.akos.ortak.model/BagimsizKullanimDetay#kullanimTip"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bagimsizKullanimGrup" id="com.sampas.akos.ortak.model/BagimsizKullanimDetay#bagimsizKullanimGrup"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.sampas.akos.ortak.model/KullanimSekli@kullanimSekli+com.sampas.akos.ortak.model/BagimsizKullanimDetay@bagimsizKullanimDetay" source="//@children.13" target="//@children.7" targetEnd="//@children.13/@sourceConnections.0/@children.1" label="//@children.13/@sourceConnections.0/@children.2" sourceEnd="//@children.13/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="bagimsizKullanimDetay" location="187,0" id="com.sampas.akos.ortak.model/KullanimSekli@kullanimSekli+com.sampas.akos.ortak.model/BagimsizKullanimDetay@bagimsizKullanimDetay|com.sampas.akos.ortak.model/BagimsizKullanimDetay#bagimsizKullanimDetay" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="kullanimSekli" location="71,615" id="com.sampas.akos.ortak.model/KullanimSekli@kullanimSekli+com.sampas.akos.ortak.model/BagimsizKullanimDetay@bagimsizKullanimDetay|com.sampas.akos.ortak.model/KullanimSekli#kullanimSekli" multiplicityLabel="//@children.13/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.13/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - kullanimSekli" location="1008,652" size="69,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="976,652" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.sampas.akos.ortak.model/KullanimSekli@kullanimSekli+com.sampas.akos.ortak.model/BagimsizKullanimDetay@bagimsizKullanimDetay" source="//@children.13" target="//@children.14" targetEnd="//@children.13/@sourceConnections.1/@children.1" label="//@children.13/@sourceConnections.1/@children.2" sourceEnd="//@children.13/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="bagimsizKullanimDetay" location="259,119" id="com.sampas.akos.ortak.model/KullanimSekli@kullanimSekli+com.sampas.akos.ortak.model/BagimsizKullanimDetay@bagimsizKullanimDetay|com.sampas.akos.ortak.model/BagimsizKullanimDetay#bagimsizKullanimDetay" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="kullanimSekli" location="0,9" id="com.sampas.akos.ortak.model/KullanimSekli@kullanimSekli+com.sampas.akos.ortak.model/BagimsizKullanimDetay@bagimsizKullanimDetay|com.sampas.akos.ortak.model/KullanimSekli#kullanimSekli" multiplicityLabel="//@children.13/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.13/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - kullanimSekli" location="1034,1133" size="69,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="1085,1161" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.13/@sourceConnections.1" name="KullanimSekli" location="1110,1145" size="131,93" id="com.sampas.akos.ortak.model/KullanimSekli" runTimeClassModel="id,aciklama,isyeriEh">
+    <children xsi:type="editmodel:CompartmentEditModel" size="94,54">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.akos.ortak.model/KullanimSekli#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/KullanimSekli#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="isyeriEh" id="com.sampas.akos.ortak.model/KullanimSekli#isyeriEh"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.10/@sourceConnections.1" name="CaddeSokakTur" location="1203,555" size="143,75" id="com.sampas.akos.ortak.model/CaddeSokakTur" runTimeClassModel="id,aciklama">
+    <children xsi:type="editmodel:CompartmentEditModel" size="94,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.akos.ortak.model/CaddeSokakTur#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/CaddeSokakTur#id"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="BinaParsel" location="-16,836" size="111,75" id="com.sampas.akos.ortak.model/BinaParsel" runTimeClassModel="id,aktifEh">
+    <children xsi:type="editmodel:CompartmentEditModel" size="85,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/BinaParsel#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="aktifEh" id="com.sampas.akos.ortak.model/BinaParsel#aktifEh"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.sampas.akos.ortak.model/Bina@bina+com.sampas.akos.ortak.model/BinaParsel@binaParsel" source="//@children.16" target="//@children.6" targetEnd="//@children.16/@sourceConnections.0/@children.1" label="//@children.16/@sourceConnections.0/@children.2" sourceEnd="//@children.16/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="binaParsel" location="81,17" id="com.sampas.akos.ortak.model/Bina@bina+com.sampas.akos.ortak.model/BinaParsel@binaParsel|com.sampas.akos.ortak.model/BinaParsel#binaParsel" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="bina" location="0,578" id="com.sampas.akos.ortak.model/Bina@bina+com.sampas.akos.ortak.model/BinaParsel@binaParsel|com.sampas.akos.ortak.model/Bina#bina" multiplicityLabel="//@children.16/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.16/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - bina" location="87,860" size="30,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="99,832" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.sampas.akos.ortak.model/KadastroParsel@kadastroParsel+com.sampas.akos.ortak.model/BinaParsel@binaParsel" source="//@children.16" target="//@children.2" targetEnd="//@children.16/@sourceConnections.1/@children.1" label="//@children.16/@sourceConnections.1/@children.2" sourceEnd="//@children.16/@sourceConnections.1/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="binaParsel" location="111,37" id="com.sampas.akos.ortak.model/KadastroParsel@kadastroParsel+com.sampas.akos.ortak.model/BinaParsel@binaParsel|com.sampas.akos.ortak.model/BinaParsel#binaParsel" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="kadastroParsel" location="0,273" id="com.sampas.akos.ortak.model/KadastroParsel@kadastroParsel+com.sampas.akos.ortak.model/BinaParsel@binaParsel|com.sampas.akos.ortak.model/KadastroParsel#kadastroParsel" multiplicityLabel="//@children.16/@sourceConnections.1/@children.1/@children.1" roleLabel="//@children.16/@sourceConnections.1/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - kadastroParsel" location="295,966" size="82,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="359,938" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="IslemMenu" location="50,1154" size="117,111" id="com.sampas.akos.ortak.model/IslemMenu" runTimeClassModel="id,link,aciklama,rol">
+    <children xsi:type="editmodel:CompartmentEditModel" size="94,72">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.akos.ortak.model/IslemMenu#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/IslemMenu#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="link" id="com.sampas.akos.ortak.model/IslemMenu#link"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="rol" id="com.sampas.akos.ortak.model/IslemMenu#rol"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/IslemMenu@islemMenu" source="//@children.17" target="//@children.4" targetEnd="//@children.17/@sourceConnections.0/@children.1" label="//@children.17/@sourceConnections.0/@children.2" sourceEnd="//@children.17/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="islemMenu" location="6,0" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/IslemMenu@islemMenu|com.sampas.akos.ortak.model/IslemMenu#islemMenu" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="kurumSabit" location="161,147" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/IslemMenu@islemMenu|com.sampas.akos.ortak.model/KurumSabit#kurumSabit" multiplicityLabel="//@children.17/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.17/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - kurumSabit" location="63,799" size="63,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="31,799" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="KonutSahiplikDurum" location="645,90" size="173,75" id="com.sampas.akos.ortak.model/KonutSahiplikDurum" runTimeClassModel="id,aciklama">
+    <children xsi:type="editmodel:CompartmentEditModel" size="94,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.akos.ortak.model/KonutSahiplikDurum#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/KonutSahiplikDurum#id"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="GelismislikDurum" location="690,201" size="153,75" id="com.sampas.akos.ortak.model/GelismislikDurum" runTimeClassModel="id,aciklama">
+    <children xsi:type="editmodel:CompartmentEditModel" size="94,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.akos.ortak.model/GelismislikDurum#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/GelismislikDurum#id"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.6/@sourceConnections.4" name="InsaatSinif" location="-45,300" size="117,75" id="com.sampas.akos.ortak.model/InsaatSinif" runTimeClassModel="id,aciklama">
+    <children xsi:type="editmodel:CompartmentEditModel" size="94,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.akos.ortak.model/InsaatSinif#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/InsaatSinif#id"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.6/@sourceConnections.5" name="InsaatTur" location="-66,406" size="117,75" id="com.sampas.akos.ortak.model/InsaatTur" runTimeClassModel="id,aciklama">
+    <children xsi:type="editmodel:CompartmentEditModel" size="94,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.akos.ortak.model/InsaatTur#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/InsaatTur#id"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="SysAudit" location="405,-15" size="149,129" id="com.sampas.akos.ortak.model/SysAudit" runTimeClassModel="id,sinifAd,izlenebilirEh,kaydedilebilirEh,aciklama">
+    <children xsi:type="editmodel:CompartmentEditModel" size="126,90">
+      <children xsi:type="editmodel:AttributeEditModel" name="aciklama" id="com.sampas.akos.ortak.model/SysAudit#aciklama"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="id" id="com.sampas.akos.ortak.model/SysAudit#id"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="izlenebilirEh" id="com.sampas.akos.ortak.model/SysAudit#izlenebilirEh"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="kaydedilebilirEh" id="com.sampas.akos.ortak.model/SysAudit#kaydedilebilirEh"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="sinifAd" id="com.sampas.akos.ortak.model/SysAudit#sinifAd"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
+    <sourceConnections xsi:type="editmodel:AssociationEditModel" autoLocated="true" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/SysAudit@sysAudit" source="//@children.22" target="//@children.4" targetEnd="//@children.22/@sourceConnections.0/@children.1" label="//@children.22/@sourceConnections.0/@children.2" sourceEnd="//@children.22/@sourceConnections.0/@children.0" connectionRouterKind="Manhattan">
+      <children xsi:type="editmodel:AssociationEndEditModel" name="sysAudit" location="0,119" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/SysAudit@sysAudit|com.sampas.akos.ortak.model/SysAudit#sysAudit" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" name="kurumSabit" location="159,0" id="com.sampas.akos.ortak.model/KurumSabit@kurumSabit+com.sampas.akos.ortak.model/SysAudit@sysAudit|com.sampas.akos.ortak.model/KurumSabit#kurumSabit" multiplicityLabel="//@children.22/@sourceConnections.0/@children.1/@children.1" roleLabel="//@children.22/@sourceConnections.0/@children.1/@children.0" navigable="true">
+        <children xsi:type="editmodel:LabelEditModel" name=" - kurumSabit" location="-16,624" size="63,14" anchorKind="LastPart"/>
+        <children xsi:type="editmodel:LabelEditModel" name="0..1" location="61,624" size="18,14" anchorKind="LastPart"/>
+      </children>
+      <children xsi:type="editmodel:WireLabelEditModel" size="0,14" anchorKind="MiddlePart"/>
+    </sourceConnections>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" properties="wireOptions=3;Product=eUML2" autoName="false"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>

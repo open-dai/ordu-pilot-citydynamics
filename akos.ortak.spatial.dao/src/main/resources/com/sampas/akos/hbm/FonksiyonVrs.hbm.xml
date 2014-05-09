@@ -1,0 +1,133 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.ortak.spatial.versiyon.model">
+	<class name="FonksiyonVrs" table="PLN_FONKSIYON_VRS">
+		
+		<!-- Common Variables For All Version Objects Region Begin -->
+		
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="nesneId" type="java.lang.Long">
+			<column name="NESNE_ID" not-null="false" />
+		</property>
+		
+		<property name="surecId" type="java.lang.Long">
+			<column name="SUREC_ID" not-null="false" />
+		</property>
+		
+		<property name="taskId" type="java.lang.Long">
+			<column name="TASK_ID" not-null="false" />
+		</property>
+		
+		<property name="userSpecVariable" type="java.lang.String">
+			<column name="USER_SPEC_VARIABLE" />
+		</property>
+		
+		<property name="islemiYapan" type="java.lang.String">
+			<column name="ISLEMI_YAPAN" not-null="true" length="15" />
+		</property>
+		
+		<property name="versiyonNo" type="java.lang.Double">
+			<column name="VERSIYON_NO" />
+		</property>
+		
+		<property name="versiyonTarihi" type="java.util.Date">
+			<column name="VERSIYON_TARIHI" />
+		</property>
+		
+		<!-- Common Variables For All Version Objects Region End -->
+		
+		<!-- Common Variables For All Base Objects Region Begin -->
+		
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true" />
+		</property>
+		
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" length="15" />
+		</property>
+		
+		<!-- Common Variables For All Base Objects Region End -->
+		
+		<!-- Function Version Specific Variables Region Begin -->
+		
+		<property name="binaYuksekligi" type="java.lang.Double">
+			<column name="HMAX" not-null="false" />
+		</property>
+		
+		<property name="binaDerinligi" type="java.lang.Double">
+			<column name="DERINLIK" not-null="false" />
+		</property>
+		
+		<property name="onBahceMesafesi" type="java.lang.Double">
+			<column name="ONBAHCE" not-null="false" />
+		</property>
+		
+		<property name="yanBahceMesafesi" type="java.lang.Double">
+			<column name="YANBAHCE" not-null="false" />
+		</property>
+		
+		<property name="arkaBahceMesafesi" type="java.lang.Double">
+			<column name="ARKABAHCE" not-null="false" />
+		</property>
+		
+		<property name="kotNoktasiNo" type="java.lang.String">
+			<column name="KOTNOKTASINO" not-null="false" length="20" />
+		</property>
+		
+		<property name="insaatNizami" type="java.lang.String">
+			<column name="NIZAM" not-null="false" length="50" />
+		</property>
+		
+		<property name="taks" type="java.lang.String">
+			<column name="TAKS" not-null="false" length="100" />
+		</property>
+		
+		<property name="kaks" type="java.lang.String">
+			<column name="KAKS" not-null="false" length="100" />
+		</property>
+		
+		<property name="aciklama" type="java.lang.String">
+			<column name="ACIKLAMA" not-null="false" length="1000" />
+		</property>
+		
+		<property name="onBahceMesafesiAciklama" type="java.lang.String">
+			<column name="ON_BAHCE_MESAFESI_ACIKLAMA" not-null="false" />
+		</property>
+		
+		<property name="yanBahceMesafesiAciklama" type="java.lang.String">
+			<column name="YAN_BAHCE_MESAFESI_ACIKLAMA" not-null="false" />
+		</property>
+		
+		<property name="arkaBahceMesafesiAciklama" type="java.lang.String">
+			<column name="ARKA_BAHCE_MESAFESI_ACIKLAMA" not-null="false" />
+		</property>
+		
+		<property name="katAdedi" type="java.lang.Long">
+			<column name="KATADEDI" not-null="false" />
+		</property>
+		
+		<property name="katAdediAciklama" type="java.lang.String">
+			<column name="KAT_ADEDI_ACIKLAMA" not-null="false" />
+		</property>
+		
+		<property name="kurumSabitId" type="java.lang.Long">
+			<column name="KURUM_ID" not-null="true" />
+		</property>
+		
+		<property name="planId" type="java.lang.Long">
+			<column name="PLAN_ID" not-null="true" />
+		</property>
+		
+		<property name="grafik" type="java.lang.Long">
+			<column name="FID" />
+		</property>
+		
+		<!-- Function Version Specific Variables Region End -->
+		
+	</class>
+</hibernate-mapping>

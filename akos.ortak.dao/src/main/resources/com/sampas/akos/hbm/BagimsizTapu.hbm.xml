@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.akos.ortak.model">
+	<class name="BagimsizTapu" table="NUM_BINA_DETAY_TAPU">
+		<cache usage="read-write" />
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+		<many-to-one name="tapu"
+			class="Tapu"
+			foreign-key="NUM_BINA_DETAY_TAPU_TAPU_FK"
+			unique-key="NUM_BINA_DETAY_TAPU_UQ">
+			<column name="TAPU_ID" not-null="true" />
+		</many-to-one>
+		<many-to-one name="bagimsiz"
+			class="Bagimsiz"
+			unique-key="NUM_BINA_DETAY_TAPU_UQ">
+			<column name="BAGIMSIZ_ID" not-null="true" />
+		</many-to-one>
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" length="15"></column>
+		</property>
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true"></column>
+		</property>
+
+
+	</class>
+</hibernate-mapping>

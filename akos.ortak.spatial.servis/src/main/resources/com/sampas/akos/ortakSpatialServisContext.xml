@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="ortakSpatialServis" class="com.sampas.ortak.spatial.servis.impl.OrtakSpatialServis"
+		autowire="byType">
+		<!-- <constructor-arg type="java.lang.String" value="AKOS-GIS-MIS-APPS" />  -->
+		<!-- constructor-arg type="java.lang.String" value="kentrehberiv3.0" /-->
+		<constructor-arg type="java.lang.String" value="kentrehberiv3.0" />
+		<property name="geolsaServis" ref="geolsaServis"></property>
+	</bean>
+
+	<bean id="geolsaServis" class="com.sampas.socbs.geolsa.servis.impl.GeolsaServis"
+		autowire="byType">
+	</bean>
+
+	<bean id="historyServis"
+		class="com.sampas.ortak.spatial.history.servis.impl.HistoryServis"
+		autowire="byType">
+	</bean>
+
+	<bean id="transactionServis"
+		class="com.sampas.ortak.spatial.transaction.servis.impl.TransactionServis"
+		autowire="byType">
+	</bean>
+
+	<bean id="versioningServis"
+		class="com.sampas.ortak.spatial.versioning.servis.impl.VersioningServis"
+		autowire="byType">
+	</bean>
+
+	<bean id="idGeneratorServis"
+		class="com.sampas.ortak.spatial.generator.servis.impl.IDGeneratorServis"
+		autowire="byType">
+	</bean>
+
+	<bean id="dbConnectionServis"
+		class="com.sampas.ortak.spatial.generator.servis.impl.DBConnectionServis"
+		autowire="byType">
+	</bean>
+
+	<bean id="ortakServis" class="com.sampas.akos.ortak.servis.OrtakServisImpl"
+		autowire="byType">
+	</bean>
+
+	<bean id="analysisServis"
+		class="com.sampas.ortak.spatial.analysis.servis.impl.AnalysisServis"
+		autowire="byType">
+		<property name="ortakSpatialServis" ref="ortakSpatialServis"></property>
+		<property name="ortakServis" ref="ortakServis"></property>
+	</bean>
+
+</beans>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.akos.ortak.model">
+	<class name="Kullanicilar" table="KULLANICILAR">
+		<cache usage="read-write" />
+
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+
+		<property name="kullaniciKodu" type="java.lang.String">
+			<column name="KULLANICI_KODU"  length="15"/>
+		</property>
+
+		<property name="kullaniciAdi" type="java.lang.String">
+			<column name="KULLANICI_ADI"  length="20"/>
+		</property>
+		
+		<property name="kullaniciSoyadi" type="java.lang.String">
+			<column name="KULLANICI_SOYADI"  length="20"/>
+		</property>
+				
+		
+		<property name="kullaniciSifresi" type="java.lang.String">
+			<column name="KULLANICI_SIFRESI"  length="15"/>
+		</property>
+		
+		<property name="kullaniciTuru" type="java.lang.String">
+			<column name="KULLANICI_TURU"  length="1"/>
+		</property>		
+
+		<property name="sicilKodu" type="java.lang.Long">
+			<column name="SICIL_KODU" />
+		</property>
+
+		<property name="roleId" type="java.lang.Long">
+			<column name="ROL_ID" />
+		</property>
+		
+		
+	</class>
+</hibernate-mapping>

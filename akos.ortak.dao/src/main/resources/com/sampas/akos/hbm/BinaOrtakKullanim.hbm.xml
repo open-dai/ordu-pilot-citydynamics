@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="com.sampas.akos.ortak.model">
+	<class name="BinaOrtakKullanim" table="NUM_BINA_ORTAK_KULLANIM">
+		<cache usage="read-write" />
+		
+		<id name="id" column="ID">
+			<generator class="assigned"></generator>
+		</id>
+		
+		<property name="kaydeden" type="java.lang.String">
+			<column name="KAYDEDEN" not-null="true" length="15" />
+		</property>
+		
+		<property name="kayitTarih" type="java.util.Date">
+			<column name="KAYIT_TARIHI" not-null="true" />
+		</property>
+		
+		<many-to-one name="bina" class="Bina"
+			foreign-key="NUM_BINA_ORTAK_KUL_BINA_FK" >
+			<column name="BINA_ID" />
+		</many-to-one>
+		
+		<many-to-one name="ortakKullanimTur" class="OrtakKullanimTur"
+			foreign-key="NUM_BINA_ORTAK_KUL_ORT_FK" >
+			<column name="ORTAK_KULLANIM_ID" />
+		</many-to-one>
+		
+		<property name="pdaEh" type="java.lang.String">
+			<column name="PDA_EH" length="1" check="PDA_EH IN('E','H')" />
+		</property>
+		
+		<property name="pdaUserName" type="java.lang.String">
+			<column name="PDA_USERNAME" />
+		</property>
+		
+		<property name="pdaIslemTarihi" type="java.util.Date">
+			<column name="PDA_ISLEM_TARIHI" />
+		</property>
+		
+		<property name="alaniAdedi" type="java.lang.Double">
+			<column name="ALANI_ADEDI" />
+		</property>
+		
+	</class>
+</hibernate-mapping>
